@@ -32,3 +32,5 @@ coverage
 
 # System
 Thumbs.db
+server-logs.txt
+mongo_test.js
