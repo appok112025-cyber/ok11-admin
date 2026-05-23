@@ -4,7 +4,7 @@ FROM node:20-alpine AS base
 WORKDIR /app
 
 # Enable corepack and prepare pnpm (cached unless Node version changes)
-RUN corepack enable && corepack prepare pnpm@latest --activate
+RUN corepack enable && corepack prepare pnpm@9 --activate
 
 # Dependencies stage - install all dependencies
 FROM base AS deps
