@@ -76,11 +76,15 @@ export default defineNuxtConfig({
       ],
     },
   },
+  devServer: {
+    host: '0.0.0.0',
+    port: 3000
+  },
   runtimeConfig: {
     jwtSecret: process.env.JWT_SECRET || 'your-secret-key',
-    apiUrl: process.env.API_URL || 'http://127.0.0.1:5925',
+    apiUrl: process.env.API_URL || 'https://api.ok11.in',
     public: {
-      apiUrl: process.env.API_URL || 'http://127.0.0.1:5925',
+      apiUrl: process.env.API_URL || 'https://api.ok11.in',
     },
   },
   experimental: {

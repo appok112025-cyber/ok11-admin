@@ -1,6 +1,11 @@
 import type { ApiResponse } from '@/types/api'
 import { requireAuth, handleApiError } from '../../utils/api'
 import { backendApiRequest } from '../../utils/backendApi'
+import mongoose from 'mongoose'
+
+const getMongoUri = () => {
+  return process.env.MONGODB_URI || 'mongodb://mongo:HDiNmhmNGwDJDQEPpUQZWfurcuLVYCgx@mongodb.railway.internal:27017/ok11?authSource=admin'
+}
 
 export default defineEventHandler(async (event): Promise<ApiResponse<any>> => {
   try {
@@ -12,9 +17,15 @@ export default defineEventHandler(async (event): Promise<ApiResponse<any>> => {
       query,
     })
 
+    const result = response.data || response
+
     return {
-      data: response.data || response,
-      meta: response.meta || {},
+      data: result.players || result,
+      meta: {
+        total: result.total,
+        page: result.page,
+        limit: result.limit
+      }
     }
   } catch (error: any) {
     return handleApiError(error, 'fetch players')

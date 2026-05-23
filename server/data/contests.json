@@ -1,0 +1,42 @@
+[
+  {
+    "id": "2folwupwmmo4lbmp1",
+    "matchId": "69e38cf7cc9773ecde99032f",
+    "name": "test con",
+    "firstPrize": 1,
+    "entryFee": 1,
+    "totalParticipants": 0,
+    "status": "Upcoming",
+    "createdAt": "2026-04-18T17:07:45.445Z"
+  },
+  {
+    "id": "5xghxqqd6mo4ljlrg",
+    "matchId": "69e38b9bcc9773ecde98da90",
+    "name": "test2",
+    "firstPrize": 1,
+    "entryFee": 1,
+    "totalParticipants": 0,
+    "status": "Upcoming",
+    "createdAt": "2026-04-18T17:13:57.484Z"
+  },
+  {
+    "id": "jae7x8llpmogzltas",
+    "matchId": "69eed61dcc9773ecde9d9ac1",
+    "name": "test1",
+    "firstPrize": 10000,
+    "entryFee": 0,
+    "totalParticipants": 0,
+    "status": "Upcoming",
+    "createdAt": "2026-04-27T09:20:49.300Z"
+  },
+  {
+    "id": "k8r2gm4bfmohfygko",
+    "matchId": "69eeec91cc9773ecde9e05a8",
+    "name": "test2",
+    "firstPrize": 100000000,
+    "entryFee": 0,
+    "totalParticipants": 0,
+    "status": "Upcoming",
+    "createdAt": "2026-04-27T16:58:33.192Z"
+  }
+]

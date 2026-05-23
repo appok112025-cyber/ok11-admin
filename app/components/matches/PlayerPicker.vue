@@ -54,8 +54,22 @@
                   :key="player.id"
                   type="button"
                   @click="addPlayerToTeam('A', player)"
-                  class="w-full px-4 py-2 text-left hover:bg-blue-50 flex items-center justify-between"
+                  class="w-full px-4 py-2 text-left hover:bg-blue-50 flex items-center gap-2"
                 >
+                  <div class="w-7 h-7 rounded-full overflow-hidden flex-shrink-0 bg-gray-100">
+                    <img
+                      v-if="player.imageUrl"
+                      :src="player.imageUrl"
+                      :alt="player.name"
+                      class="w-full h-full object-cover"
+                    />
+                    <div
+                      v-else
+                      class="w-full h-full flex items-center justify-center bg-blue-100 text-blue-600 text-xs font-semibold"
+                    >
+                      {{ player.name?.charAt(0)?.toUpperCase() || '?' }}
+                    </div>
+                  </div>
                   <span>{{ player.name }}</span>
                 </button>
                 <div
@@ -75,7 +89,23 @@
             :key="player.id"
             class="flex items-center justify-between bg-blue-50 px-3 py-2 rounded-lg"
           >
-            <span class="text-sm">{{ player.name }}</span>
+            <div class="flex items-center gap-2">
+              <div class="w-8 h-8 rounded-full overflow-hidden flex-shrink-0 bg-gray-100">
+                <img
+                  v-if="player.imageUrl"
+                  :src="player.imageUrl"
+                  :alt="player.name"
+                  class="w-full h-full object-cover"
+                />
+                <div
+                  v-else
+                  class="w-full h-full flex items-center justify-center bg-blue-100 text-blue-600 text-xs font-semibold"
+                >
+                  {{ player.name?.charAt(0)?.toUpperCase() || '?' }}
+                </div>
+              </div>
+              <span class="text-sm">{{ player.name }}</span>
+            </div>
             <button
               type="button"
               @click="removePlayerFromTeam('A', player.id)"
@@ -164,8 +194,22 @@
                   :key="player.id"
                   type="button"
                   @click="addPlayerToTeam('B', player)"
-                  class="w-full px-4 py-2 text-left hover:bg-blue-50 flex items-center justify-between"
+                  class="w-full px-4 py-2 text-left hover:bg-blue-50 flex items-center gap-2"
                 >
+                  <div class="w-7 h-7 rounded-full overflow-hidden flex-shrink-0 bg-gray-100">
+                    <img
+                      v-if="player.imageUrl"
+                      :src="player.imageUrl"
+                      :alt="player.name"
+                      class="w-full h-full object-cover"
+                    />
+                    <div
+                      v-else
+                      class="w-full h-full flex items-center justify-center bg-blue-100 text-blue-600 text-xs font-semibold"
+                    >
+                      {{ player.name?.charAt(0)?.toUpperCase() || '?' }}
+                    </div>
+                  </div>
                   <span>{{ player.name }}</span>
                 </button>
                 <div
@@ -185,7 +229,23 @@
             :key="player.id"
             class="flex items-center justify-between bg-blue-50 px-3 py-2 rounded-lg"
           >
-            <span class="text-sm">{{ player.name }}</span>
+            <div class="flex items-center gap-2">
+              <div class="w-8 h-8 rounded-full overflow-hidden flex-shrink-0 bg-gray-100">
+                <img
+                  v-if="player.imageUrl"
+                  :src="player.imageUrl"
+                  :alt="player.name"
+                  class="w-full h-full object-cover"
+                />
+                <div
+                  v-else
+                  class="w-full h-full flex items-center justify-center bg-blue-100 text-blue-600 text-xs font-semibold"
+                >
+                  {{ player.name?.charAt(0)?.toUpperCase() || '?' }}
+                </div>
+              </div>
+              <span class="text-sm">{{ player.name }}</span>
+            </div>
             <button
               type="button"
               @click="removePlayerFromTeam('B', player.id)"
@@ -238,17 +298,30 @@
                 <h3 class="text-lg font-semibold text-gray-900 mb-4">
                   Add New Player
                 </h3>
-                <div>
-                  <label class="block text-sm font-medium text-gray-700 mb-2">
-                    Player Name <span class="text-red-500">*</span>
-                  </label>
-                  <input
-                    v-model="newPlayerName"
-                    type="text"
-                    class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500"
-                    placeholder="Enter player name"
-                    @keyup.enter="handleAddPlayer"
-                  />
+                <div class="space-y-4">
+                  <div>
+                    <label class="block text-sm font-medium text-gray-700 mb-2">
+                      Player Name <span class="text-red-500">*</span>
+                    </label>
+                    <input
+                      v-model="newPlayerName"
+                      type="text"
+                      class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500"
+                      placeholder="Enter player name"
+                      @keyup.enter="handleAddPlayer"
+                    />
+                  </div>
+                  <div>
+                    <label class="block text-sm font-medium text-gray-700 mb-2">
+                      Player Image URL
+                    </label>
+                    <input
+                      v-model="newPlayerImageUrl"
+                      type="url"
+                      class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500"
+                      placeholder="https://example.com/player.jpg"
+                    />
+                  </div>
                 </div>
               </div>
               <div class="bg-gray-50 px-6 py-4 flex flex-row-reverse gap-3">
@@ -279,6 +352,7 @@
   interface Player {
     id: string
     name: string
+    imageUrl?: string
   }
 
   const props = defineProps<{
@@ -305,6 +379,7 @@
   const dropdownBStyle = ref({})
   const showAddPlayerDialog = ref(false)
   const newPlayerName = ref('')
+  const newPlayerImageUrl = ref('')
   const pendingTeam = ref<'A' | 'B' | null>(null)
 
   const fetchPlayers = async () => {
@@ -314,6 +389,7 @@
         allPlayers.value = (response.data || []).map((player: any) => ({
           id: player._id || player.id,
           name: player.name,
+          imageUrl: player.imageUrl || '',
         }))
       }
     } catch (error) {
@@ -421,6 +497,7 @@
   const openAddPlayerDialog = (team: 'A' | 'B') => {
     pendingTeam.value = team
     newPlayerName.value = ''
+    newPlayerImageUrl.value = ''
     showAddPlayerDialog.value = true
     if (team === 'A') {
       showDropdownA.value = false
@@ -432,6 +509,7 @@
   const closeAddPlayerDialog = () => {
     showAddPlayerDialog.value = false
     newPlayerName.value = ''
+    newPlayerImageUrl.value = ''
     pendingTeam.value = null
   }
 
@@ -441,15 +519,21 @@
     const { success, error: showError } = useToast()
 
     try {
+      const body: any = { name: newPlayerName.value.trim() }
+      if (newPlayerImageUrl.value.trim()) {
+        body.imageUrl = newPlayerImageUrl.value.trim()
+      }
+
       const response = await $fetch<{ data: any }>('/api/players', {
         method: 'POST',
-        body: { name: newPlayerName.value.trim() },
+        body,
       })
 
       if (response.data) {
         const newPlayer: Player = {
           id: response.data._id || response.data.id,
           name: response.data.name,
+          imageUrl: response.data.imageUrl || '',
         }
 
         await fetchPlayers()

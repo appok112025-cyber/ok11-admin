@@ -1,6 +1,11 @@
 import type { H3Event } from 'h3'
 
 const getApiUrl = (): string => {
+  // If in development and not explicitly overridden, use localhost
+  if (process.env.NODE_ENV === 'development' && !process.env.API_URL) {
+    return 'http://localhost:5925'
+  }
+
   // Prioritize process.env.API_URL (set in docker-compose as http://api:5925)
   if (process.env.API_URL) {
     return process.env.API_URL
@@ -16,8 +21,8 @@ const getApiUrl = (): string => {
     // Runtime config not available
   }
 
-  // Final fallback for local development
-  return 'http://127.0.0.1:5925'
+  // Final fallback for production
+  return 'https://api.ok11.in'
 }
 
 export const backendApiRequest = async <T>(
@@ -28,10 +33,11 @@ export const backendApiRequest = async <T>(
     body?: any
     headers?: Record<string, string>
     query?: Record<string, any>
-  } = {}
+  } = {},
+  skipToken: boolean = false
 ): Promise<T> => {
   const apiUrl = getApiUrl()
-  const token = getCookie(event, 'auth_token')
+  const token = !skipToken ? getCookie(event, 'auth_token') : null
 
   const headers: Record<string, string> = {
     'Content-Type': 'application/json',
@@ -47,6 +53,14 @@ export const backendApiRequest = async <T>(
     : ''
 
   const url = `${apiUrl}${endpoint}${queryString}`
+  const logMessage = `[${new Date().toISOString()}] [Backend API] Requesting: ${options.method || 'GET'} ${url}\n`
+  
+  try {
+    // Attempt to write to a log file for visibility
+    const fs = await import('fs')
+    const path = await import('path')
+    fs.appendFileSync(path.resolve(process.cwd(), 'server-logs.txt'), logMessage)
+  } catch (e) {}
 
   try {
     const response = await $fetch(url, {
@@ -58,6 +72,13 @@ export const backendApiRequest = async <T>(
 
     return response as T
   } catch (error: any) {
+    const errorLog = `[${new Date().toISOString()}] [Backend API] FAILED: ${error.statusCode} ${error.statusMessage || error.message} URL: ${url}\n`
+    try {
+      const fs = await import('fs')
+      const path = await import('path')
+      fs.appendFileSync(path.resolve(process.cwd(), 'server-logs.txt'), errorLog)
+    } catch (e) {}
+
     const isNetworkError =
       !error.status &&
       (error.message?.includes('fetch failed') ||

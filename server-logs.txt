@@ -1,0 +1,1361 @@
+[2026-04-30T14:10:37.516Z] [Backend API] Requesting: POST https://api.ok11.in/api/contests
+[2026-04-30T14:10:39.160Z] [Backend API] FAILED: 404 Not Found URL: https://api.ok11.in/api/contests
+[2026-04-30T14:10:39.161Z] [Backend API] Requesting: POST https://api.ok11.in/api/contest
+[2026-04-30T14:10:40.728Z] [Backend API] FAILED: 404 Not Found URL: https://api.ok11.in/api/contest
+[2026-04-30T14:54:29.197Z] [Backend API] Requesting: POST https://api.ok11.in/api/auth/admin/login
+[2026-04-30T14:54:31.802Z] [Backend API] Requesting: GET https://api.ok11.in/api/dashboard/stats
+[2026-04-30T14:54:35.028Z] [Backend API] Requesting: GET https://api.ok11.in/api/matches?limit=1000
+[2026-04-30T14:54:37.776Z] [Backend API] Requesting: GET https://api.ok11.in/api/matches?limit=1000
+[2026-04-30T14:54:38.513Z] [Backend API] Requesting: GET https://api.ok11.in/api/submissions?matchId=69f1c24fcc9773ecde9ffcd8
+[2026-04-30T14:54:40.961Z] [Backend API] Requesting: GET https://api.ok11.in/api/contests?matchId=69f1c24fcc9773ecde9ffcd8
+[2026-04-30T14:54:41.529Z] [Backend API] FAILED: 404 Not Found URL: https://api.ok11.in/api/contests?matchId=69f1c24fcc9773ecde9ffcd8
+[2026-04-30T14:54:41.530Z] [Backend API] Requesting: GET https://api.ok11.in/api/contest?matchId=69f1c24fcc9773ecde9ffcd8
+[2026-04-30T14:54:41.706Z] [Backend API] FAILED: 404 Not Found URL: https://api.ok11.in/api/contest?matchId=69f1c24fcc9773ecde9ffcd8
+[2026-04-30T14:54:41.707Z] [Backend API] Requesting: GET https://api.ok11.in/api/matches/69f1c24fcc9773ecde9ffcd8/contests
+[2026-04-30T14:54:41.874Z] [Backend API] FAILED: 404 Not Found URL: https://api.ok11.in/api/matches/69f1c24fcc9773ecde9ffcd8/contests
+[2026-04-30T14:54:41.945Z] [Backend API] Requesting: GET https://api.ok11.in/api/matches/69f1c24fcc9773ecde9ffcd8
+[2026-04-30T14:54:49.600Z] [Backend API] Requesting: POST https://api.ok11.in/api/contests
+[2026-04-30T14:54:49.810Z] [Backend API] FAILED: 404 Not Found URL: https://api.ok11.in/api/contests
+[2026-04-30T14:54:49.811Z] [Backend API] Requesting: POST https://api.ok11.in/api/contest
+[2026-04-30T14:54:49.902Z] [Backend API] FAILED: 404 Not Found URL: https://api.ok11.in/api/contest
+[2026-04-30T14:57:12.299Z] [Backend API] Requesting: GET https://api.ok11.in/api/contests?matchId=69f1c24fcc9773ecde9ffcd8
+[2026-04-30T14:57:12.556Z] [Backend API] FAILED: 404 Not Found URL: https://api.ok11.in/api/contests?matchId=69f1c24fcc9773ecde9ffcd8
+[2026-04-30T14:57:12.557Z] [Backend API] Requesting: GET https://api.ok11.in/api/contest?matchId=69f1c24fcc9773ecde9ffcd8
+[2026-04-30T14:57:12.638Z] [Backend API] FAILED: 404 Not Found URL: https://api.ok11.in/api/contest?matchId=69f1c24fcc9773ecde9ffcd8
+[2026-04-30T14:57:12.639Z] [Backend API] Requesting: GET https://api.ok11.in/api/matches/69f1c24fcc9773ecde9ffcd8/contests?matchId=69f1c24fcc9773ecde9ffcd8
+[2026-04-30T14:57:12.713Z] [Backend API] FAILED: 404 Not Found URL: https://api.ok11.in/api/matches/69f1c24fcc9773ecde9ffcd8/contests?matchId=69f1c24fcc9773ecde9ffcd8
+[2026-04-30T14:57:12.714Z] [Backend API] Requesting: GET https://api.ok11.in/api/admin/contests?matchId=69f1c24fcc9773ecde9ffcd8
+[2026-04-30T14:57:12.786Z] [Backend API] FAILED: 404 Not Found URL: https://api.ok11.in/api/admin/contests?matchId=69f1c24fcc9773ecde9ffcd8
+[2026-04-30T14:57:12.786Z] [Backend API] Requesting: GET https://api.ok11.in/api/game-contests?matchId=69f1c24fcc9773ecde9ffcd8
+[2026-04-30T14:57:12.865Z] [Backend API] FAILED: 404 Not Found URL: https://api.ok11.in/api/game-contests?matchId=69f1c24fcc9773ecde9ffcd8
+[2026-04-30T14:57:12.866Z] [Backend API] Requesting: GET https://api.ok11.in/api/match-contests?matchId=69f1c24fcc9773ecde9ffcd8
+[2026-04-30T14:57:12.931Z] [Backend API] FAILED: 404 Not Found URL: https://api.ok11.in/api/match-contests?matchId=69f1c24fcc9773ecde9ffcd8
+[2026-04-30T14:57:12.982Z] [Backend API] Requesting: GET https://api.ok11.in/api/matches/69f1c24fcc9773ecde9ffcd8
+[2026-04-30T14:57:16.268Z] [Backend API] Requesting: GET https://api.ok11.in/api/matches?limit=1000
+[2026-04-30T14:57:16.879Z] [Backend API] Requesting: GET https://api.ok11.in/api/submissions?matchId=69f1c24fcc9773ecde9ffcd8
+[2026-04-30T14:57:19.006Z] [Backend API] Requesting: GET https://api.ok11.in/api/contests?matchId=69f1c24fcc9773ecde9ffcd8
+[2026-04-30T14:57:19.082Z] [Backend API] FAILED: 404 Not Found URL: https://api.ok11.in/api/contests?matchId=69f1c24fcc9773ecde9ffcd8
+[2026-04-30T14:57:19.083Z] [Backend API] Requesting: GET https://api.ok11.in/api/contest?matchId=69f1c24fcc9773ecde9ffcd8
+[2026-04-30T14:57:19.159Z] [Backend API] FAILED: 404 Not Found URL: https://api.ok11.in/api/contest?matchId=69f1c24fcc9773ecde9ffcd8
+[2026-04-30T14:57:19.160Z] [Backend API] Requesting: GET https://api.ok11.in/api/matches/69f1c24fcc9773ecde9ffcd8/contests?matchId=69f1c24fcc9773ecde9ffcd8
+[2026-04-30T14:57:19.230Z] [Backend API] FAILED: 404 Not Found URL: https://api.ok11.in/api/matches/69f1c24fcc9773ecde9ffcd8/contests?matchId=69f1c24fcc9773ecde9ffcd8
+[2026-04-30T14:57:19.232Z] [Backend API] Requesting: GET https://api.ok11.in/api/admin/contests?matchId=69f1c24fcc9773ecde9ffcd8
+[2026-04-30T14:57:19.296Z] [Backend API] FAILED: 404 Not Found URL: https://api.ok11.in/api/admin/contests?matchId=69f1c24fcc9773ecde9ffcd8
+[2026-04-30T14:57:19.297Z] [Backend API] Requesting: GET https://api.ok11.in/api/game-contests?matchId=69f1c24fcc9773ecde9ffcd8
+[2026-04-30T14:57:19.366Z] [Backend API] FAILED: 404 Not Found URL: https://api.ok11.in/api/game-contests?matchId=69f1c24fcc9773ecde9ffcd8
+[2026-04-30T14:57:19.367Z] [Backend API] Requesting: GET https://api.ok11.in/api/match-contests?matchId=69f1c24fcc9773ecde9ffcd8
+[2026-04-30T14:57:19.433Z] [Backend API] FAILED: 404 Not Found URL: https://api.ok11.in/api/match-contests?matchId=69f1c24fcc9773ecde9ffcd8
+[2026-04-30T14:57:19.468Z] [Backend API] Requesting: GET https://api.ok11.in/api/matches/69f1c24fcc9773ecde9ffcd8
+[2026-04-30T14:57:27.385Z] [Backend API] Requesting: GET https://api.ok11.in/api/matches?limit=1000
+[2026-04-30T14:57:28.896Z] [Backend API] Requesting: GET https://api.ok11.in/api/submissions?matchId=69f1c24fcc9773ecde9ffcd8
+[2026-04-30T14:57:35.163Z] [Backend API] Requesting: GET https://api.ok11.in/api/contests?matchId=69f1c24fcc9773ecde9ffcd8
+[2026-04-30T14:57:35.377Z] [Backend API] FAILED: 404 Not Found URL: https://api.ok11.in/api/contests?matchId=69f1c24fcc9773ecde9ffcd8
+[2026-04-30T14:57:35.378Z] [Backend API] Requesting: GET https://api.ok11.in/api/contest?matchId=69f1c24fcc9773ecde9ffcd8
+[2026-04-30T14:57:35.468Z] [Backend API] FAILED: 404 Not Found URL: https://api.ok11.in/api/contest?matchId=69f1c24fcc9773ecde9ffcd8
+[2026-04-30T14:57:35.469Z] [Backend API] Requesting: GET https://api.ok11.in/api/matches/69f1c24fcc9773ecde9ffcd8/contests?matchId=69f1c24fcc9773ecde9ffcd8
+[2026-04-30T14:57:35.545Z] [Backend API] FAILED: 404 Not Found URL: https://api.ok11.in/api/matches/69f1c24fcc9773ecde9ffcd8/contests?matchId=69f1c24fcc9773ecde9ffcd8
+[2026-04-30T14:57:35.545Z] [Backend API] Requesting: GET https://api.ok11.in/api/admin/contests?matchId=69f1c24fcc9773ecde9ffcd8
+[2026-04-30T14:57:35.614Z] [Backend API] FAILED: 404 Not Found URL: https://api.ok11.in/api/admin/contests?matchId=69f1c24fcc9773ecde9ffcd8
+[2026-04-30T14:57:35.616Z] [Backend API] Requesting: GET https://api.ok11.in/api/game-contests?matchId=69f1c24fcc9773ecde9ffcd8
+[2026-04-30T14:57:35.683Z] [Backend API] FAILED: 404 Not Found URL: https://api.ok11.in/api/game-contests?matchId=69f1c24fcc9773ecde9ffcd8
+[2026-04-30T14:57:35.684Z] [Backend API] Requesting: GET https://api.ok11.in/api/match-contests?matchId=69f1c24fcc9773ecde9ffcd8
+[2026-04-30T14:57:35.751Z] [Backend API] FAILED: 404 Not Found URL: https://api.ok11.in/api/match-contests?matchId=69f1c24fcc9773ecde9ffcd8
+[2026-04-30T14:57:35.787Z] [Backend API] Requesting: GET https://api.ok11.in/api/matches/69f1c24fcc9773ecde9ffcd8
+[2026-04-30T15:00:16.324Z] [Backend API] Requesting: GET https://api.ok11.in/api/matches?limit=1000
+[2026-04-30T15:00:17.164Z] [Backend API] Requesting: GET https://api.ok11.in/api/submissions?matchId=69f1c24fcc9773ecde9ffcd8
+[2026-04-30T15:00:18.429Z] [Backend API] Requesting: GET https://api.ok11.in/api/contests?matchId=69f1c24fcc9773ecde9ffcd8
+[2026-04-30T15:00:18.533Z] [Backend API] FAILED: 404 Not Found URL: https://api.ok11.in/api/contests?matchId=69f1c24fcc9773ecde9ffcd8
+[2026-04-30T15:00:18.534Z] [Backend API] Requesting: GET https://api.ok11.in/api/contest?matchId=69f1c24fcc9773ecde9ffcd8
+[2026-04-30T15:00:19.168Z] [Backend API] FAILED: 404 Not Found URL: https://api.ok11.in/api/contest?matchId=69f1c24fcc9773ecde9ffcd8
+[2026-04-30T15:00:19.169Z] [Backend API] Requesting: GET https://api.ok11.in/api/matches/69f1c24fcc9773ecde9ffcd8/contests?matchId=69f1c24fcc9773ecde9ffcd8
+[2026-04-30T15:00:20.376Z] [Backend API] FAILED: 404 Not Found URL: https://api.ok11.in/api/matches/69f1c24fcc9773ecde9ffcd8/contests?matchId=69f1c24fcc9773ecde9ffcd8
+[2026-04-30T15:00:20.377Z] [Backend API] Requesting: GET https://api.ok11.in/api/matches/69f1c24fcc9773ecde9ffcd8?populate=*?matchId=69f1c24fcc9773ecde9ffcd8
+[2026-04-30T15:00:20.515Z] [Backend API] Requesting: GET https://api.ok11.in/api/matches/69f1c24fcc9773ecde9ffcd8
+[2026-04-30T15:00:25.446Z] [Backend API] Requesting: POST https://api.ok11.in/api/contests
+[2026-04-30T15:00:25.790Z] [Backend API] FAILED: 404 Not Found URL: https://api.ok11.in/api/contests
+[2026-04-30T15:00:25.791Z] [Backend API] Requesting: POST https://api.ok11.in/api/contest
+[2026-04-30T15:00:25.866Z] [Backend API] FAILED: 404 Not Found URL: https://api.ok11.in/api/contest
+[2026-04-30T15:00:25.867Z] [Backend API] Requesting: POST https://api.ok11.in/api/matches/69f1c24fcc9773ecde9ffcd8/contests
+[2026-04-30T15:00:25.943Z] [Backend API] FAILED: 404 Not Found URL: https://api.ok11.in/api/matches/69f1c24fcc9773ecde9ffcd8/contests
+[2026-04-30T15:00:25.944Z] [Backend API] Requesting: POST https://api.ok11.in/api/admin/contests
+[2026-04-30T15:00:26.015Z] [Backend API] FAILED: 404 Not Found URL: https://api.ok11.in/api/admin/contests
+[2026-04-30T15:00:26.017Z] [Backend API] Requesting: POST https://api.ok11.in/api/game-contests
+[2026-04-30T15:00:26.081Z] [Backend API] FAILED: 404 Not Found URL: https://api.ok11.in/api/game-contests
+[2026-04-30T15:00:26.082Z] [Backend API] Requesting: POST https://api.ok11.in/api/match-contests
+[2026-04-30T15:00:26.151Z] [Backend API] FAILED: 404 Not Found URL: https://api.ok11.in/api/match-contests
+[2026-04-30T15:01:45.958Z] [Backend API] Requesting: GET https://api.ok11.in/api/matches?limit=1000
+[2026-04-30T15:01:46.417Z] [Backend API] Requesting: GET https://api.ok11.in/api/submissions?matchId=69f1c24fcc9773ecde9ffcd8
+[2026-04-30T15:01:48.627Z] [Backend API] Requesting: GET https://api.ok11.in/api/contests?matchId=69f1c24fcc9773ecde9ffcd8
+[2026-04-30T15:01:48.704Z] [Backend API] FAILED: 404 Not Found URL: https://api.ok11.in/api/contests?matchId=69f1c24fcc9773ecde9ffcd8
+[2026-04-30T15:01:48.706Z] [Backend API] Requesting: GET https://api.ok11.in/api/contests?matchId=69f1c24fcc9773ecde9ffcd8
+[2026-04-30T15:01:48.774Z] [Backend API] FAILED: 404 Not Found URL: https://api.ok11.in/api/contests?matchId=69f1c24fcc9773ecde9ffcd8
+[2026-04-30T15:01:48.775Z] [Backend API] Requesting: GET https://api.ok11.in/api/contest?matchId=69f1c24fcc9773ecde9ffcd8
+[2026-04-30T15:01:48.842Z] [Backend API] FAILED: 404 Not Found URL: https://api.ok11.in/api/contest?matchId=69f1c24fcc9773ecde9ffcd8
+[2026-04-30T15:01:48.842Z] [Backend API] Requesting: GET https://api.ok11.in/api/contest?matchId=69f1c24fcc9773ecde9ffcd8
+[2026-04-30T15:01:48.913Z] [Backend API] FAILED: 404 Not Found URL: https://api.ok11.in/api/contest?matchId=69f1c24fcc9773ecde9ffcd8
+[2026-04-30T15:01:48.915Z] [Backend API] Requesting: GET https://api.ok11.in/api/matches/69f1c24fcc9773ecde9ffcd8/contests?matchId=69f1c24fcc9773ecde9ffcd8
+[2026-04-30T15:01:48.986Z] [Backend API] FAILED: 404 Not Found URL: https://api.ok11.in/api/matches/69f1c24fcc9773ecde9ffcd8/contests?matchId=69f1c24fcc9773ecde9ffcd8
+[2026-04-30T15:01:48.987Z] [Backend API] Requesting: GET https://api.ok11.in/api/matches/69f1c24fcc9773ecde9ffcd8/contests?matchId=69f1c24fcc9773ecde9ffcd8
+[2026-04-30T15:01:49.057Z] [Backend API] FAILED: 404 Not Found URL: https://api.ok11.in/api/matches/69f1c24fcc9773ecde9ffcd8/contests?matchId=69f1c24fcc9773ecde9ffcd8
+[2026-04-30T15:01:49.058Z] [Backend API] Requesting: GET https://api.ok11.in/api/matches/69f1c24fcc9773ecde9ffcd8?populate=*?matchId=69f1c24fcc9773ecde9ffcd8
+[2026-04-30T15:01:49.153Z] [Backend API] Requesting: GET https://api.ok11.in/api/matches/69f1c24fcc9773ecde9ffcd8
+[2026-04-30T15:01:53.344Z] [Backend API] Requesting: POST https://api.ok11.in/api/contests
+[2026-04-30T15:01:54.037Z] [Backend API] FAILED: 404 Not Found URL: https://api.ok11.in/api/contests
+[2026-04-30T15:01:54.038Z] [Backend API] Requesting: POST https://api.ok11.in/api/contest
+[2026-04-30T15:01:54.135Z] [Backend API] FAILED: 404 Not Found URL: https://api.ok11.in/api/contest
+[2026-04-30T15:01:54.136Z] [Backend API] Requesting: POST https://api.ok11.in/api/matches/69f1c24fcc9773ecde9ffcd8/contests
+[2026-04-30T15:01:54.234Z] [Backend API] FAILED: 404 Not Found URL: https://api.ok11.in/api/matches/69f1c24fcc9773ecde9ffcd8/contests
+[2026-04-30T15:01:54.234Z] [Backend API] Requesting: POST https://api.ok11.in/api/admin/contests
+[2026-04-30T15:01:54.334Z] [Backend API] FAILED: 404 Not Found URL: https://api.ok11.in/api/admin/contests
+[2026-04-30T15:01:54.335Z] [Backend API] Requesting: POST https://api.ok11.in/api/game-contests
+[2026-04-30T15:01:54.711Z] [Backend API] FAILED: 404 Not Found URL: https://api.ok11.in/api/game-contests
+[2026-04-30T15:01:54.712Z] [Backend API] Requesting: POST https://api.ok11.in/api/match-contests
+[2026-04-30T15:01:54.803Z] [Backend API] FAILED: 404 Not Found URL: https://api.ok11.in/api/match-contests
+[2026-04-30T15:02:01.778Z] [Backend API] Requesting: GET https://api.ok11.in/api/contests?matchId=69f1c24fcc9773ecde9ffcd8
+[2026-04-30T15:02:02.190Z] [Backend API] FAILED: 404 Not Found URL: https://api.ok11.in/api/contests?matchId=69f1c24fcc9773ecde9ffcd8
+[2026-04-30T15:02:02.192Z] [Backend API] Requesting: GET https://api.ok11.in/api/contests?matchId=69f1c24fcc9773ecde9ffcd8
+[2026-04-30T15:02:02.270Z] [Backend API] FAILED: 404 Not Found URL: https://api.ok11.in/api/contests?matchId=69f1c24fcc9773ecde9ffcd8
+[2026-04-30T15:02:02.271Z] [Backend API] Requesting: GET https://api.ok11.in/api/contest?matchId=69f1c24fcc9773ecde9ffcd8
+[2026-04-30T15:02:02.338Z] [Backend API] FAILED: 404 Not Found URL: https://api.ok11.in/api/contest?matchId=69f1c24fcc9773ecde9ffcd8
+[2026-04-30T15:02:02.339Z] [Backend API] Requesting: GET https://api.ok11.in/api/contest?matchId=69f1c24fcc9773ecde9ffcd8
+[2026-04-30T15:02:02.677Z] [Backend API] FAILED: 404 Not Found URL: https://api.ok11.in/api/contest?matchId=69f1c24fcc9773ecde9ffcd8
+[2026-04-30T15:02:02.677Z] [Backend API] Requesting: GET https://api.ok11.in/api/matches/69f1c24fcc9773ecde9ffcd8/contests?matchId=69f1c24fcc9773ecde9ffcd8
+[2026-04-30T15:02:02.760Z] [Backend API] FAILED: 404 Not Found URL: https://api.ok11.in/api/matches/69f1c24fcc9773ecde9ffcd8/contests?matchId=69f1c24fcc9773ecde9ffcd8
+[2026-04-30T15:02:02.760Z] [Backend API] Requesting: GET https://api.ok11.in/api/matches/69f1c24fcc9773ecde9ffcd8/contests?matchId=69f1c24fcc9773ecde9ffcd8
+[2026-04-30T15:02:02.869Z] [Backend API] FAILED: 404 Not Found URL: https://api.ok11.in/api/matches/69f1c24fcc9773ecde9ffcd8/contests?matchId=69f1c24fcc9773ecde9ffcd8
+[2026-04-30T15:02:02.870Z] [Backend API] Requesting: GET https://api.ok11.in/api/matches/69f1c24fcc9773ecde9ffcd8?populate=*?matchId=69f1c24fcc9773ecde9ffcd8
+[2026-04-30T15:02:02.965Z] [Backend API] Requesting: GET https://api.ok11.in/api/matches/69f1c24fcc9773ecde9ffcd8
+[2026-04-30T15:02:07.346Z] [Backend API] Requesting: POST https://api.ok11.in/api/contests
+[2026-04-30T15:02:07.806Z] [Backend API] FAILED: 404 Not Found URL: https://api.ok11.in/api/contests
+[2026-04-30T15:02:07.807Z] [Backend API] Requesting: POST https://api.ok11.in/api/contest
+[2026-04-30T15:02:07.878Z] [Backend API] FAILED: 404 Not Found URL: https://api.ok11.in/api/contest
+[2026-04-30T15:02:07.879Z] [Backend API] Requesting: POST https://api.ok11.in/api/matches/69f1c24fcc9773ecde9ffcd8/contests
+[2026-04-30T15:02:07.950Z] [Backend API] FAILED: 404 Not Found URL: https://api.ok11.in/api/matches/69f1c24fcc9773ecde9ffcd8/contests
+[2026-04-30T15:02:07.951Z] [Backend API] Requesting: POST https://api.ok11.in/api/admin/contests
+[2026-04-30T15:02:08.049Z] [Backend API] FAILED: 404 Not Found URL: https://api.ok11.in/api/admin/contests
+[2026-04-30T15:02:08.050Z] [Backend API] Requesting: POST https://api.ok11.in/api/game-contests
+[2026-04-30T15:02:08.116Z] [Backend API] FAILED: 404 Not Found URL: https://api.ok11.in/api/game-contests
+[2026-04-30T15:02:08.117Z] [Backend API] Requesting: POST https://api.ok11.in/api/match-contests
+[2026-04-30T15:02:08.197Z] [Backend API] FAILED: 404 Not Found URL: https://api.ok11.in/api/match-contests
+[2026-04-30T15:02:40.792Z] [Backend API] Requesting: GET https://api.ok11.in/api/matches?limit=1000
+[2026-04-30T15:02:41.344Z] [Backend API] Requesting: GET https://api.ok11.in/api/submissions?matchId=69f1c24fcc9773ecde9ffcd8
+[2026-04-30T15:02:43.309Z] [Backend API] Requesting: GET https://api.ok11.in/api/contests?matchId=69f1c24fcc9773ecde9ffcd8
+[2026-04-30T15:02:43.474Z] [Backend API] FAILED: 404 Not Found URL: https://api.ok11.in/api/contests?matchId=69f1c24fcc9773ecde9ffcd8
+[2026-04-30T15:02:43.475Z] [Backend API] Requesting: GET https://api.ok11.in/api/contests?matchId=69f1c24fcc9773ecde9ffcd8
+[2026-04-30T15:02:43.680Z] [Backend API] FAILED: 404 Not Found URL: https://api.ok11.in/api/contests?matchId=69f1c24fcc9773ecde9ffcd8
+[2026-04-30T15:02:43.682Z] [Backend API] Requesting: GET https://api.ok11.in/api/contest?matchId=69f1c24fcc9773ecde9ffcd8
+[2026-04-30T15:02:43.869Z] [Backend API] FAILED: 404 Not Found URL: https://api.ok11.in/api/contest?matchId=69f1c24fcc9773ecde9ffcd8
+[2026-04-30T15:02:43.870Z] [Backend API] Requesting: GET https://api.ok11.in/api/contest?matchId=69f1c24fcc9773ecde9ffcd8
+[2026-04-30T15:02:44.021Z] [Backend API] FAILED: 404 Not Found URL: https://api.ok11.in/api/contest?matchId=69f1c24fcc9773ecde9ffcd8
+[2026-04-30T15:02:44.022Z] [Backend API] Requesting: GET https://api.ok11.in/api/matches/69f1c24fcc9773ecde9ffcd8/contests?matchId=69f1c24fcc9773ecde9ffcd8
+[2026-04-30T15:02:44.166Z] [Backend API] FAILED: 404 Not Found URL: https://api.ok11.in/api/matches/69f1c24fcc9773ecde9ffcd8/contests?matchId=69f1c24fcc9773ecde9ffcd8
+[2026-04-30T15:02:44.167Z] [Backend API] Requesting: GET https://api.ok11.in/api/matches/69f1c24fcc9773ecde9ffcd8/contests?matchId=69f1c24fcc9773ecde9ffcd8
+[2026-04-30T15:02:44.332Z] [Backend API] FAILED: 404 Not Found URL: https://api.ok11.in/api/matches/69f1c24fcc9773ecde9ffcd8/contests?matchId=69f1c24fcc9773ecde9ffcd8
+[2026-04-30T15:02:44.333Z] [Backend API] Requesting: GET https://api.ok11.in/api/matches/69f1c24fcc9773ecde9ffcd8?populate=*?matchId=69f1c24fcc9773ecde9ffcd8
+[2026-04-30T15:02:44.518Z] [Backend API] Requesting: GET https://api.ok11.in/api/matches/69f1c24fcc9773ecde9ffcd8
+[2026-04-30T15:02:48.638Z] [Backend API] Requesting: POST https://api.ok11.in/api/contests
+[2026-04-30T15:02:48.850Z] [Backend API] FAILED: 404 Not Found URL: https://api.ok11.in/api/contests
+[2026-04-30T15:02:48.851Z] [Backend API] Requesting: POST https://api.ok11.in/api/contest
+[2026-04-30T15:02:49.048Z] [Backend API] FAILED: 404 Not Found URL: https://api.ok11.in/api/contest
+[2026-04-30T15:02:49.049Z] [Backend API] Requesting: POST https://api.ok11.in/api/matches/69f1c24fcc9773ecde9ffcd8/contests
+[2026-04-30T15:02:49.230Z] [Backend API] FAILED: 404 Not Found URL: https://api.ok11.in/api/matches/69f1c24fcc9773ecde9ffcd8/contests
+[2026-04-30T15:02:49.231Z] [Backend API] Requesting: POST https://api.ok11.in/api/admin/contests
+[2026-04-30T15:02:49.403Z] [Backend API] FAILED: 404 Not Found URL: https://api.ok11.in/api/admin/contests
+[2026-04-30T15:02:49.403Z] [Backend API] Requesting: POST https://api.ok11.in/api/game-contests
+[2026-04-30T15:02:49.595Z] [Backend API] FAILED: 404 Not Found URL: https://api.ok11.in/api/game-contests
+[2026-04-30T15:02:49.596Z] [Backend API] Requesting: POST https://api.ok11.in/api/match-contests
+[2026-04-30T15:02:49.789Z] [Backend API] FAILED: 404 Not Found URL: https://api.ok11.in/api/match-contests
+[2026-04-30T15:03:51.912Z] [Backend API] Requesting: GET https://api.ok11.in/api/matches?limit=1000
+[2026-04-30T15:03:52.435Z] [Backend API] Requesting: GET https://api.ok11.in/api/submissions?matchId=69f1c24fcc9773ecde9ffcd8
+[2026-04-30T15:03:56.327Z] [Backend API] Requesting: GET https://api.ok11.in/api/matches?limit=1000
+[2026-04-30T15:03:56.778Z] [Backend API] Requesting: GET https://api.ok11.in/api/submissions?matchId=69f1c24fcc9773ecde9ffcd8
+[2026-04-30T15:03:56.797Z] [Backend API] Requesting: GET https://api.ok11.in/api/matches?limit=1000
+[2026-04-30T15:04:10.552Z] [Backend API] Requesting: GET https://api.ok11.in/api/matches?limit=1000
+[2026-04-30T15:04:18.282Z] [Backend API] Requesting: GET https://api.ok11.in/api/matches?limit=1000
+[2026-04-30T15:04:18.980Z] [Backend API] Requesting: GET https://api.ok11.in/api/submissions?matchId=69f1c24fcc9773ecde9ffcd8
+[2026-04-30T15:04:20.510Z] [Backend API] Requesting: GET https://api.ok11.in/api/contests?matchId=69f1c24fcc9773ecde9ffcd8
+[2026-04-30T15:04:20.576Z] [Backend API] FAILED: 404 Not Found URL: https://api.ok11.in/api/contests?matchId=69f1c24fcc9773ecde9ffcd8
+[2026-04-30T15:04:20.577Z] [Backend API] Requesting: GET https://api.ok11.in/api/contests?matchId=69f1c24fcc9773ecde9ffcd8
+[2026-04-30T15:04:20.650Z] [Backend API] FAILED: 404 Not Found URL: https://api.ok11.in/api/contests?matchId=69f1c24fcc9773ecde9ffcd8
+[2026-04-30T15:04:20.651Z] [Backend API] Requesting: GET https://api.ok11.in/api/contest?matchId=69f1c24fcc9773ecde9ffcd8
+[2026-04-30T15:04:20.716Z] [Backend API] FAILED: 404 Not Found URL: https://api.ok11.in/api/contest?matchId=69f1c24fcc9773ecde9ffcd8
+[2026-04-30T15:04:20.716Z] [Backend API] Requesting: GET https://api.ok11.in/api/contest?matchId=69f1c24fcc9773ecde9ffcd8
+[2026-04-30T15:04:20.781Z] [Backend API] FAILED: 404 Not Found URL: https://api.ok11.in/api/contest?matchId=69f1c24fcc9773ecde9ffcd8
+[2026-04-30T15:04:20.782Z] [Backend API] Requesting: GET https://api.ok11.in/api/matches/69f1c24fcc9773ecde9ffcd8/contests?matchId=69f1c24fcc9773ecde9ffcd8
+[2026-04-30T15:04:20.848Z] [Backend API] FAILED: 404 Not Found URL: https://api.ok11.in/api/matches/69f1c24fcc9773ecde9ffcd8/contests?matchId=69f1c24fcc9773ecde9ffcd8
+[2026-04-30T15:04:20.849Z] [Backend API] Requesting: GET https://api.ok11.in/api/matches/69f1c24fcc9773ecde9ffcd8/contests?matchId=69f1c24fcc9773ecde9ffcd8
+[2026-04-30T15:04:20.959Z] [Backend API] FAILED: 404 Not Found URL: https://api.ok11.in/api/matches/69f1c24fcc9773ecde9ffcd8/contests?matchId=69f1c24fcc9773ecde9ffcd8
+[2026-04-30T15:04:20.960Z] [Backend API] Requesting: GET https://api.ok11.in/api/matches/69f1c24fcc9773ecde9ffcd8?matchId=69f1c24fcc9773ecde9ffcd8&populate=*
+[2026-04-30T15:04:21.069Z] [Backend API] Requesting: GET https://api.ok11.in/api/matches/69f1c24fcc9773ecde9ffcd8
+[2026-04-30T15:04:26.713Z] [Backend API] Requesting: POST https://api.ok11.in/api/contests
+[2026-04-30T15:04:26.980Z] [Backend API] FAILED: 404 Not Found URL: https://api.ok11.in/api/contests
+[2026-04-30T15:04:26.981Z] [Backend API] Requesting: POST https://api.ok11.in/api/contests
+[2026-04-30T15:04:27.075Z] [Backend API] FAILED: 404 Not Found URL: https://api.ok11.in/api/contests
+[2026-04-30T15:04:27.076Z] [Backend API] Requesting: POST https://api.ok11.in/api/contest
+[2026-04-30T15:04:27.161Z] [Backend API] FAILED: 404 Not Found URL: https://api.ok11.in/api/contest
+[2026-04-30T15:04:27.162Z] [Backend API] Requesting: POST https://api.ok11.in/api/contest
+[2026-04-30T15:04:27.246Z] [Backend API] FAILED: 404 Not Found URL: https://api.ok11.in/api/contest
+[2026-04-30T15:04:27.246Z] [Backend API] Requesting: POST https://api.ok11.in/api/matches/69f1c24fcc9773ecde9ffcd8/contests
+[2026-04-30T15:04:27.326Z] [Backend API] FAILED: 404 Not Found URL: https://api.ok11.in/api/matches/69f1c24fcc9773ecde9ffcd8/contests
+[2026-04-30T15:04:27.326Z] [Backend API] Requesting: POST https://api.ok11.in/api/matches/69f1c24fcc9773ecde9ffcd8/contests
+[2026-04-30T15:04:27.436Z] [Backend API] FAILED: 404 Not Found URL: https://api.ok11.in/api/matches/69f1c24fcc9773ecde9ffcd8/contests
+[2026-04-30T15:04:27.437Z] [Backend API] Requesting: POST https://api.ok11.in/api/admin/contests
+[2026-04-30T15:04:27.530Z] [Backend API] FAILED: 404 Not Found URL: https://api.ok11.in/api/admin/contests
+[2026-04-30T15:04:27.531Z] [Backend API] Requesting: POST https://api.ok11.in/api/admin/contests
+[2026-04-30T15:04:27.618Z] [Backend API] FAILED: 404 Not Found URL: https://api.ok11.in/api/admin/contests
+[2026-04-30T15:04:27.619Z] [Backend API] Requesting: POST https://api.ok11.in/api/game-contests
+[2026-04-30T15:04:27.932Z] [Backend API] FAILED: 404 Not Found URL: https://api.ok11.in/api/game-contests
+[2026-04-30T15:04:27.933Z] [Backend API] Requesting: POST https://api.ok11.in/api/game-contests
+[2026-04-30T15:04:28.010Z] [Backend API] FAILED: 404 Not Found URL: https://api.ok11.in/api/game-contests
+[2026-04-30T15:04:28.011Z] [Backend API] Requesting: POST https://api.ok11.in/api/match-contests
+[2026-04-30T15:04:28.090Z] [Backend API] FAILED: 404 Not Found URL: https://api.ok11.in/api/match-contests
+[2026-04-30T15:04:28.091Z] [Backend API] Requesting: POST https://api.ok11.in/api/match-contests
+[2026-04-30T15:04:28.176Z] [Backend API] FAILED: 404 Not Found URL: https://api.ok11.in/api/match-contests
+[2026-04-30T15:06:55.919Z] [Backend API] Requesting: GET https://api.ok11.in/api/contests?matchId=69f1c24fcc9773ecde9ffcd8
+[2026-04-30T15:06:56.181Z] [Backend API] FAILED: 404 Not Found URL: https://api.ok11.in/api/contests?matchId=69f1c24fcc9773ecde9ffcd8
+[2026-04-30T15:06:56.182Z] [Backend API] Requesting: GET https://api.ok11.in/api/contests?matchId=69f1c24fcc9773ecde9ffcd8
+[2026-04-30T15:06:56.331Z] [Backend API] FAILED: 404 Not Found URL: https://api.ok11.in/api/contests?matchId=69f1c24fcc9773ecde9ffcd8
+[2026-04-30T15:06:56.332Z] [Backend API] Requesting: GET https://api.ok11.in/api/contest?matchId=69f1c24fcc9773ecde9ffcd8
+[2026-04-30T15:06:56.409Z] [Backend API] FAILED: 404 Not Found URL: https://api.ok11.in/api/contest?matchId=69f1c24fcc9773ecde9ffcd8
+[2026-04-30T15:06:56.410Z] [Backend API] Requesting: GET https://api.ok11.in/api/contest?matchId=69f1c24fcc9773ecde9ffcd8
+[2026-04-30T15:06:56.490Z] [Backend API] FAILED: 404 Not Found URL: https://api.ok11.in/api/contest?matchId=69f1c24fcc9773ecde9ffcd8
+[2026-04-30T15:06:56.490Z] [Backend API] Requesting: GET https://api.ok11.in/api/matches/69f1c24fcc9773ecde9ffcd8/contests?matchId=69f1c24fcc9773ecde9ffcd8
+[2026-04-30T15:06:56.577Z] [Backend API] FAILED: 404 Not Found URL: https://api.ok11.in/api/matches/69f1c24fcc9773ecde9ffcd8/contests?matchId=69f1c24fcc9773ecde9ffcd8
+[2026-04-30T15:06:56.579Z] [Backend API] Requesting: GET https://api.ok11.in/api/matches/69f1c24fcc9773ecde9ffcd8/contests?matchId=69f1c24fcc9773ecde9ffcd8
+[2026-04-30T15:06:56.654Z] [Backend API] FAILED: 404 Not Found URL: https://api.ok11.in/api/matches/69f1c24fcc9773ecde9ffcd8/contests?matchId=69f1c24fcc9773ecde9ffcd8
+[2026-04-30T15:06:56.655Z] [Backend API] Requesting: GET https://api.ok11.in/api/matches/69f1c24fcc9773ecde9ffcd8?matchId=69f1c24fcc9773ecde9ffcd8&populate=*
+[2026-04-30T15:06:56.735Z] [Backend API] SUCCESS: https://api.ok11.in/api/matches/69f1c24fcc9773ecde9ffcd8?matchId=69f1c24fcc9773ecde9ffcd8&populate=*
+Response: {"success":true,"data":{"players":{"teamA":[{"_id":"6935675a7c5561aa39a6848d","name":"S Sudharsan","createdAt":"2025-12-07T11:39:06.996Z","updatedAt":"2025-12-07T11:39:06.996Z","__v":0},{"_id":"6936e3287c5561aa39a6c22b","name":"S Gill","createdAt":"2025-12-08T14:39:36.997Z","updatedAt":"2025-12-08T14:39:36.997Z","__v":0},{"_id":"6972d0e83e1f3555d53e3843","name":"J Buttler","createdAt":"2026-01-23T01:37:44.414Z","updatedAt":"2026-01-23T01:38:02.071Z","__v":0},{"_id":"692bc7af7c5561aa39a5c75f","na...
+[2026-04-30T15:06:56.750Z] [Backend API] Requesting: GET https://api.ok11.in/api/matches/69f1c24fcc9773ecde9ffcd8
+[2026-04-30T15:06:56.831Z] [Backend API] SUCCESS: https://api.ok11.in/api/matches/69f1c24fcc9773ecde9ffcd8
+Response: {"success":true,"data":{"players":{"teamA":[{"_id":"6935675a7c5561aa39a6848d","name":"S Sudharsan","createdAt":"2025-12-07T11:39:06.996Z","updatedAt":"2025-12-07T11:39:06.996Z","__v":0},{"_id":"6936e3287c5561aa39a6c22b","name":"S Gill","createdAt":"2025-12-08T14:39:36.997Z","updatedAt":"2025-12-08T14:39:36.997Z","__v":0},{"_id":"6972d0e83e1f3555d53e3843","name":"J Buttler","createdAt":"2026-01-23T01:37:44.414Z","updatedAt":"2026-01-23T01:38:02.071Z","__v":0},{"_id":"692bc7af7c5561aa39a5c75f","na...
+[2026-04-30T15:06:58.337Z] [Backend API] Requesting: GET https://api.ok11.in/api/matches?limit=1000
+[2026-04-30T15:06:58.968Z] [Backend API] SUCCESS: https://api.ok11.in/api/matches?limit=1000
+Response: {"success":true,"data":{"data":[{"players":{"teamA":[{"_id":"6935675a7c5561aa39a6848d","name":"S Sudharsan","createdAt":"2025-12-07T11:39:06.996Z","updatedAt":"2025-12-07T11:39:06.996Z","__v":0},{"_id":"6936e3287c5561aa39a6c22b","name":"S Gill","createdAt":"2025-12-08T14:39:36.997Z","updatedAt":"2025-12-08T14:39:36.997Z","__v":0},{"_id":"6972d0e83e1f3555d53e3843","name":"J Buttler","createdAt":"2026-01-23T01:37:44.414Z","updatedAt":"2026-01-23T01:38:02.071Z","__v":0},{"_id":"692bc7af7c5561aa39a5...
+[2026-04-30T15:06:59.011Z] [Backend API] Requesting: GET https://api.ok11.in/api/submissions?matchId=69f1c24fcc9773ecde9ffcd8
+[2026-04-30T15:06:59.152Z] [Backend API] SUCCESS: https://api.ok11.in/api/submissions?matchId=69f1c24fcc9773ecde9ffcd8
+Response: {"success":true,"data":{"data":[{"_id":"69f3069dcc9773ecdea06799","userId":{"_id":"69f3064c9cafa6003c6f5921","displayName":"RLDELECTRONIC Rld","email":"rldelectronicrld@gmail.com"},"matchId":{"players":{"teamA":[{"_id":"6935675a7c5561aa39a6848d","name":"S Sudharsan","createdAt":"2025-12-07T11:39:06.996Z","updatedAt":"2025-12-07T11:39:06.996Z","__v":0},{"_id":"6936e3287c5561aa39a6c22b","name":"S Gill","createdAt":"2025-12-08T14:39:36.997Z","updatedAt":"2025-12-08T14:39:36.997Z","__v":0},{"_id":"6...
+[2026-04-30T15:07:00.241Z] [Backend API] Requesting: GET https://api.ok11.in/api/contests?matchId=69f1c24fcc9773ecde9ffcd8
+[2026-04-30T15:07:00.307Z] [Backend API] FAILED: 404 Not Found URL: https://api.ok11.in/api/contests?matchId=69f1c24fcc9773ecde9ffcd8
+[2026-04-30T15:07:00.308Z] [Backend API] Requesting: GET https://api.ok11.in/api/contests?matchId=69f1c24fcc9773ecde9ffcd8
+[2026-04-30T15:07:00.406Z] [Backend API] FAILED: 404 Not Found URL: https://api.ok11.in/api/contests?matchId=69f1c24fcc9773ecde9ffcd8
+[2026-04-30T15:07:00.407Z] [Backend API] Requesting: GET https://api.ok11.in/api/contest?matchId=69f1c24fcc9773ecde9ffcd8
+[2026-04-30T15:07:00.491Z] [Backend API] FAILED: 404 Not Found URL: https://api.ok11.in/api/contest?matchId=69f1c24fcc9773ecde9ffcd8
+[2026-04-30T15:07:00.492Z] [Backend API] Requesting: GET https://api.ok11.in/api/contest?matchId=69f1c24fcc9773ecde9ffcd8
+[2026-04-30T15:07:00.563Z] [Backend API] FAILED: 404 Not Found URL: https://api.ok11.in/api/contest?matchId=69f1c24fcc9773ecde9ffcd8
+[2026-04-30T15:07:00.564Z] [Backend API] Requesting: GET https://api.ok11.in/api/matches/69f1c24fcc9773ecde9ffcd8/contests?matchId=69f1c24fcc9773ecde9ffcd8
+[2026-04-30T15:07:00.631Z] [Backend API] FAILED: 404 Not Found URL: https://api.ok11.in/api/matches/69f1c24fcc9773ecde9ffcd8/contests?matchId=69f1c24fcc9773ecde9ffcd8
+[2026-04-30T15:07:00.632Z] [Backend API] Requesting: GET https://api.ok11.in/api/matches/69f1c24fcc9773ecde9ffcd8/contests?matchId=69f1c24fcc9773ecde9ffcd8
+[2026-04-30T15:07:00.724Z] [Backend API] FAILED: 404 Not Found URL: https://api.ok11.in/api/matches/69f1c24fcc9773ecde9ffcd8/contests?matchId=69f1c24fcc9773ecde9ffcd8
+[2026-04-30T15:07:00.725Z] [Backend API] Requesting: GET https://api.ok11.in/api/matches/69f1c24fcc9773ecde9ffcd8?matchId=69f1c24fcc9773ecde9ffcd8&populate=*
+[2026-04-30T15:07:00.801Z] [Backend API] SUCCESS: https://api.ok11.in/api/matches/69f1c24fcc9773ecde9ffcd8?matchId=69f1c24fcc9773ecde9ffcd8&populate=*
+Response: {"success":true,"data":{"players":{"teamA":[{"_id":"6935675a7c5561aa39a6848d","name":"S Sudharsan","createdAt":"2025-12-07T11:39:06.996Z","updatedAt":"2025-12-07T11:39:06.996Z","__v":0},{"_id":"6936e3287c5561aa39a6c22b","name":"S Gill","createdAt":"2025-12-08T14:39:36.997Z","updatedAt":"2025-12-08T14:39:36.997Z","__v":0},{"_id":"6972d0e83e1f3555d53e3843","name":"J Buttler","createdAt":"2026-01-23T01:37:44.414Z","updatedAt":"2026-01-23T01:38:02.071Z","__v":0},{"_id":"692bc7af7c5561aa39a5c75f","na...
+[2026-04-30T15:07:00.824Z] [Backend API] Requesting: GET https://api.ok11.in/api/matches/69f1c24fcc9773ecde9ffcd8
+[2026-04-30T15:07:00.904Z] [Backend API] SUCCESS: https://api.ok11.in/api/matches/69f1c24fcc9773ecde9ffcd8
+Response: {"success":true,"data":{"players":{"teamA":[{"_id":"6935675a7c5561aa39a6848d","name":"S Sudharsan","createdAt":"2025-12-07T11:39:06.996Z","updatedAt":"2025-12-07T11:39:06.996Z","__v":0},{"_id":"6936e3287c5561aa39a6c22b","name":"S Gill","createdAt":"2025-12-08T14:39:36.997Z","updatedAt":"2025-12-08T14:39:36.997Z","__v":0},{"_id":"6972d0e83e1f3555d53e3843","name":"J Buttler","createdAt":"2026-01-23T01:37:44.414Z","updatedAt":"2026-01-23T01:38:02.071Z","__v":0},{"_id":"692bc7af7c5561aa39a5c75f","na...
+[2026-04-30T15:07:04.851Z] [Backend API] Requesting: POST https://api.ok11.in/api/contests
+[2026-04-30T15:07:04.936Z] [Backend API] FAILED: 404 Not Found URL: https://api.ok11.in/api/contests
+[2026-04-30T15:07:04.937Z] [Backend API] Requesting: POST https://api.ok11.in/api/contests
+[2026-04-30T15:07:05.011Z] [Backend API] FAILED: 404 Not Found URL: https://api.ok11.in/api/contests
+[2026-04-30T15:07:05.012Z] [Backend API] Requesting: POST https://api.ok11.in/api/contest
+[2026-04-30T15:07:05.717Z] [Backend API] FAILED: 404 Not Found URL: https://api.ok11.in/api/contest
+[2026-04-30T15:07:05.717Z] [Backend API] Requesting: POST https://api.ok11.in/api/contest
+[2026-04-30T15:07:05.793Z] [Backend API] FAILED: 404 Not Found URL: https://api.ok11.in/api/contest
+[2026-04-30T15:07:05.793Z] [Backend API] Requesting: POST https://api.ok11.in/api/matches/69f1c24fcc9773ecde9ffcd8/contests
+[2026-04-30T15:07:05.861Z] [Backend API] FAILED: 404 Not Found URL: https://api.ok11.in/api/matches/69f1c24fcc9773ecde9ffcd8/contests
+[2026-04-30T15:07:05.862Z] [Backend API] Requesting: POST https://api.ok11.in/api/matches/69f1c24fcc9773ecde9ffcd8/contests
+[2026-04-30T15:07:05.925Z] [Backend API] FAILED: 404 Not Found URL: https://api.ok11.in/api/matches/69f1c24fcc9773ecde9ffcd8/contests
+[2026-04-30T15:07:05.925Z] [Backend API] Requesting: POST https://api.ok11.in/api/admin/contests
+[2026-04-30T15:07:05.991Z] [Backend API] FAILED: 404 Not Found URL: https://api.ok11.in/api/admin/contests
+[2026-04-30T15:07:05.992Z] [Backend API] Requesting: POST https://api.ok11.in/api/admin/contests
+[2026-04-30T15:07:06.056Z] [Backend API] FAILED: 404 Not Found URL: https://api.ok11.in/api/admin/contests
+[2026-04-30T15:07:06.057Z] [Backend API] Requesting: POST https://api.ok11.in/api/game-contests
+[2026-04-30T15:07:06.129Z] [Backend API] FAILED: 404 Not Found URL: https://api.ok11.in/api/game-contests
+[2026-04-30T15:07:06.130Z] [Backend API] Requesting: POST https://api.ok11.in/api/game-contests
+[2026-04-30T15:07:06.212Z] [Backend API] FAILED: 404 Not Found URL: https://api.ok11.in/api/game-contests
+[2026-04-30T15:07:06.213Z] [Backend API] Requesting: POST https://api.ok11.in/api/match-contests
+[2026-04-30T15:07:06.297Z] [Backend API] FAILED: 404 Not Found URL: https://api.ok11.in/api/match-contests
+[2026-04-30T15:07:06.298Z] [Backend API] Requesting: POST https://api.ok11.in/api/match-contests
+[2026-04-30T15:07:06.371Z] [Backend API] FAILED: 404 Not Found URL: https://api.ok11.in/api/match-contests
+[2026-04-30T15:08:19.166Z] [Backend API] Requesting: GET https://api.ok11.in/api?matchId=69f1c24fcc9773ecde9ffcd8
+[2026-04-30T15:08:19.392Z] [Backend API] FAILED: 404 Not Found URL: https://api.ok11.in/api?matchId=69f1c24fcc9773ecde9ffcd8
+[2026-04-30T15:08:19.393Z] [Backend API] Requesting: GET https://api.ok11.in/api?matchId=69f1c24fcc9773ecde9ffcd8
+[2026-04-30T15:08:19.461Z] [Backend API] FAILED: 404 Not Found URL: https://api.ok11.in/api?matchId=69f1c24fcc9773ecde9ffcd8
+[2026-04-30T15:08:19.462Z] [Backend API] Requesting: GET https://api.ok11.in/api/contests?matchId=69f1c24fcc9773ecde9ffcd8
+[2026-04-30T15:08:19.540Z] [Backend API] FAILED: 404 Not Found URL: https://api.ok11.in/api/contests?matchId=69f1c24fcc9773ecde9ffcd8
+[2026-04-30T15:08:19.541Z] [Backend API] Requesting: GET https://api.ok11.in/api/contests?matchId=69f1c24fcc9773ecde9ffcd8
+[2026-04-30T15:08:19.612Z] [Backend API] FAILED: 404 Not Found URL: https://api.ok11.in/api/contests?matchId=69f1c24fcc9773ecde9ffcd8
+[2026-04-30T15:08:19.613Z] [Backend API] Requesting: GET https://api.ok11.in/api/contest?matchId=69f1c24fcc9773ecde9ffcd8
+[2026-04-30T15:08:19.686Z] [Backend API] FAILED: 404 Not Found URL: https://api.ok11.in/api/contest?matchId=69f1c24fcc9773ecde9ffcd8
+[2026-04-30T15:08:19.687Z] [Backend API] Requesting: GET https://api.ok11.in/api/contest?matchId=69f1c24fcc9773ecde9ffcd8
+[2026-04-30T15:08:19.763Z] [Backend API] FAILED: 404 Not Found URL: https://api.ok11.in/api/contest?matchId=69f1c24fcc9773ecde9ffcd8
+[2026-04-30T15:08:19.764Z] [Backend API] Requesting: GET https://api.ok11.in/api/matches/69f1c24fcc9773ecde9ffcd8/contests?matchId=69f1c24fcc9773ecde9ffcd8
+[2026-04-30T15:08:19.836Z] [Backend API] FAILED: 404 Not Found URL: https://api.ok11.in/api/matches/69f1c24fcc9773ecde9ffcd8/contests?matchId=69f1c24fcc9773ecde9ffcd8
+[2026-04-30T15:08:19.837Z] [Backend API] Requesting: GET https://api.ok11.in/api/matches/69f1c24fcc9773ecde9ffcd8/contests?matchId=69f1c24fcc9773ecde9ffcd8
+[2026-04-30T15:08:19.910Z] [Backend API] FAILED: 404 Not Found URL: https://api.ok11.in/api/matches/69f1c24fcc9773ecde9ffcd8/contests?matchId=69f1c24fcc9773ecde9ffcd8
+[2026-04-30T15:08:19.911Z] [Backend API] Requesting: GET https://api.ok11.in/api/matches/69f1c24fcc9773ecde9ffcd8?matchId=69f1c24fcc9773ecde9ffcd8&populate=*
+[2026-04-30T15:08:20.000Z] [Backend API] SUCCESS: https://api.ok11.in/api/matches/69f1c24fcc9773ecde9ffcd8?matchId=69f1c24fcc9773ecde9ffcd8&populate=*
+Response: {"success":true,"data":{"players":{"teamA":[{"_id":"6935675a7c5561aa39a6848d","name":"S Sudharsan","createdAt":"2025-12-07T11:39:06.996Z","updatedAt":"2025-12-07T11:39:06.996Z","__v":0},{"_id":"6936e3287c5561aa39a6c22b","name":"S Gill","createdAt":"2025-12-08T14:39:36.997Z","updatedAt":"2025-12-08T14:39:36.997Z","__v":0},{"_id":"6972d0e83e1f3555d53e3843","name":"J Buttler","createdAt":"2026-01-23T01:37:44.414Z","updatedAt":"2026-01-23T01:38:02.071Z","__v":0},{"_id":"692bc7af7c5561aa39a5c75f","name":"W Sundar","createdAt":"2025-11-30T04:27:27.608Z","updatedAt":"2025-11-30T04:27:27.608Z","__v":0},{"_id":"693568457c5561aa39a68582","name":"S Khan","createdAt":"2025-12-07T11:43:01.933Z","updatedAt":"2025-12-07T11:43:01.933Z","__v":0},{"_id":"692c15e67c5561aa39a5cb8d","name":"J Holder","createdAt":"2025-11-30T10:01:10.138Z","updatedAt":"2025-11-30T10:01:10.138Z","__v":0},{"_id":"692c1a5d7c5561aa39a5cc41","name":"R Khan","createdAt":"2025-11-30T10:20:13.679Z","updatedAt":"2025-11-30T10:20:13.679Z","__v":0},{"_id":"698f363a3e1f3555d54c1e57","name":"K Rabada","createdAt":"2026-02-13T14:33:30.645Z","updatedAt":"2026-02-13T14:33:30.645Z","__v":0},{"_id":"69cc73e2cc9773ecde8c67e5","name":"A Khan","createdAt":"2026-04-01T01:24:50.768Z","updatedAt":"2026-04-01T01:24:50.768Z","__v":0},{"_id":"6961c7da3e1f3555d537bb49","name":"M Siraj","createdAt":"2026-01-10T03:30:34.705Z","updatedAt":"2026-01-10T03:30:34.705Z","__v":0},{"_id":"692bc7ce7c5561aa39a5c767","name":"P Krishna","createdAt":"2025-11-30T04:27:58.375Z","updatedAt":"2025-11-30T04:27:58.375Z","__v":0}],"teamB":[{"_id":"692c13cb7c5561aa39a5cb14","name":"J Bethell","createdAt":"2025-11-30T09:52:11.780Z","updatedAt":"2025-11-30T09:52:11.780Z","__v":0},{"_id":"692bca717c5561aa39a5c80b","name":"V Kohli","createdAt":"2025-11-30T04:39:13.755Z","updatedAt":"2025-11-30T04:39:13.755Z","__v":0},{"_id":"69c3ffd5cc9773ecde889396","name":"D Padikkal","createdAt":"2026-03-25T15:31:33.552Z","updatedAt":"2026-03-25T15:31:33.552Z","__v":0},{"...
+[2026-04-30T15:08:20.015Z] [Backend API] Requesting: GET https://api.ok11.in/api/matches/69f1c24fcc9773ecde9ffcd8
+[2026-04-30T15:08:20.093Z] [Backend API] SUCCESS: https://api.ok11.in/api/matches/69f1c24fcc9773ecde9ffcd8
+Response: {"success":true,"data":{"players":{"teamA":[{"_id":"6935675a7c5561aa39a6848d","name":"S Sudharsan","createdAt":"2025-12-07T11:39:06.996Z","updatedAt":"2025-12-07T11:39:06.996Z","__v":0},{"_id":"6936e3287c5561aa39a6c22b","name":"S Gill","createdAt":"2025-12-08T14:39:36.997Z","updatedAt":"2025-12-08T14:39:36.997Z","__v":0},{"_id":"6972d0e83e1f3555d53e3843","name":"J Buttler","createdAt":"2026-01-23T01:37:44.414Z","updatedAt":"2026-01-23T01:38:02.071Z","__v":0},{"_id":"692bc7af7c5561aa39a5c75f","name":"W Sundar","createdAt":"2025-11-30T04:27:27.608Z","updatedAt":"2025-11-30T04:27:27.608Z","__v":0},{"_id":"693568457c5561aa39a68582","name":"S Khan","createdAt":"2025-12-07T11:43:01.933Z","updatedAt":"2025-12-07T11:43:01.933Z","__v":0},{"_id":"692c15e67c5561aa39a5cb8d","name":"J Holder","createdAt":"2025-11-30T10:01:10.138Z","updatedAt":"2025-11-30T10:01:10.138Z","__v":0},{"_id":"692c1a5d7c5561aa39a5cc41","name":"R Khan","createdAt":"2025-11-30T10:20:13.679Z","updatedAt":"2025-11-30T10:20:13.679Z","__v":0},{"_id":"698f363a3e1f3555d54c1e57","name":"K Rabada","createdAt":"2026-02-13T14:33:30.645Z","updatedAt":"2026-02-13T14:33:30.645Z","__v":0},{"_id":"69cc73e2cc9773ecde8c67e5","name":"A Khan","createdAt":"2026-04-01T01:24:50.768Z","updatedAt":"2026-04-01T01:24:50.768Z","__v":0},{"_id":"6961c7da3e1f3555d537bb49","name":"M Siraj","createdAt":"2026-01-10T03:30:34.705Z","updatedAt":"2026-01-10T03:30:34.705Z","__v":0},{"_id":"692bc7ce7c5561aa39a5c767","name":"P Krishna","createdAt":"2025-11-30T04:27:58.375Z","updatedAt":"2025-11-30T04:27:58.375Z","__v":0}],"teamB":[{"_id":"692c13cb7c5561aa39a5cb14","name":"J Bethell","createdAt":"2025-11-30T09:52:11.780Z","updatedAt":"2025-11-30T09:52:11.780Z","__v":0},{"_id":"692bca717c5561aa39a5c80b","name":"V Kohli","createdAt":"2025-11-30T04:39:13.755Z","updatedAt":"2025-11-30T04:39:13.755Z","__v":0},{"_id":"69c3ffd5cc9773ecde889396","name":"D Padikkal","createdAt":"2026-03-25T15:31:33.552Z","updatedAt":"2026-03-25T15:31:33.552Z","__v":0},{"...
+[2026-04-30T15:08:26.549Z] [Backend API] Requesting: POST https://api.ok11.in/api/contests
+[2026-04-30T15:08:27.297Z] [Backend API] FAILED: 404 Not Found URL: https://api.ok11.in/api/contests
+[2026-04-30T15:08:27.298Z] [Backend API] Requesting: POST https://api.ok11.in/api/contests
+[2026-04-30T15:08:27.546Z] [Backend API] FAILED: 404 Not Found URL: https://api.ok11.in/api/contests
+[2026-04-30T15:08:27.547Z] [Backend API] Requesting: POST https://api.ok11.in/api/contest
+[2026-04-30T15:08:27.774Z] [Backend API] FAILED: 404 Not Found URL: https://api.ok11.in/api/contest
+[2026-04-30T15:08:27.775Z] [Backend API] Requesting: POST https://api.ok11.in/api/contest
+[2026-04-30T15:08:28.310Z] [Backend API] FAILED: 404 Not Found URL: https://api.ok11.in/api/contest
+[2026-04-30T15:08:28.311Z] [Backend API] Requesting: POST https://api.ok11.in/api/matches/69f1c24fcc9773ecde9ffcd8/contests
+[2026-04-30T15:08:28.512Z] [Backend API] FAILED: 404 Not Found URL: https://api.ok11.in/api/matches/69f1c24fcc9773ecde9ffcd8/contests
+[2026-04-30T15:08:28.513Z] [Backend API] Requesting: POST https://api.ok11.in/api/matches/69f1c24fcc9773ecde9ffcd8/contests
+[2026-04-30T15:08:28.698Z] [Backend API] FAILED: 404 Not Found URL: https://api.ok11.in/api/matches/69f1c24fcc9773ecde9ffcd8/contests
+[2026-04-30T15:08:28.699Z] [Backend API] Requesting: POST https://api.ok11.in/api/admin/contests
+[2026-04-30T15:08:28.870Z] [Backend API] FAILED: 404 Not Found URL: https://api.ok11.in/api/admin/contests
+[2026-04-30T15:08:28.871Z] [Backend API] Requesting: POST https://api.ok11.in/api/admin/contests
+[2026-04-30T15:08:29.038Z] [Backend API] FAILED: 404 Not Found URL: https://api.ok11.in/api/admin/contests
+[2026-04-30T15:08:29.038Z] [Backend API] Requesting: POST https://api.ok11.in/api/game-contests
+[2026-04-30T15:08:29.222Z] [Backend API] FAILED: 404 Not Found URL: https://api.ok11.in/api/game-contests
+[2026-04-30T15:08:29.223Z] [Backend API] Requesting: POST https://api.ok11.in/api/game-contests
+[2026-04-30T15:08:29.362Z] [Backend API] FAILED: 404 Not Found URL: https://api.ok11.in/api/game-contests
+[2026-04-30T15:08:29.362Z] [Backend API] Requesting: POST https://api.ok11.in/api/match-contests
+[2026-04-30T15:08:29.488Z] [Backend API] FAILED: 404 Not Found URL: https://api.ok11.in/api/match-contests
+[2026-04-30T15:08:29.489Z] [Backend API] Requesting: POST https://api.ok11.in/api/match-contests
+[2026-04-30T15:08:29.623Z] [Backend API] FAILED: 404 Not Found URL: https://api.ok11.in/api/match-contests
+[2026-04-30T15:08:32.746Z] [Backend API] Requesting: GET https://api.ok11.in/api/matches?limit=1000
+[2026-04-30T15:08:33.194Z] [Backend API] SUCCESS: https://api.ok11.in/api/matches?limit=1000
+Response: {"success":true,"data":{"data":[{"players":{"teamA":[{"_id":"6935675a7c5561aa39a6848d","name":"S Sudharsan","createdAt":"2025-12-07T11:39:06.996Z","updatedAt":"2025-12-07T11:39:06.996Z","__v":0},{"_id":"6936e3287c5561aa39a6c22b","name":"S Gill","createdAt":"2025-12-08T14:39:36.997Z","updatedAt":"2025-12-08T14:39:36.997Z","__v":0},{"_id":"6972d0e83e1f3555d53e3843","name":"J Buttler","createdAt":"2026-01-23T01:37:44.414Z","updatedAt":"2026-01-23T01:38:02.071Z","__v":0},{"_id":"692bc7af7c5561aa39a5c75f","name":"W Sundar","createdAt":"2025-11-30T04:27:27.608Z","updatedAt":"2025-11-30T04:27:27.608Z","__v":0},{"_id":"693568457c5561aa39a68582","name":"S Khan","createdAt":"2025-12-07T11:43:01.933Z","updatedAt":"2025-12-07T11:43:01.933Z","__v":0},{"_id":"692c15e67c5561aa39a5cb8d","name":"J Holder","createdAt":"2025-11-30T10:01:10.138Z","updatedAt":"2025-11-30T10:01:10.138Z","__v":0},{"_id":"692c1a5d7c5561aa39a5cc41","name":"R Khan","createdAt":"2025-11-30T10:20:13.679Z","updatedAt":"2025-11-30T10:20:13.679Z","__v":0},{"_id":"698f363a3e1f3555d54c1e57","name":"K Rabada","createdAt":"2026-02-13T14:33:30.645Z","updatedAt":"2026-02-13T14:33:30.645Z","__v":0},{"_id":"69cc73e2cc9773ecde8c67e5","name":"A Khan","createdAt":"2026-04-01T01:24:50.768Z","updatedAt":"2026-04-01T01:24:50.768Z","__v":0},{"_id":"6961c7da3e1f3555d537bb49","name":"M Siraj","createdAt":"2026-01-10T03:30:34.705Z","updatedAt":"2026-01-10T03:30:34.705Z","__v":0},{"_id":"692bc7ce7c5561aa39a5c767","name":"P Krishna","createdAt":"2025-11-30T04:27:58.375Z","updatedAt":"2025-11-30T04:27:58.375Z","__v":0}],"teamB":[{"_id":"692c13cb7c5561aa39a5cb14","name":"J Bethell","createdAt":"2025-11-30T09:52:11.780Z","updatedAt":"2025-11-30T09:52:11.780Z","__v":0},{"_id":"692bca717c5561aa39a5c80b","name":"V Kohli","createdAt":"2025-11-30T04:39:13.755Z","updatedAt":"2025-11-30T04:39:13.755Z","__v":0},{"_id":"69c3ffd5cc9773ecde889396","name":"D Padikkal","createdAt":"2026-03-25T15:31:33.552Z","updatedAt":"2026-03-25T15:31:33.552Z","_...
+[2026-04-30T15:08:33.236Z] [Backend API] Requesting: GET https://api.ok11.in/api/submissions?matchId=69f1c24fcc9773ecde9ffcd8
+[2026-04-30T15:08:33.461Z] [Backend API] SUCCESS: https://api.ok11.in/api/submissions?matchId=69f1c24fcc9773ecde9ffcd8
+Response: {"success":true,"data":{"data":[{"_id":"69f3069dcc9773ecdea06799","userId":{"_id":"69f3064c9cafa6003c6f5921","displayName":"RLDELECTRONIC Rld","email":"rldelectronicrld@gmail.com"},"matchId":{"players":{"teamA":[{"_id":"6935675a7c5561aa39a6848d","name":"S Sudharsan","createdAt":"2025-12-07T11:39:06.996Z","updatedAt":"2025-12-07T11:39:06.996Z","__v":0},{"_id":"6936e3287c5561aa39a6c22b","name":"S Gill","createdAt":"2025-12-08T14:39:36.997Z","updatedAt":"2025-12-08T14:39:36.997Z","__v":0},{"_id":"6972d0e83e1f3555d53e3843","name":"J Buttler","createdAt":"2026-01-23T01:37:44.414Z","updatedAt":"2026-01-23T01:38:02.071Z","__v":0},{"_id":"692bc7af7c5561aa39a5c75f","name":"W Sundar","createdAt":"2025-11-30T04:27:27.608Z","updatedAt":"2025-11-30T04:27:27.608Z","__v":0},{"_id":"693568457c5561aa39a68582","name":"S Khan","createdAt":"2025-12-07T11:43:01.933Z","updatedAt":"2025-12-07T11:43:01.933Z","__v":0},{"_id":"692c15e67c5561aa39a5cb8d","name":"J Holder","createdAt":"2025-11-30T10:01:10.138Z","updatedAt":"2025-11-30T10:01:10.138Z","__v":0},{"_id":"692c1a5d7c5561aa39a5cc41","name":"R Khan","createdAt":"2025-11-30T10:20:13.679Z","updatedAt":"2025-11-30T10:20:13.679Z","__v":0},{"_id":"698f363a3e1f3555d54c1e57","name":"K Rabada","createdAt":"2026-02-13T14:33:30.645Z","updatedAt":"2026-02-13T14:33:30.645Z","__v":0},{"_id":"69cc73e2cc9773ecde8c67e5","name":"A Khan","createdAt":"2026-04-01T01:24:50.768Z","updatedAt":"2026-04-01T01:24:50.768Z","__v":0},{"_id":"6961c7da3e1f3555d537bb49","name":"M Siraj","createdAt":"2026-01-10T03:30:34.705Z","updatedAt":"2026-01-10T03:30:34.705Z","__v":0},{"_id":"692bc7ce7c5561aa39a5c767","name":"P Krishna","createdAt":"2025-11-30T04:27:58.375Z","updatedAt":"2025-11-30T04:27:58.375Z","__v":0}],"teamB":[{"_id":"692c13cb7c5561aa39a5cb14","name":"J Bethell","createdAt":"2025-11-30T09:52:11.780Z","updatedAt":"2025-11-30T09:52:11.780Z","__v":0},{"_id":"692bca717c5561aa39a5c80b","name":"V Kohli","createdAt":"2025-11-30T04:39:13.755Z","updatedAt":"2025-11-30...
+[2026-04-30T15:08:34.462Z] [Backend API] Requesting: GET https://api.ok11.in/api?matchId=69f1c24fcc9773ecde9ffcd8
+[2026-04-30T15:08:34.818Z] [Backend API] FAILED: 404 Not Found URL: https://api.ok11.in/api?matchId=69f1c24fcc9773ecde9ffcd8
+[2026-04-30T15:08:34.819Z] [Backend API] Requesting: GET https://api.ok11.in/api?matchId=69f1c24fcc9773ecde9ffcd8
+[2026-04-30T15:08:34.986Z] [Backend API] FAILED: 404 Not Found URL: https://api.ok11.in/api?matchId=69f1c24fcc9773ecde9ffcd8
+[2026-04-30T15:08:34.987Z] [Backend API] Requesting: GET https://api.ok11.in/api/contests?matchId=69f1c24fcc9773ecde9ffcd8
+[2026-04-30T15:08:35.173Z] [Backend API] FAILED: 404 Not Found URL: https://api.ok11.in/api/contests?matchId=69f1c24fcc9773ecde9ffcd8
+[2026-04-30T15:08:35.174Z] [Backend API] Requesting: GET https://api.ok11.in/api/contests?matchId=69f1c24fcc9773ecde9ffcd8
+[2026-04-30T15:08:35.664Z] [Backend API] FAILED: 404 Not Found URL: https://api.ok11.in/api/contests?matchId=69f1c24fcc9773ecde9ffcd8
+[2026-04-30T15:08:35.665Z] [Backend API] Requesting: GET https://api.ok11.in/api/contest?matchId=69f1c24fcc9773ecde9ffcd8
+[2026-04-30T15:08:35.858Z] [Backend API] FAILED: 404 Not Found URL: https://api.ok11.in/api/contest?matchId=69f1c24fcc9773ecde9ffcd8
+[2026-04-30T15:08:35.859Z] [Backend API] Requesting: GET https://api.ok11.in/api/contest?matchId=69f1c24fcc9773ecde9ffcd8
+[2026-04-30T15:08:36.068Z] [Backend API] FAILED: 404 Not Found URL: https://api.ok11.in/api/contest?matchId=69f1c24fcc9773ecde9ffcd8
+[2026-04-30T15:08:36.069Z] [Backend API] Requesting: GET https://api.ok11.in/api/matches/69f1c24fcc9773ecde9ffcd8/contests?matchId=69f1c24fcc9773ecde9ffcd8
+[2026-04-30T15:08:36.197Z] [Backend API] FAILED: 404 Not Found URL: https://api.ok11.in/api/matches/69f1c24fcc9773ecde9ffcd8/contests?matchId=69f1c24fcc9773ecde9ffcd8
+[2026-04-30T15:08:36.198Z] [Backend API] Requesting: GET https://api.ok11.in/api/matches/69f1c24fcc9773ecde9ffcd8/contests?matchId=69f1c24fcc9773ecde9ffcd8
+[2026-04-30T15:08:36.353Z] [Backend API] FAILED: 404 Not Found URL: https://api.ok11.in/api/matches/69f1c24fcc9773ecde9ffcd8/contests?matchId=69f1c24fcc9773ecde9ffcd8
+[2026-04-30T15:08:36.354Z] [Backend API] Requesting: GET https://api.ok11.in/api/matches/69f1c24fcc9773ecde9ffcd8?matchId=69f1c24fcc9773ecde9ffcd8&populate=*
+[2026-04-30T15:08:36.514Z] [Backend API] SUCCESS: https://api.ok11.in/api/matches/69f1c24fcc9773ecde9ffcd8?matchId=69f1c24fcc9773ecde9ffcd8&populate=*
+Response: {"success":true,"data":{"players":{"teamA":[{"_id":"6935675a7c5561aa39a6848d","name":"S Sudharsan","createdAt":"2025-12-07T11:39:06.996Z","updatedAt":"2025-12-07T11:39:06.996Z","__v":0},{"_id":"6936e3287c5561aa39a6c22b","name":"S Gill","createdAt":"2025-12-08T14:39:36.997Z","updatedAt":"2025-12-08T14:39:36.997Z","__v":0},{"_id":"6972d0e83e1f3555d53e3843","name":"J Buttler","createdAt":"2026-01-23T01:37:44.414Z","updatedAt":"2026-01-23T01:38:02.071Z","__v":0},{"_id":"692bc7af7c5561aa39a5c75f","name":"W Sundar","createdAt":"2025-11-30T04:27:27.608Z","updatedAt":"2025-11-30T04:27:27.608Z","__v":0},{"_id":"693568457c5561aa39a68582","name":"S Khan","createdAt":"2025-12-07T11:43:01.933Z","updatedAt":"2025-12-07T11:43:01.933Z","__v":0},{"_id":"692c15e67c5561aa39a5cb8d","name":"J Holder","createdAt":"2025-11-30T10:01:10.138Z","updatedAt":"2025-11-30T10:01:10.138Z","__v":0},{"_id":"692c1a5d7c5561aa39a5cc41","name":"R Khan","createdAt":"2025-11-30T10:20:13.679Z","updatedAt":"2025-11-30T10:20:13.679Z","__v":0},{"_id":"698f363a3e1f3555d54c1e57","name":"K Rabada","createdAt":"2026-02-13T14:33:30.645Z","updatedAt":"2026-02-13T14:33:30.645Z","__v":0},{"_id":"69cc73e2cc9773ecde8c67e5","name":"A Khan","createdAt":"2026-04-01T01:24:50.768Z","updatedAt":"2026-04-01T01:24:50.768Z","__v":0},{"_id":"6961c7da3e1f3555d537bb49","name":"M Siraj","createdAt":"2026-01-10T03:30:34.705Z","updatedAt":"2026-01-10T03:30:34.705Z","__v":0},{"_id":"692bc7ce7c5561aa39a5c767","name":"P Krishna","createdAt":"2025-11-30T04:27:58.375Z","updatedAt":"2025-11-30T04:27:58.375Z","__v":0}],"teamB":[{"_id":"692c13cb7c5561aa39a5cb14","name":"J Bethell","createdAt":"2025-11-30T09:52:11.780Z","updatedAt":"2025-11-30T09:52:11.780Z","__v":0},{"_id":"692bca717c5561aa39a5c80b","name":"V Kohli","createdAt":"2025-11-30T04:39:13.755Z","updatedAt":"2025-11-30T04:39:13.755Z","__v":0},{"_id":"69c3ffd5cc9773ecde889396","name":"D Padikkal","createdAt":"2026-03-25T15:31:33.552Z","updatedAt":"2026-03-25T15:31:33.552Z","__v":0},{"...
+[2026-04-30T15:08:36.533Z] [Backend API] Requesting: GET https://api.ok11.in/api/matches/69f1c24fcc9773ecde9ffcd8
+[2026-04-30T15:08:36.709Z] [Backend API] SUCCESS: https://api.ok11.in/api/matches/69f1c24fcc9773ecde9ffcd8
+Response: {"success":true,"data":{"players":{"teamA":[{"_id":"6935675a7c5561aa39a6848d","name":"S Sudharsan","createdAt":"2025-12-07T11:39:06.996Z","updatedAt":"2025-12-07T11:39:06.996Z","__v":0},{"_id":"6936e3287c5561aa39a6c22b","name":"S Gill","createdAt":"2025-12-08T14:39:36.997Z","updatedAt":"2025-12-08T14:39:36.997Z","__v":0},{"_id":"6972d0e83e1f3555d53e3843","name":"J Buttler","createdAt":"2026-01-23T01:37:44.414Z","updatedAt":"2026-01-23T01:38:02.071Z","__v":0},{"_id":"692bc7af7c5561aa39a5c75f","name":"W Sundar","createdAt":"2025-11-30T04:27:27.608Z","updatedAt":"2025-11-30T04:27:27.608Z","__v":0},{"_id":"693568457c5561aa39a68582","name":"S Khan","createdAt":"2025-12-07T11:43:01.933Z","updatedAt":"2025-12-07T11:43:01.933Z","__v":0},{"_id":"692c15e67c5561aa39a5cb8d","name":"J Holder","createdAt":"2025-11-30T10:01:10.138Z","updatedAt":"2025-11-30T10:01:10.138Z","__v":0},{"_id":"692c1a5d7c5561aa39a5cc41","name":"R Khan","createdAt":"2025-11-30T10:20:13.679Z","updatedAt":"2025-11-30T10:20:13.679Z","__v":0},{"_id":"698f363a3e1f3555d54c1e57","name":"K Rabada","createdAt":"2026-02-13T14:33:30.645Z","updatedAt":"2026-02-13T14:33:30.645Z","__v":0},{"_id":"69cc73e2cc9773ecde8c67e5","name":"A Khan","createdAt":"2026-04-01T01:24:50.768Z","updatedAt":"2026-04-01T01:24:50.768Z","__v":0},{"_id":"6961c7da3e1f3555d537bb49","name":"M Siraj","createdAt":"2026-01-10T03:30:34.705Z","updatedAt":"2026-01-10T03:30:34.705Z","__v":0},{"_id":"692bc7ce7c5561aa39a5c767","name":"P Krishna","createdAt":"2025-11-30T04:27:58.375Z","updatedAt":"2025-11-30T04:27:58.375Z","__v":0}],"teamB":[{"_id":"692c13cb7c5561aa39a5cb14","name":"J Bethell","createdAt":"2025-11-30T09:52:11.780Z","updatedAt":"2025-11-30T09:52:11.780Z","__v":0},{"_id":"692bca717c5561aa39a5c80b","name":"V Kohli","createdAt":"2025-11-30T04:39:13.755Z","updatedAt":"2025-11-30T04:39:13.755Z","__v":0},{"_id":"69c3ffd5cc9773ecde889396","name":"D Padikkal","createdAt":"2026-03-25T15:31:33.552Z","updatedAt":"2026-03-25T15:31:33.552Z","__v":0},{"...
+[2026-04-30T15:08:41.134Z] [Backend API] Requesting: POST https://api.ok11.in/api/contests
+[2026-04-30T15:08:41.330Z] [Backend API] FAILED: 404 Not Found URL: https://api.ok11.in/api/contests
+[2026-04-30T15:08:41.332Z] [Backend API] Requesting: POST https://api.ok11.in/api/contests
+[2026-04-30T15:08:41.408Z] [Backend API] FAILED: 404 Not Found URL: https://api.ok11.in/api/contests
+[2026-04-30T15:08:41.409Z] [Backend API] Requesting: POST https://api.ok11.in/api/contest
+[2026-04-30T15:08:41.480Z] [Backend API] FAILED: 404 Not Found URL: https://api.ok11.in/api/contest
+[2026-04-30T15:08:41.481Z] [Backend API] Requesting: POST https://api.ok11.in/api/contest
+[2026-04-30T15:08:41.548Z] [Backend API] FAILED: 404 Not Found URL: https://api.ok11.in/api/contest
+[2026-04-30T15:08:41.549Z] [Backend API] Requesting: POST https://api.ok11.in/api/matches/69f1c24fcc9773ecde9ffcd8/contests
+[2026-04-30T15:08:41.613Z] [Backend API] FAILED: 404 Not Found URL: https://api.ok11.in/api/matches/69f1c24fcc9773ecde9ffcd8/contests
+[2026-04-30T15:08:41.614Z] [Backend API] Requesting: POST https://api.ok11.in/api/matches/69f1c24fcc9773ecde9ffcd8/contests
+[2026-04-30T15:08:41.685Z] [Backend API] FAILED: 404 Not Found URL: https://api.ok11.in/api/matches/69f1c24fcc9773ecde9ffcd8/contests
+[2026-04-30T15:08:41.686Z] [Backend API] Requesting: POST https://api.ok11.in/api/admin/contests
+[2026-04-30T15:08:42.147Z] [Backend API] FAILED: 404 Not Found URL: https://api.ok11.in/api/admin/contests
+[2026-04-30T15:08:42.148Z] [Backend API] Requesting: POST https://api.ok11.in/api/admin/contests
+[2026-04-30T15:08:42.234Z] [Backend API] FAILED: 404 Not Found URL: https://api.ok11.in/api/admin/contests
+[2026-04-30T15:08:42.235Z] [Backend API] Requesting: POST https://api.ok11.in/api/game-contests
+[2026-04-30T15:08:42.644Z] [Backend API] FAILED: 404 Not Found URL: https://api.ok11.in/api/game-contests
+[2026-04-30T15:08:42.645Z] [Backend API] Requesting: POST https://api.ok11.in/api/game-contests
+[2026-04-30T15:08:42.719Z] [Backend API] FAILED: 404 Not Found URL: https://api.ok11.in/api/game-contests
+[2026-04-30T15:08:42.720Z] [Backend API] Requesting: POST https://api.ok11.in/api/match-contests
+[2026-04-30T15:08:42.787Z] [Backend API] FAILED: 404 Not Found URL: https://api.ok11.in/api/match-contests
+[2026-04-30T15:08:42.787Z] [Backend API] Requesting: POST https://api.ok11.in/api/match-contests
+[2026-04-30T15:08:42.857Z] [Backend API] FAILED: 404 Not Found URL: https://api.ok11.in/api/match-contests
+[2026-04-30T15:41:35.910Z] [Backend API] Requesting: POST https://api.ok11.in/api/contests
+[2026-04-30T15:41:36.470Z] [Backend API] FAILED: 404 Not Found URL: https://api.ok11.in/api/contests
+[2026-04-30T15:41:36.472Z] [Backend API] Requesting: POST https://api.ok11.in/api/contests
+[2026-04-30T15:41:36.562Z] [Backend API] FAILED: 404 Not Found URL: https://api.ok11.in/api/contests
+[2026-04-30T15:41:36.563Z] [Backend API] Requesting: POST https://api.ok11.in/api/contest
+[2026-04-30T15:41:36.663Z] [Backend API] FAILED: 404 Not Found URL: https://api.ok11.in/api/contest
+[2026-04-30T15:41:36.664Z] [Backend API] Requesting: POST https://api.ok11.in/api/contest
+[2026-04-30T15:41:36.751Z] [Backend API] FAILED: 404 Not Found URL: https://api.ok11.in/api/contest
+[2026-04-30T15:41:36.752Z] [Backend API] Requesting: POST https://api.ok11.in/api/matches/69f1c24fcc9773ecde9ffcd8/contests
+[2026-04-30T15:41:36.844Z] [Backend API] FAILED: 404 Not Found URL: https://api.ok11.in/api/matches/69f1c24fcc9773ecde9ffcd8/contests
+[2026-04-30T15:41:36.845Z] [Backend API] Requesting: POST https://api.ok11.in/api/matches/69f1c24fcc9773ecde9ffcd8/contests
+[2026-04-30T15:41:36.934Z] [Backend API] FAILED: 404 Not Found URL: https://api.ok11.in/api/matches/69f1c24fcc9773ecde9ffcd8/contests
+[2026-04-30T15:41:36.935Z] [Backend API] Requesting: POST https://api.ok11.in/api/admin/contests
+[2026-04-30T15:41:37.016Z] [Backend API] FAILED: 404 Not Found URL: https://api.ok11.in/api/admin/contests
+[2026-04-30T15:41:37.017Z] [Backend API] Requesting: POST https://api.ok11.in/api/admin/contests
+[2026-04-30T15:41:37.109Z] [Backend API] FAILED: 404 Not Found URL: https://api.ok11.in/api/admin/contests
+[2026-04-30T15:41:37.110Z] [Backend API] Requesting: POST https://api.ok11.in/api/game-contests
+[2026-04-30T15:41:37.204Z] [Backend API] FAILED: 404 Not Found URL: https://api.ok11.in/api/game-contests
+[2026-04-30T15:41:37.206Z] [Backend API] Requesting: POST https://api.ok11.in/api/game-contests
+[2026-04-30T15:41:37.296Z] [Backend API] FAILED: 404 Not Found URL: https://api.ok11.in/api/game-contests
+[2026-04-30T15:41:37.297Z] [Backend API] Requesting: POST https://api.ok11.in/api/match-contests
+[2026-04-30T15:41:37.384Z] [Backend API] FAILED: 404 Not Found URL: https://api.ok11.in/api/match-contests
+[2026-04-30T15:41:37.385Z] [Backend API] Requesting: POST https://api.ok11.in/api/match-contests
+[2026-04-30T15:41:37.462Z] [Backend API] FAILED: 404 Not Found URL: https://api.ok11.in/api/match-contests
+[2026-04-30T15:41:44.523Z] [Backend API] Requesting: GET https://api.ok11.in/api/matches?limit=1000
+[2026-04-30T15:41:44.909Z] [Backend API] SUCCESS: https://api.ok11.in/api/matches?limit=1000
+Response: {"success":true,"data":{"data":[{"players":{"teamA":[{"_id":"6935675a7c5561aa39a6848d","name":"S Sudharsan","createdAt":"2025-12-07T11:39:06.996Z","updatedAt":"2025-12-07T11:39:06.996Z","__v":0},{"_id":"6936e3287c5561aa39a6c22b","name":"S Gill","createdAt":"2025-12-08T14:39:36.997Z","updatedAt":"2025-12-08T14:39:36.997Z","__v":0},{"_id":"6972d0e83e1f3555d53e3843","name":"J Buttler","createdAt":"2026-01-23T01:37:44.414Z","updatedAt":"2026-01-23T01:38:02.071Z","__v":0},{"_id":"692bc7af7c5561aa39a5c75f","name":"W Sundar","createdAt":"2025-11-30T04:27:27.608Z","updatedAt":"2025-11-30T04:27:27.608Z","__v":0},{"_id":"693568457c5561aa39a68582","name":"S Khan","createdAt":"2025-12-07T11:43:01.933Z","updatedAt":"2025-12-07T11:43:01.933Z","__v":0},{"_id":"692c15e67c5561aa39a5cb8d","name":"J Holder","createdAt":"2025-11-30T10:01:10.138Z","updatedAt":"2025-11-30T10:01:10.138Z","__v":0},{"_id":"692c1a5d7c5561aa39a5cc41","name":"R Khan","createdAt":"2025-11-30T10:20:13.679Z","updatedAt":"2025-11-30T10:20:13.679Z","__v":0},{"_id":"698f363a3e1f3555d54c1e57","name":"K Rabada","createdAt":"2026-02-13T14:33:30.645Z","updatedAt":"2026-02-13T14:33:30.645Z","__v":0},{"_id":"69cc73e2cc9773ecde8c67e5","name":"A Khan","createdAt":"2026-04-01T01:24:50.768Z","updatedAt":"2026-04-01T01:24:50.768Z","__v":0},{"_id":"6961c7da3e1f3555d537bb49","name":"M Siraj","createdAt":"2026-01-10T03:30:34.705Z","updatedAt":"2026-01-10T03:30:34.705Z","__v":0},{"_id":"692bc7ce7c5561aa39a5c767","name":"P Krishna","createdAt":"2025-11-30T04:27:58.375Z","updatedAt":"2025-11-30T04:27:58.375Z","__v":0}],"teamB":[{"_id":"692c13cb7c5561aa39a5cb14","name":"J Bethell","createdAt":"2025-11-30T09:52:11.780Z","updatedAt":"2025-11-30T09:52:11.780Z","__v":0},{"_id":"692bca717c5561aa39a5c80b","name":"V Kohli","createdAt":"2025-11-30T04:39:13.755Z","updatedAt":"2025-11-30T04:39:13.755Z","__v":0},{"_id":"69c3ffd5cc9773ecde889396","name":"D Padikkal","createdAt":"2026-03-25T15:31:33.552Z","updatedAt":"2026-03-25T15:31:33.552Z","_...
+[2026-04-30T15:41:44.965Z] [Backend API] Requesting: GET https://api.ok11.in/api/submissions?matchId=69f1c24fcc9773ecde9ffcd8
+[2026-04-30T15:41:45.059Z] [Backend API] SUCCESS: https://api.ok11.in/api/submissions?matchId=69f1c24fcc9773ecde9ffcd8
+Response: {"success":true,"data":{"data":[{"_id":"69f3069dcc9773ecdea06799","userId":{"_id":"69f3064c9cafa6003c6f5921","displayName":"RLDELECTRONIC Rld","email":"rldelectronicrld@gmail.com"},"matchId":{"players":{"teamA":[{"_id":"6935675a7c5561aa39a6848d","name":"S Sudharsan","createdAt":"2025-12-07T11:39:06.996Z","updatedAt":"2025-12-07T11:39:06.996Z","__v":0},{"_id":"6936e3287c5561aa39a6c22b","name":"S Gill","createdAt":"2025-12-08T14:39:36.997Z","updatedAt":"2025-12-08T14:39:36.997Z","__v":0},{"_id":"6972d0e83e1f3555d53e3843","name":"J Buttler","createdAt":"2026-01-23T01:37:44.414Z","updatedAt":"2026-01-23T01:38:02.071Z","__v":0},{"_id":"692bc7af7c5561aa39a5c75f","name":"W Sundar","createdAt":"2025-11-30T04:27:27.608Z","updatedAt":"2025-11-30T04:27:27.608Z","__v":0},{"_id":"693568457c5561aa39a68582","name":"S Khan","createdAt":"2025-12-07T11:43:01.933Z","updatedAt":"2025-12-07T11:43:01.933Z","__v":0},{"_id":"692c15e67c5561aa39a5cb8d","name":"J Holder","createdAt":"2025-11-30T10:01:10.138Z","updatedAt":"2025-11-30T10:01:10.138Z","__v":0},{"_id":"692c1a5d7c5561aa39a5cc41","name":"R Khan","createdAt":"2025-11-30T10:20:13.679Z","updatedAt":"2025-11-30T10:20:13.679Z","__v":0},{"_id":"698f363a3e1f3555d54c1e57","name":"K Rabada","createdAt":"2026-02-13T14:33:30.645Z","updatedAt":"2026-02-13T14:33:30.645Z","__v":0},{"_id":"69cc73e2cc9773ecde8c67e5","name":"A Khan","createdAt":"2026-04-01T01:24:50.768Z","updatedAt":"2026-04-01T01:24:50.768Z","__v":0},{"_id":"6961c7da3e1f3555d537bb49","name":"M Siraj","createdAt":"2026-01-10T03:30:34.705Z","updatedAt":"2026-01-10T03:30:34.705Z","__v":0},{"_id":"692bc7ce7c5561aa39a5c767","name":"P Krishna","createdAt":"2025-11-30T04:27:58.375Z","updatedAt":"2025-11-30T04:27:58.375Z","__v":0}],"teamB":[{"_id":"692c13cb7c5561aa39a5cb14","name":"J Bethell","createdAt":"2025-11-30T09:52:11.780Z","updatedAt":"2025-11-30T09:52:11.780Z","__v":0},{"_id":"692bca717c5561aa39a5c80b","name":"V Kohli","createdAt":"2025-11-30T04:39:13.755Z","updatedAt":"2025-11-30...
+[2026-04-30T15:41:50.118Z] [Backend API] Requesting: GET https://api.ok11.in/api/matches?limit=1000
+[2026-04-30T15:41:50.821Z] [Backend API] SUCCESS: https://api.ok11.in/api/matches?limit=1000
+Response: {"success":true,"data":{"data":[{"players":{"teamA":[{"_id":"6935675a7c5561aa39a6848d","name":"S Sudharsan","createdAt":"2025-12-07T11:39:06.996Z","updatedAt":"2025-12-07T11:39:06.996Z","__v":0},{"_id":"6936e3287c5561aa39a6c22b","name":"S Gill","createdAt":"2025-12-08T14:39:36.997Z","updatedAt":"2025-12-08T14:39:36.997Z","__v":0},{"_id":"6972d0e83e1f3555d53e3843","name":"J Buttler","createdAt":"2026-01-23T01:37:44.414Z","updatedAt":"2026-01-23T01:38:02.071Z","__v":0},{"_id":"692bc7af7c5561aa39a5c75f","name":"W Sundar","createdAt":"2025-11-30T04:27:27.608Z","updatedAt":"2025-11-30T04:27:27.608Z","__v":0},{"_id":"693568457c5561aa39a68582","name":"S Khan","createdAt":"2025-12-07T11:43:01.933Z","updatedAt":"2025-12-07T11:43:01.933Z","__v":0},{"_id":"692c15e67c5561aa39a5cb8d","name":"J Holder","createdAt":"2025-11-30T10:01:10.138Z","updatedAt":"2025-11-30T10:01:10.138Z","__v":0},{"_id":"692c1a5d7c5561aa39a5cc41","name":"R Khan","createdAt":"2025-11-30T10:20:13.679Z","updatedAt":"2025-11-30T10:20:13.679Z","__v":0},{"_id":"698f363a3e1f3555d54c1e57","name":"K Rabada","createdAt":"2026-02-13T14:33:30.645Z","updatedAt":"2026-02-13T14:33:30.645Z","__v":0},{"_id":"69cc73e2cc9773ecde8c67e5","name":"A Khan","createdAt":"2026-04-01T01:24:50.768Z","updatedAt":"2026-04-01T01:24:50.768Z","__v":0},{"_id":"6961c7da3e1f3555d537bb49","name":"M Siraj","createdAt":"2026-01-10T03:30:34.705Z","updatedAt":"2026-01-10T03:30:34.705Z","__v":0},{"_id":"692bc7ce7c5561aa39a5c767","name":"P Krishna","createdAt":"2025-11-30T04:27:58.375Z","updatedAt":"2025-11-30T04:27:58.375Z","__v":0}],"teamB":[{"_id":"692c13cb7c5561aa39a5cb14","name":"J Bethell","createdAt":"2025-11-30T09:52:11.780Z","updatedAt":"2025-11-30T09:52:11.780Z","__v":0},{"_id":"692bca717c5561aa39a5c80b","name":"V Kohli","createdAt":"2025-11-30T04:39:13.755Z","updatedAt":"2025-11-30T04:39:13.755Z","__v":0},{"_id":"69c3ffd5cc9773ecde889396","name":"D Padikkal","createdAt":"2026-03-25T15:31:33.552Z","updatedAt":"2026-03-25T15:31:33.552Z","_...
+[2026-04-30T15:41:50.863Z] [Backend API] Requesting: GET https://api.ok11.in/api/submissions?matchId=69f1c24fcc9773ecde9ffcd8
+[2026-04-30T15:41:51.065Z] [Backend API] SUCCESS: https://api.ok11.in/api/submissions?matchId=69f1c24fcc9773ecde9ffcd8
+Response: {"success":true,"data":{"data":[{"_id":"69f3069dcc9773ecdea06799","userId":{"_id":"69f3064c9cafa6003c6f5921","displayName":"RLDELECTRONIC Rld","email":"rldelectronicrld@gmail.com"},"matchId":{"players":{"teamA":[{"_id":"6935675a7c5561aa39a6848d","name":"S Sudharsan","createdAt":"2025-12-07T11:39:06.996Z","updatedAt":"2025-12-07T11:39:06.996Z","__v":0},{"_id":"6936e3287c5561aa39a6c22b","name":"S Gill","createdAt":"2025-12-08T14:39:36.997Z","updatedAt":"2025-12-08T14:39:36.997Z","__v":0},{"_id":"6972d0e83e1f3555d53e3843","name":"J Buttler","createdAt":"2026-01-23T01:37:44.414Z","updatedAt":"2026-01-23T01:38:02.071Z","__v":0},{"_id":"692bc7af7c5561aa39a5c75f","name":"W Sundar","createdAt":"2025-11-30T04:27:27.608Z","updatedAt":"2025-11-30T04:27:27.608Z","__v":0},{"_id":"693568457c5561aa39a68582","name":"S Khan","createdAt":"2025-12-07T11:43:01.933Z","updatedAt":"2025-12-07T11:43:01.933Z","__v":0},{"_id":"692c15e67c5561aa39a5cb8d","name":"J Holder","createdAt":"2025-11-30T10:01:10.138Z","updatedAt":"2025-11-30T10:01:10.138Z","__v":0},{"_id":"692c1a5d7c5561aa39a5cc41","name":"R Khan","createdAt":"2025-11-30T10:20:13.679Z","updatedAt":"2025-11-30T10:20:13.679Z","__v":0},{"_id":"698f363a3e1f3555d54c1e57","name":"K Rabada","createdAt":"2026-02-13T14:33:30.645Z","updatedAt":"2026-02-13T14:33:30.645Z","__v":0},{"_id":"69cc73e2cc9773ecde8c67e5","name":"A Khan","createdAt":"2026-04-01T01:24:50.768Z","updatedAt":"2026-04-01T01:24:50.768Z","__v":0},{"_id":"6961c7da3e1f3555d537bb49","name":"M Siraj","createdAt":"2026-01-10T03:30:34.705Z","updatedAt":"2026-01-10T03:30:34.705Z","__v":0},{"_id":"692bc7ce7c5561aa39a5c767","name":"P Krishna","createdAt":"2025-11-30T04:27:58.375Z","updatedAt":"2025-11-30T04:27:58.375Z","__v":0}],"teamB":[{"_id":"692c13cb7c5561aa39a5cb14","name":"J Bethell","createdAt":"2025-11-30T09:52:11.780Z","updatedAt":"2025-11-30T09:52:11.780Z","__v":0},{"_id":"692bca717c5561aa39a5c80b","name":"V Kohli","createdAt":"2025-11-30T04:39:13.755Z","updatedAt":"2025-11-30...
+[2026-04-30T15:41:52.782Z] [Backend API] Requesting: GET https://api.ok11.in/api?matchId=69f1c24fcc9773ecde9ffcd8
+[2026-04-30T15:41:52.907Z] [Backend API] FAILED: 404 Not Found URL: https://api.ok11.in/api?matchId=69f1c24fcc9773ecde9ffcd8
+[2026-04-30T15:41:52.908Z] [Backend API] Requesting: GET https://api.ok11.in/api?matchId=69f1c24fcc9773ecde9ffcd8
+[2026-04-30T15:41:53.024Z] [Backend API] FAILED: 404 Not Found URL: https://api.ok11.in/api?matchId=69f1c24fcc9773ecde9ffcd8
+[2026-04-30T15:41:53.025Z] [Backend API] Requesting: GET https://api.ok11.in/api/contests?matchId=69f1c24fcc9773ecde9ffcd8
+[2026-04-30T15:41:53.152Z] [Backend API] FAILED: 404 Not Found URL: https://api.ok11.in/api/contests?matchId=69f1c24fcc9773ecde9ffcd8
+[2026-04-30T15:41:53.153Z] [Backend API] Requesting: GET https://api.ok11.in/api/contests?matchId=69f1c24fcc9773ecde9ffcd8
+[2026-04-30T15:41:53.304Z] [Backend API] FAILED: 404 Not Found URL: https://api.ok11.in/api/contests?matchId=69f1c24fcc9773ecde9ffcd8
+[2026-04-30T15:41:53.305Z] [Backend API] Requesting: GET https://api.ok11.in/api/contests/?matchId=69f1c24fcc9773ecde9ffcd8
+[2026-04-30T15:41:53.447Z] [Backend API] FAILED: 404 Not Found URL: https://api.ok11.in/api/contests/?matchId=69f1c24fcc9773ecde9ffcd8
+[2026-04-30T15:41:53.448Z] [Backend API] Requesting: GET https://api.ok11.in/api/contests/?matchId=69f1c24fcc9773ecde9ffcd8
+[2026-04-30T15:41:53.572Z] [Backend API] FAILED: 404 Not Found URL: https://api.ok11.in/api/contests/?matchId=69f1c24fcc9773ecde9ffcd8
+[2026-04-30T15:41:53.573Z] [Backend API] Requesting: GET https://api.ok11.in/api/contest?matchId=69f1c24fcc9773ecde9ffcd8
+[2026-04-30T15:41:53.710Z] [Backend API] FAILED: 404 Not Found URL: https://api.ok11.in/api/contest?matchId=69f1c24fcc9773ecde9ffcd8
+[2026-04-30T15:41:53.711Z] [Backend API] Requesting: GET https://api.ok11.in/api/contest?matchId=69f1c24fcc9773ecde9ffcd8
+[2026-04-30T15:41:53.838Z] [Backend API] FAILED: 404 Not Found URL: https://api.ok11.in/api/contest?matchId=69f1c24fcc9773ecde9ffcd8
+[2026-04-30T15:41:53.839Z] [Backend API] Requesting: GET https://api.ok11.in/api/gamecontests?matchId=69f1c24fcc9773ecde9ffcd8
+[2026-04-30T15:41:53.953Z] [Backend API] FAILED: 404 Not Found URL: https://api.ok11.in/api/gamecontests?matchId=69f1c24fcc9773ecde9ffcd8
+[2026-04-30T15:41:53.954Z] [Backend API] Requesting: GET https://api.ok11.in/api/gamecontests?matchId=69f1c24fcc9773ecde9ffcd8
+[2026-04-30T15:41:54.093Z] [Backend API] FAILED: 404 Not Found URL: https://api.ok11.in/api/gamecontests?matchId=69f1c24fcc9773ecde9ffcd8
+[2026-04-30T15:41:54.095Z] [Backend API] Requesting: GET https://api.ok11.in/api/game-contests?matchId=69f1c24fcc9773ecde9ffcd8
+[2026-04-30T15:41:54.233Z] [Backend API] FAILED: 404 Not Found URL: https://api.ok11.in/api/game-contests?matchId=69f1c24fcc9773ecde9ffcd8
+[2026-04-30T15:41:54.234Z] [Backend API] Requesting: GET https://api.ok11.in/api/game-contests?matchId=69f1c24fcc9773ecde9ffcd8
+[2026-04-30T15:41:54.373Z] [Backend API] FAILED: 404 Not Found URL: https://api.ok11.in/api/game-contests?matchId=69f1c24fcc9773ecde9ffcd8
+[2026-04-30T15:41:54.374Z] [Backend API] Requesting: GET https://api.ok11.in/api/game_contests?matchId=69f1c24fcc9773ecde9ffcd8
+[2026-04-30T15:41:54.520Z] [Backend API] FAILED: 404 Not Found URL: https://api.ok11.in/api/game_contests?matchId=69f1c24fcc9773ecde9ffcd8
+[2026-04-30T15:41:54.521Z] [Backend API] Requesting: GET https://api.ok11.in/api/game_contests?matchId=69f1c24fcc9773ecde9ffcd8
+[2026-04-30T15:41:54.662Z] [Backend API] FAILED: 404 Not Found URL: https://api.ok11.in/api/game_contests?matchId=69f1c24fcc9773ecde9ffcd8
+[2026-04-30T15:41:54.663Z] [Backend API] Requesting: GET https://api.ok11.in/api/matchcontests?matchId=69f1c24fcc9773ecde9ffcd8
+[2026-04-30T15:41:54.790Z] [Backend API] FAILED: 404 Not Found URL: https://api.ok11.in/api/matchcontests?matchId=69f1c24fcc9773ecde9ffcd8
+[2026-04-30T15:41:54.791Z] [Backend API] Requesting: GET https://api.ok11.in/api/matchcontests?matchId=69f1c24fcc9773ecde9ffcd8
+[2026-04-30T15:41:54.934Z] [Backend API] FAILED: 404 Not Found URL: https://api.ok11.in/api/matchcontests?matchId=69f1c24fcc9773ecde9ffcd8
+[2026-04-30T15:41:54.935Z] [Backend API] Requesting: GET https://api.ok11.in/api/match-contests?matchId=69f1c24fcc9773ecde9ffcd8
+[2026-04-30T15:41:55.052Z] [Backend API] FAILED: 404 Not Found URL: https://api.ok11.in/api/match-contests?matchId=69f1c24fcc9773ecde9ffcd8
+[2026-04-30T15:41:55.053Z] [Backend API] Requesting: GET https://api.ok11.in/api/match-contests?matchId=69f1c24fcc9773ecde9ffcd8
+[2026-04-30T15:41:55.175Z] [Backend API] FAILED: 404 Not Found URL: https://api.ok11.in/api/match-contests?matchId=69f1c24fcc9773ecde9ffcd8
+[2026-04-30T15:41:55.176Z] [Backend API] Requesting: GET https://api.ok11.in/api/match_contests?matchId=69f1c24fcc9773ecde9ffcd8
+[2026-04-30T15:41:55.305Z] [Backend API] FAILED: 404 Not Found URL: https://api.ok11.in/api/match_contests?matchId=69f1c24fcc9773ecde9ffcd8
+[2026-04-30T15:41:55.306Z] [Backend API] Requesting: GET https://api.ok11.in/api/match_contests?matchId=69f1c24fcc9773ecde9ffcd8
+[2026-04-30T15:41:55.456Z] [Backend API] FAILED: 404 Not Found URL: https://api.ok11.in/api/match_contests?matchId=69f1c24fcc9773ecde9ffcd8
+[2026-04-30T15:41:55.457Z] [Backend API] Requesting: GET https://api.ok11.in/api/matches/69f1c24fcc9773ecde9ffcd8/contests?matchId=69f1c24fcc9773ecde9ffcd8
+[2026-04-30T15:41:55.542Z] [Backend API] FAILED: 404 Not Found URL: https://api.ok11.in/api/matches/69f1c24fcc9773ecde9ffcd8/contests?matchId=69f1c24fcc9773ecde9ffcd8
+[2026-04-30T15:41:55.543Z] [Backend API] Requesting: GET https://api.ok11.in/api/matches/69f1c24fcc9773ecde9ffcd8/contests?matchId=69f1c24fcc9773ecde9ffcd8
+[2026-04-30T15:41:55.649Z] [Backend API] FAILED: 404 Not Found URL: https://api.ok11.in/api/matches/69f1c24fcc9773ecde9ffcd8/contests?matchId=69f1c24fcc9773ecde9ffcd8
+[2026-04-30T15:41:55.650Z] [Backend API] Requesting: GET https://api.ok11.in/api/matches/69f1c24fcc9773ecde9ffcd8?matchId=69f1c24fcc9773ecde9ffcd8&populate=*
+[2026-04-30T15:41:55.799Z] [Backend API] SUCCESS: https://api.ok11.in/api/matches/69f1c24fcc9773ecde9ffcd8?matchId=69f1c24fcc9773ecde9ffcd8&populate=*
+Response: {"success":true,"data":{"players":{"teamA":[{"_id":"6935675a7c5561aa39a6848d","name":"S Sudharsan","createdAt":"2025-12-07T11:39:06.996Z","updatedAt":"2025-12-07T11:39:06.996Z","__v":0},{"_id":"6936e3287c5561aa39a6c22b","name":"S Gill","createdAt":"2025-12-08T14:39:36.997Z","updatedAt":"2025-12-08T14:39:36.997Z","__v":0},{"_id":"6972d0e83e1f3555d53e3843","name":"J Buttler","createdAt":"2026-01-23T01:37:44.414Z","updatedAt":"2026-01-23T01:38:02.071Z","__v":0},{"_id":"692bc7af7c5561aa39a5c75f","name":"W Sundar","createdAt":"2025-11-30T04:27:27.608Z","updatedAt":"2025-11-30T04:27:27.608Z","__v":0},{"_id":"693568457c5561aa39a68582","name":"S Khan","createdAt":"2025-12-07T11:43:01.933Z","updatedAt":"2025-12-07T11:43:01.933Z","__v":0},{"_id":"692c15e67c5561aa39a5cb8d","name":"J Holder","createdAt":"2025-11-30T10:01:10.138Z","updatedAt":"2025-11-30T10:01:10.138Z","__v":0},{"_id":"692c1a5d7c5561aa39a5cc41","name":"R Khan","createdAt":"2025-11-30T10:20:13.679Z","updatedAt":"2025-11-30T10:20:13.679Z","__v":0},{"_id":"698f363a3e1f3555d54c1e57","name":"K Rabada","createdAt":"2026-02-13T14:33:30.645Z","updatedAt":"2026-02-13T14:33:30.645Z","__v":0},{"_id":"69cc73e2cc9773ecde8c67e5","name":"A Khan","createdAt":"2026-04-01T01:24:50.768Z","updatedAt":"2026-04-01T01:24:50.768Z","__v":0},{"_id":"6961c7da3e1f3555d537bb49","name":"M Siraj","createdAt":"2026-01-10T03:30:34.705Z","updatedAt":"2026-01-10T03:30:34.705Z","__v":0},{"_id":"692bc7ce7c5561aa39a5c767","name":"P Krishna","createdAt":"2025-11-30T04:27:58.375Z","updatedAt":"2025-11-30T04:27:58.375Z","__v":0}],"teamB":[{"_id":"692c13cb7c5561aa39a5cb14","name":"J Bethell","createdAt":"2025-11-30T09:52:11.780Z","updatedAt":"2025-11-30T09:52:11.780Z","__v":0},{"_id":"692bca717c5561aa39a5c80b","name":"V Kohli","createdAt":"2025-11-30T04:39:13.755Z","updatedAt":"2025-11-30T04:39:13.755Z","__v":0},{"_id":"69c3ffd5cc9773ecde889396","name":"D Padikkal","createdAt":"2026-03-25T15:31:33.552Z","updatedAt":"2026-03-25T15:31:33.552Z","__v":0},{"...
+[2026-04-30T15:41:55.827Z] [Backend API] Requesting: GET https://api.ok11.in/api/matches/69f1c24fcc9773ecde9ffcd8
+[2026-04-30T15:41:56.082Z] [Backend API] SUCCESS: https://api.ok11.in/api/matches/69f1c24fcc9773ecde9ffcd8
+Response: {"success":true,"data":{"players":{"teamA":[{"_id":"6935675a7c5561aa39a6848d","name":"S Sudharsan","createdAt":"2025-12-07T11:39:06.996Z","updatedAt":"2025-12-07T11:39:06.996Z","__v":0},{"_id":"6936e3287c5561aa39a6c22b","name":"S Gill","createdAt":"2025-12-08T14:39:36.997Z","updatedAt":"2025-12-08T14:39:36.997Z","__v":0},{"_id":"6972d0e83e1f3555d53e3843","name":"J Buttler","createdAt":"2026-01-23T01:37:44.414Z","updatedAt":"2026-01-23T01:38:02.071Z","__v":0},{"_id":"692bc7af7c5561aa39a5c75f","name":"W Sundar","createdAt":"2025-11-30T04:27:27.608Z","updatedAt":"2025-11-30T04:27:27.608Z","__v":0},{"_id":"693568457c5561aa39a68582","name":"S Khan","createdAt":"2025-12-07T11:43:01.933Z","updatedAt":"2025-12-07T11:43:01.933Z","__v":0},{"_id":"692c15e67c5561aa39a5cb8d","name":"J Holder","createdAt":"2025-11-30T10:01:10.138Z","updatedAt":"2025-11-30T10:01:10.138Z","__v":0},{"_id":"692c1a5d7c5561aa39a5cc41","name":"R Khan","createdAt":"2025-11-30T10:20:13.679Z","updatedAt":"2025-11-30T10:20:13.679Z","__v":0},{"_id":"698f363a3e1f3555d54c1e57","name":"K Rabada","createdAt":"2026-02-13T14:33:30.645Z","updatedAt":"2026-02-13T14:33:30.645Z","__v":0},{"_id":"69cc73e2cc9773ecde8c67e5","name":"A Khan","createdAt":"2026-04-01T01:24:50.768Z","updatedAt":"2026-04-01T01:24:50.768Z","__v":0},{"_id":"6961c7da3e1f3555d537bb49","name":"M Siraj","createdAt":"2026-01-10T03:30:34.705Z","updatedAt":"2026-01-10T03:30:34.705Z","__v":0},{"_id":"692bc7ce7c5561aa39a5c767","name":"P Krishna","createdAt":"2025-11-30T04:27:58.375Z","updatedAt":"2025-11-30T04:27:58.375Z","__v":0}],"teamB":[{"_id":"692c13cb7c5561aa39a5cb14","name":"J Bethell","createdAt":"2025-11-30T09:52:11.780Z","updatedAt":"2025-11-30T09:52:11.780Z","__v":0},{"_id":"692bca717c5561aa39a5c80b","name":"V Kohli","createdAt":"2025-11-30T04:39:13.755Z","updatedAt":"2025-11-30T04:39:13.755Z","__v":0},{"_id":"69c3ffd5cc9773ecde889396","name":"D Padikkal","createdAt":"2026-03-25T15:31:33.552Z","updatedAt":"2026-03-25T15:31:33.552Z","__v":0},{"...
+[2026-04-30T15:42:00.635Z] [Backend API] Requesting: POST https://api.ok11.in/api/contests
+[2026-04-30T15:42:02.419Z] [Backend API] FAILED: 404 Not Found URL: https://api.ok11.in/api/contests
+[2026-04-30T15:42:02.420Z] [Backend API] Requesting: POST https://api.ok11.in/api/contests
+[2026-04-30T15:42:02.692Z] [Backend API] FAILED: 404 Not Found URL: https://api.ok11.in/api/contests
+[2026-04-30T15:42:02.693Z] [Backend API] Requesting: POST https://api.ok11.in/api/contest
+[2026-04-30T15:42:02.985Z] [Backend API] FAILED: 404 Not Found URL: https://api.ok11.in/api/contest
+[2026-04-30T15:42:02.985Z] [Backend API] Requesting: POST https://api.ok11.in/api/contest
+[2026-04-30T15:42:03.291Z] [Backend API] FAILED: 404 Not Found URL: https://api.ok11.in/api/contest
+[2026-04-30T15:42:03.292Z] [Backend API] Requesting: POST https://api.ok11.in/api/matches/69f1c24fcc9773ecde9ffcd8/contests
+[2026-04-30T15:42:03.591Z] [Backend API] FAILED: 404 Not Found URL: https://api.ok11.in/api/matches/69f1c24fcc9773ecde9ffcd8/contests
+[2026-04-30T15:42:03.591Z] [Backend API] Requesting: POST https://api.ok11.in/api/matches/69f1c24fcc9773ecde9ffcd8/contests
+[2026-04-30T15:42:03.887Z] [Backend API] FAILED: 404 Not Found URL: https://api.ok11.in/api/matches/69f1c24fcc9773ecde9ffcd8/contests
+[2026-04-30T15:42:03.888Z] [Backend API] Requesting: POST https://api.ok11.in/api/admin/contests
+[2026-04-30T15:42:04.156Z] [Backend API] FAILED: 404 Not Found URL: https://api.ok11.in/api/admin/contests
+[2026-04-30T15:42:04.157Z] [Backend API] Requesting: POST https://api.ok11.in/api/admin/contests
+[2026-04-30T15:42:04.421Z] [Backend API] FAILED: 404 Not Found URL: https://api.ok11.in/api/admin/contests
+[2026-04-30T15:42:04.422Z] [Backend API] Requesting: POST https://api.ok11.in/api/game-contests
+[2026-04-30T15:42:04.723Z] [Backend API] FAILED: 404 Not Found URL: https://api.ok11.in/api/game-contests
+[2026-04-30T15:42:04.724Z] [Backend API] Requesting: POST https://api.ok11.in/api/game-contests
+[2026-04-30T15:42:04.998Z] [Backend API] FAILED: 404 Not Found URL: https://api.ok11.in/api/game-contests
+[2026-04-30T15:42:04.999Z] [Backend API] Requesting: POST https://api.ok11.in/api/match-contests
+[2026-04-30T15:42:05.261Z] [Backend API] FAILED: 404 Not Found URL: https://api.ok11.in/api/match-contests
+[2026-04-30T15:42:05.262Z] [Backend API] Requesting: POST https://api.ok11.in/api/match-contests
+[2026-04-30T15:42:05.528Z] [Backend API] FAILED: 404 Not Found URL: https://api.ok11.in/api/match-contests
+[2026-04-30T17:01:57.462Z] [Backend API] Requesting: POST http://localhost:5925/api/auth/admin/login
+[2026-04-30T17:02:00.149Z] [Backend API] Requesting: GET http://localhost:5925/api/dashboard/stats
+[2026-04-30T17:02:02.005Z] [Backend API] Requesting: GET http://localhost:5925/api/matches?limit=1000
+[2026-04-30T17:02:04.800Z] [Backend API] Requesting: GET http://localhost:5925/api/matches?limit=1000
+[2026-04-30T17:02:05.391Z] [Backend API] Requesting: GET http://localhost:5925/api/submissions?matchId=69f1c24fcc9773ecde9ffcd8
+[2026-04-30T17:02:06.656Z] [Backend API] Requesting: GET http://localhost:5925/api/contests?matchId=69f1c24fcc9773ecde9ffcd8
+[2026-04-30T17:02:06.733Z] [Backend API] Requesting: GET http://localhost:5925/api/matches/69f1c24fcc9773ecde9ffcd8
+[2026-04-30T17:02:10.870Z] [Backend API] Requesting: POST http://localhost:5925/api/contests
+[2026-04-30T17:07:56.869Z] [Backend API] Requesting: GET http://localhost:5925/api/matches?limit=1000
+[2026-04-30T17:08:24.530Z] [Backend API] Requesting: GET http://localhost:5925/api/matches?limit=1000
+[2026-04-30T17:08:26.955Z] [Backend API] FAILED: undefined [GET] "http://localhost:5925/api/matches?limit=1000": <no response> [TimeoutError]: The operation was aborted due to timeout URL: http://localhost:5925/api/matches?limit=1000
+[2026-04-30T17:08:27.274Z] [Backend API] Requesting: GET http://localhost:5925/api/matches?limit=1000
+[2026-04-30T17:08:54.534Z] [Backend API] FAILED: undefined [GET] "http://localhost:5925/api/matches?limit=1000": <no response> [TimeoutError]: The operation was aborted due to timeout URL: http://localhost:5925/api/matches?limit=1000
+[2026-04-30T17:08:57.281Z] [Backend API] FAILED: undefined [GET] "http://localhost:5925/api/matches?limit=1000": <no response> [TimeoutError]: The operation was aborted due to timeout URL: http://localhost:5925/api/matches?limit=1000
+[2026-04-30T17:08:57.387Z] [Backend API] Requesting: GET http://localhost:5925/api/matches?limit=1000
+[2026-04-30T17:09:55.609Z] [Backend API] Requesting: GET http://localhost:5925/api/matches?limit=1000
+[2026-04-30T17:09:55.620Z] [Backend API] FAILED: undefined [GET] "http://localhost:5925/api/matches?limit=1000": <no response> fetch failed URL: http://localhost:5925/api/matches?limit=1000
+[2026-04-30T17:09:55.679Z] [Backend API] Requesting: GET http://localhost:5925/api/matches?limit=1000
+[2026-04-30T17:09:55.687Z] [Backend API] FAILED: undefined [GET] "http://localhost:5925/api/matches?limit=1000": <no response> fetch failed URL: http://localhost:5925/api/matches?limit=1000
+[2026-04-30T17:09:56.753Z] [Backend API] Requesting: GET http://localhost:5925/api/matches?limit=1000
+[2026-04-30T17:09:56.768Z] [Backend API] FAILED: undefined [GET] "http://localhost:5925/api/matches?limit=1000": <no response> fetch failed URL: http://localhost:5925/api/matches?limit=1000
+[2026-04-30T17:09:56.820Z] [Backend API] Requesting: GET http://localhost:5925/api/matches?limit=1000
+[2026-04-30T17:09:56.826Z] [Backend API] FAILED: undefined [GET] "http://localhost:5925/api/matches?limit=1000": <no response> fetch failed URL: http://localhost:5925/api/matches?limit=1000
+[2026-04-30T17:09:58.899Z] [Backend API] Requesting: GET http://localhost:5925/api/matches?limit=1000
+[2026-04-30T17:09:58.906Z] [Backend API] FAILED: undefined [GET] "http://localhost:5925/api/matches?limit=1000": <no response> fetch failed URL: http://localhost:5925/api/matches?limit=1000
+[2026-04-30T17:09:58.964Z] [Backend API] Requesting: GET http://localhost:5925/api/matches?limit=1000
+[2026-04-30T17:09:58.973Z] [Backend API] FAILED: undefined [GET] "http://localhost:5925/api/matches?limit=1000": <no response> fetch failed URL: http://localhost:5925/api/matches?limit=1000
+[2026-04-30T17:10:03.953Z] [Backend API] Requesting: GET http://localhost:5925/api/matches?limit=1000
+[2026-04-30T17:10:03.961Z] [Backend API] FAILED: undefined [GET] "http://localhost:5925/api/matches?limit=1000": <no response> fetch failed URL: http://localhost:5925/api/matches?limit=1000
+[2026-04-30T17:10:04.013Z] [Backend API] Requesting: GET http://localhost:5925/api/matches?limit=1000
+[2026-04-30T17:10:04.021Z] [Backend API] FAILED: undefined [GET] "http://localhost:5925/api/matches?limit=1000": <no response> fetch failed URL: http://localhost:5925/api/matches?limit=1000
+[2026-04-30T17:10:05.083Z] [Backend API] Requesting: GET http://localhost:5925/api/matches?limit=1000
+[2026-04-30T17:10:05.089Z] [Backend API] FAILED: undefined [GET] "http://localhost:5925/api/matches?limit=1000": <no response> fetch failed URL: http://localhost:5925/api/matches?limit=1000
+[2026-04-30T17:10:05.135Z] [Backend API] Requesting: GET http://localhost:5925/api/matches?limit=1000
+[2026-04-30T17:10:05.141Z] [Backend API] FAILED: undefined [GET] "http://localhost:5925/api/matches?limit=1000": <no response> fetch failed URL: http://localhost:5925/api/matches?limit=1000
+[2026-04-30T17:10:07.200Z] [Backend API] Requesting: GET http://localhost:5925/api/matches?limit=1000
+[2026-04-30T17:10:07.209Z] [Backend API] FAILED: undefined [GET] "http://localhost:5925/api/matches?limit=1000": <no response> fetch failed URL: http://localhost:5925/api/matches?limit=1000
+[2026-04-30T17:10:07.277Z] [Backend API] Requesting: GET http://localhost:5925/api/matches?limit=1000
+[2026-04-30T17:10:07.283Z] [Backend API] FAILED: undefined [GET] "http://localhost:5925/api/matches?limit=1000": <no response> fetch failed URL: http://localhost:5925/api/matches?limit=1000
+[2026-05-12T04:55:54.404Z] [Backend API] Requesting: POST http://localhost:5925/api/auth/admin/login
+[2026-05-12T04:55:56.627Z] [Backend API] Requesting: GET http://localhost:5925/api/dashboard/stats
+[2026-05-12T04:56:00.593Z] [Backend API] Requesting: GET http://localhost:5925/api/matches?limit=1000
+[2026-05-12T04:56:21.763Z] [Backend API] Requesting: GET http://localhost:5925/api/matches?limit=1000
+[2026-05-12T04:56:22.559Z] [Backend API] Requesting: GET http://localhost:5925/api/submissions?matchId=69ffe3b9aa61c4aeb4761ff3
+[2026-05-12T04:56:24.905Z] [Backend API] Requesting: GET http://localhost:5925/api/matches?limit=1000
+[2026-05-12T04:56:28.416Z] [Backend API] Requesting: GET http://localhost:5925/api/matches?limit=1000
+[2026-05-12T04:56:29.149Z] [Backend API] Requesting: GET http://localhost:5925/api/submissions?matchId=69ffe203aa61c4aeb475e09a
+[2026-05-12T04:56:31.840Z] [Backend API] Requesting: GET http://localhost:5925/api/matches?limit=1000
+[2026-05-12T04:57:57.586Z] [Backend API] Requesting: GET http://localhost:5925/api/matches?limit=1000
+[2026-05-12T04:57:58.279Z] [Backend API] Requesting: GET http://localhost:5925/api/submissions?matchId=69ffe3b9aa61c4aeb4761ff3
+[2026-05-12T04:57:59.922Z] [Backend API] Requesting: GET http://localhost:5925/api/contests?matchId=69ffe3b9aa61c4aeb4761ff3
+[2026-05-12T04:58:00.295Z] [Backend API] Requesting: GET http://localhost:5925/api/matches/69ffe3b9aa61c4aeb4761ff3
+[2026-05-12T04:58:16.929Z] [Backend API] Requesting: POST http://localhost:5925/api/contests
+[2026-05-12T05:04:23.805Z] [Backend API] Requesting: GET http://localhost:5925/api/matches?limit=1000
+[2026-05-12T05:04:24.670Z] [Backend API] Requesting: GET http://localhost:5925/api/submissions?matchId=69ffe3b9aa61c4aeb4761ff3
+[2026-05-12T05:04:26.242Z] [Backend API] Requesting: GET http://localhost:5925/api/contests?matchId=69ffe3b9aa61c4aeb4761ff3
+[2026-05-12T05:04:26.308Z] [Backend API] Requesting: GET http://localhost:5925/api/contests/undefined/leaderboard
+[2026-05-12T05:04:26.323Z] [Backend API] FAILED: 500 Internal Server Error URL: http://localhost:5925/api/contests/undefined/leaderboard
+[2026-05-12T05:04:26.404Z] [Backend API] Requesting: GET http://localhost:5925/api/contests/undefined/leaderboard
+[2026-05-12T05:04:26.413Z] [Backend API] FAILED: 500 Internal Server Error URL: http://localhost:5925/api/contests/undefined/leaderboard
+[2026-05-12T05:04:26.467Z] [Backend API] Requesting: GET http://localhost:5925/api/matches/69ffe3b9aa61c4aeb4761ff3
+[2026-05-12T05:05:08.149Z] [Backend API] Requesting: GET http://localhost:5925/api/matches?limit=1000
+[2026-05-12T05:05:09.771Z] [Backend API] Requesting: GET http://localhost:5925/api/submissions?matchId=69ffe3b9aa61c4aeb4761ff3
+[2026-05-12T05:05:11.351Z] [Backend API] Requesting: GET http://localhost:5925/api/contests?matchId=69ffe3b9aa61c4aeb4761ff3
+[2026-05-12T05:05:11.359Z] [Backend API] FAILED: undefined [GET] "http://localhost:5925/api/contests?matchId=69ffe3b9aa61c4aeb4761ff3": <no response> fetch failed URL: http://localhost:5925/api/contests?matchId=69ffe3b9aa61c4aeb4761ff3
+[2026-05-12T05:05:11.376Z] [Backend API] Requesting: GET http://localhost:5925/api/matches/69ffe3b9aa61c4aeb4761ff3
+[2026-05-12T05:05:11.382Z] [Backend API] FAILED: undefined [GET] "http://localhost:5925/api/matches/69ffe3b9aa61c4aeb4761ff3": <no response> fetch failed URL: http://localhost:5925/api/matches/69ffe3b9aa61c4aeb4761ff3
+[2026-05-12T05:05:11.433Z] [Backend API] Requesting: GET http://localhost:5925/api/matches/69ffe3b9aa61c4aeb4761ff3
+[2026-05-12T05:05:11.441Z] [Backend API] FAILED: undefined [GET] "http://localhost:5925/api/matches/69ffe3b9aa61c4aeb4761ff3": <no response> fetch failed URL: http://localhost:5925/api/matches/69ffe3b9aa61c4aeb4761ff3
+[2026-05-12T05:05:22.522Z] [Backend API] Requesting: POST http://localhost:5925/api/contests
+[2026-05-12T05:05:22.527Z] [Backend API] FAILED: undefined [POST] "http://localhost:5925/api/contests": <no response> fetch failed URL: http://localhost:5925/api/contests
+[2026-05-12T05:05:32.281Z] [Backend API] Requesting: GET http://localhost:5925/api/matches?limit=1000
+[2026-05-12T05:05:33.616Z] [Backend API] Requesting: GET http://localhost:5925/api/submissions?matchId=69ffe3b9aa61c4aeb4761ff3
+[2026-05-12T05:05:35.027Z] [Backend API] Requesting: GET http://localhost:5925/api/contests?matchId=69ffe3b9aa61c4aeb4761ff3
+[2026-05-12T05:05:35.099Z] [Backend API] Requesting: GET http://localhost:5925/api/contests/undefined/leaderboard
+[2026-05-12T05:05:35.111Z] [Backend API] FAILED: 500 Internal Server Error URL: http://localhost:5925/api/contests/undefined/leaderboard
+[2026-05-12T05:05:35.153Z] [Backend API] Requesting: GET http://localhost:5925/api/contests/undefined/leaderboard
+[2026-05-12T05:05:35.162Z] [Backend API] FAILED: 500 Internal Server Error URL: http://localhost:5925/api/contests/undefined/leaderboard
+[2026-05-12T05:05:35.205Z] [Backend API] Requesting: GET http://localhost:5925/api/matches/69ffe3b9aa61c4aeb4761ff3
+[2026-05-12T05:05:37.823Z] [Backend API] Requesting: GET http://localhost:5925/api/matches?limit=1000
+[2026-05-12T05:05:38.785Z] [Backend API] Requesting: GET http://localhost:5925/api/submissions?matchId=69ffe3b9aa61c4aeb4761ff3
+[2026-05-12T05:05:40.585Z] [Backend API] Requesting: GET http://localhost:5925/api/contests?matchId=69ffe3b9aa61c4aeb4761ff3
+[2026-05-12T05:05:40.657Z] [Backend API] Requesting: GET http://localhost:5925/api/contests/undefined/leaderboard
+[2026-05-12T05:05:40.666Z] [Backend API] FAILED: 500 Internal Server Error URL: http://localhost:5925/api/contests/undefined/leaderboard
+[2026-05-12T05:05:40.713Z] [Backend API] Requesting: GET http://localhost:5925/api/contests/undefined/leaderboard
+[2026-05-12T05:05:40.720Z] [Backend API] FAILED: 500 Internal Server Error URL: http://localhost:5925/api/contests/undefined/leaderboard
+[2026-05-12T05:05:40.764Z] [Backend API] Requesting: GET http://localhost:5925/api/matches/69ffe3b9aa61c4aeb4761ff3
+[2026-05-12T05:05:55.828Z] [Backend API] Requesting: GET http://localhost:5925/api/contests?matchId=69ffe3b9aa61c4aeb4761ff3
+[2026-05-12T05:05:55.940Z] [Backend API] Requesting: GET http://localhost:5925/api/contests/undefined/leaderboard
+[2026-05-12T05:05:55.948Z] [Backend API] FAILED: 500 Internal Server Error URL: http://localhost:5925/api/contests/undefined/leaderboard
+[2026-05-12T05:05:55.975Z] [Backend API] Requesting: GET http://localhost:5925/api/contests?matchId=69ffe3b9aa61c4aeb4761ff3
+[2026-05-12T05:05:55.992Z] [Backend API] Requesting: GET http://localhost:5925/api/contests/undefined/leaderboard
+[2026-05-12T05:05:56.000Z] [Backend API] FAILED: 500 Internal Server Error URL: http://localhost:5925/api/contests/undefined/leaderboard
+[2026-05-12T05:05:56.031Z] [Backend API] Requesting: GET http://localhost:5925/api/matches/69ffe3b9aa61c4aeb4761ff3
+[2026-05-12T05:05:56.049Z] [Backend API] Requesting: GET http://localhost:5925/api/contests/undefined/leaderboard
+[2026-05-12T05:05:56.054Z] [Backend API] FAILED: 500 Internal Server Error URL: http://localhost:5925/api/contests/undefined/leaderboard
+[2026-05-12T05:05:56.088Z] [Backend API] Requesting: GET http://localhost:5925/api/contests/undefined/leaderboard
+[2026-05-12T05:05:56.095Z] [Backend API] FAILED: 500 Internal Server Error URL: http://localhost:5925/api/contests/undefined/leaderboard
+[2026-05-12T05:05:56.194Z] [Backend API] Requesting: GET http://localhost:5925/api/matches/69ffe3b9aa61c4aeb4761ff3
+[2026-05-12T05:06:08.241Z] [Backend API] Requesting: DELETE http://localhost:5925/api/contests/undefined?
+[2026-05-12T05:06:08.320Z] [Backend API] FAILED: 500 Internal Server Error URL: http://localhost:5925/api/contests/undefined?
+[2026-05-12T05:08:30.657Z] [Backend API] Requesting: DELETE http://localhost:5925/api/contests/undefined?
+[2026-05-12T05:08:34.081Z] [Backend API] FAILED: 500 Internal Server Error URL: http://localhost:5925/api/contests/undefined?
+[2026-05-12T05:23:18.667Z] [Backend API] Requesting: POST http://localhost:5925/api/auth/admin/login
+[2026-05-12T05:23:21.838Z] [Backend API] Requesting: GET http://localhost:5925/api/dashboard/stats
+[2026-05-12T05:23:27.320Z] [Backend API] Requesting: GET http://localhost:5925/api/matches?limit=1000
+[2026-05-12T05:23:35.917Z] [Backend API] Requesting: GET http://localhost:5925/api/matches?limit=1000
+[2026-05-12T05:23:39.133Z] [Backend API] Requesting: GET http://localhost:5925/api/submissions?matchId=69ffe3b9aa61c4aeb4761ff3
+[2026-05-12T05:23:40.884Z] [Backend API] Requesting: GET http://localhost:5925/api/contests?matchId=69ffe3b9aa61c4aeb4761ff3
+[2026-05-12T05:23:41.108Z] [Backend API] Requesting: GET http://localhost:5925/api/contests/6a02b369ed17fa6b7089b42a/leaderboard
+[2026-05-12T05:23:41.477Z] [Backend API] Requesting: GET http://localhost:5925/api/matches/69ffe3b9aa61c4aeb4761ff3
+[2026-05-12T05:23:44.123Z] [Backend API] Requesting: DELETE http://localhost:5925/api/contests/6a02b369ed17fa6b7089b42a
+[2026-05-12T05:23:44.462Z] [Backend API] FAILED: 500 Internal Server Error URL: http://localhost:5925/api/contests/6a02b369ed17fa6b7089b42a
+[2026-05-12T05:24:04.333Z] [Backend API] Requesting: GET http://localhost:5925/api/contests?matchId=69ffe3b9aa61c4aeb4761ff3
+[2026-05-12T05:24:04.532Z] [Backend API] Requesting: GET http://localhost:5925/api/contests/6a02b369ed17fa6b7089b42a/leaderboard
+[2026-05-12T05:24:04.704Z] [Backend API] Requesting: GET http://localhost:5925/api/matches/69ffe3b9aa61c4aeb4761ff3
+[2026-05-12T05:24:10.608Z] [Backend API] Requesting: DELETE http://localhost:5925/api/contests/6a02b369ed17fa6b7089b42a
+[2026-05-12T05:24:11.423Z] [Backend API] FAILED: 500 Internal Server Error URL: http://localhost:5925/api/contests/6a02b369ed17fa6b7089b42a
+[2026-05-12T05:24:21.095Z] [Backend API] Requesting: DELETE http://localhost:5925/api/contests/6a02b369ed17fa6b7089b42a
+[2026-05-12T05:24:21.617Z] [Backend API] FAILED: 500 Internal Server Error URL: http://localhost:5925/api/contests/6a02b369ed17fa6b7089b42a
+[2026-05-12T05:25:11.096Z] [Backend API] Requesting: POST http://localhost:5925/api/contests/6a02b369ed17fa6b7089b42a/pay
+[2026-05-12T05:25:11.106Z] [Backend API] FAILED: 404 Not Found URL: http://localhost:5925/api/contests/6a02b369ed17fa6b7089b42a/pay
+[2026-05-12T05:25:48.175Z] [Backend API] Requesting: DELETE http://localhost:5925/api/contests/6a02b369ed17fa6b7089b42a
+[2026-05-12T05:26:01.220Z] [Backend API] Requesting: POST http://localhost:5925/api/contests
+[2026-05-12T05:34:55.686Z] [Backend API] Requesting: POST http://localhost:5925/api/auth/admin/login
+[2026-05-12T05:34:58.716Z] [Backend API] Requesting: GET http://localhost:5925/api/dashboard/stats
+[2026-05-12T05:35:01.496Z] [Backend API] Requesting: GET http://localhost:5925/api/matches?limit=1000
+[2026-05-12T05:46:03.453Z] [Backend API] Requesting: POST http://localhost:5925/api/auth/admin/login
+[2026-05-12T05:46:09.801Z] [Backend API] Requesting: GET http://localhost:5925/api/dashboard/stats
+[2026-05-12T05:46:12.907Z] [Backend API] Requesting: GET http://localhost:5925/api/matches?limit=1000
+[2026-05-12T05:46:20.334Z] [Backend API] Requesting: GET http://localhost:5925/api/matches?limit=1000
+[2026-05-12T05:46:22.702Z] [Backend API] Requesting: GET http://localhost:5925/api/submissions?matchId=69ffe3b9aa61c4aeb4761ff3
+[2026-05-12T05:46:24.091Z] [Backend API] Requesting: GET http://localhost:5925/api/contests?matchId=69ffe3b9aa61c4aeb4761ff3
+[2026-05-12T05:46:24.323Z] [Backend API] Requesting: GET http://localhost:5925/api/contests/6a02b9e946e77720dbfff41b/leaderboard
+[2026-05-12T05:46:25.106Z] [Backend API] Requesting: GET http://localhost:5925/api/matches/69ffe3b9aa61c4aeb4761ff3
+[2026-05-12T05:52:09.274Z] [Backend API] Requesting: POST http://localhost:5925/api/auth/admin/login
+[2026-05-12T05:52:10.928Z] [Backend API] Requesting: GET http://localhost:5925/api/dashboard/stats
+[2026-05-12T05:52:13.093Z] [Backend API] Requesting: GET http://localhost:5925/api/matches?limit=1000
+[2026-05-12T05:52:22.463Z] [Backend API] Requesting: GET http://localhost:5925/api/matches?limit=1000
+[2026-05-12T05:52:24.307Z] [Backend API] Requesting: GET http://localhost:5925/api/submissions?matchId=69ffe3b9aa61c4aeb4761ff3
+[2026-05-12T05:52:25.473Z] [Backend API] Requesting: GET http://localhost:5925/api/contests?matchId=69ffe3b9aa61c4aeb4761ff3
+[2026-05-12T05:52:25.597Z] [Backend API] Requesting: GET http://localhost:5925/api/contests/6a02b9e946e77720dbfff41b/leaderboard
+[2026-05-12T05:52:26.295Z] [Backend API] Requesting: GET http://localhost:5925/api/matches/69ffe3b9aa61c4aeb4761ff3
+[2026-05-12T05:52:28.810Z] [Backend API] Requesting: DELETE http://localhost:5925/api/contests/6a02b9e946e77720dbfff41b
+[2026-05-12T05:52:33.456Z] [Backend API] Requesting: POST http://localhost:5925/api/contests
+[2026-05-12T05:53:03.300Z] [Backend API] Requesting: POST http://localhost:5925/api/contests/6a02c021c0cdbb676a49ab37/points
+[2026-05-12T05:53:03.309Z] [Backend API] FAILED: 404 Not Found URL: http://localhost:5925/api/contests/6a02c021c0cdbb676a49ab37/points
+[2026-05-12T05:53:08.972Z] [Backend API] Requesting: GET http://localhost:5925/api/matches?limit=1000
+[2026-05-12T05:53:11.611Z] [Backend API] Requesting: GET http://localhost:5925/api/submissions?matchId=69ffe3b9aa61c4aeb4761ff3
+[2026-05-12T05:53:13.775Z] [Backend API] Requesting: GET http://localhost:5925/api/contests?matchId=69ffe3b9aa61c4aeb4761ff3
+[2026-05-12T05:53:13.881Z] [Backend API] Requesting: GET http://localhost:5925/api/contests/6a02c021c0cdbb676a49ab37/leaderboard
+[2026-05-12T05:53:14.190Z] [Backend API] Requesting: GET http://localhost:5925/api/matches/69ffe3b9aa61c4aeb4761ff3
+[2026-05-12T08:17:35.976Z] [Backend API] Requesting: POST http://localhost:5925/api/auth/admin/login
+[2026-05-12T08:17:38.279Z] [Backend API] Requesting: GET http://localhost:5925/api/dashboard/stats
+[2026-05-12T08:17:40.295Z] [Backend API] Requesting: GET http://localhost:5925/api/matches?limit=1000
+[2026-05-12T08:17:43.858Z] [Backend API] Requesting: GET http://localhost:5925/api/matches?limit=1000
+[2026-05-12T08:17:44.709Z] [Backend API] Requesting: GET http://localhost:5925/api/submissions?matchId=69ffe3b9aa61c4aeb4761ff3
+[2026-05-12T08:17:45.977Z] [Backend API] Requesting: GET http://localhost:5925/api/contests?matchId=69ffe3b9aa61c4aeb4761ff3
+[2026-05-12T08:17:46.051Z] [Backend API] Requesting: GET http://localhost:5925/api/contests/6a02c021c0cdbb676a49ab37/leaderboard
+[2026-05-12T08:17:46.185Z] [Backend API] Requesting: GET http://localhost:5925/api/matches/69ffe3b9aa61c4aeb4761ff3
+[2026-05-12T08:17:53.309Z] [Backend API] Requesting: POST http://localhost:5925/api/contests/6a02c021c0cdbb676a49ab37/points
+[2026-05-12T08:17:53.643Z] [Backend API] Requesting: GET http://localhost:5925/api/contests/6a02c021c0cdbb676a49ab37/leaderboard
+[2026-05-12T08:17:57.454Z] [Backend API] Requesting: GET http://localhost:5925/api/matches?limit=1000
+[2026-05-12T08:17:58.254Z] [Backend API] Requesting: GET http://localhost:5925/api/submissions?matchId=69ffe3b9aa61c4aeb4761ff3
+[2026-05-12T08:17:59.700Z] [Backend API] Requesting: GET http://localhost:5925/api/contests?matchId=69ffe3b9aa61c4aeb4761ff3
+[2026-05-12T08:17:59.771Z] [Backend API] Requesting: GET http://localhost:5925/api/contests/6a02c021c0cdbb676a49ab37/leaderboard
+[2026-05-12T08:17:59.901Z] [Backend API] Requesting: GET http://localhost:5925/api/matches/69ffe3b9aa61c4aeb4761ff3
+[2026-05-12T13:15:21.533Z] [Backend API] Requesting: GET http://localhost:5925/api/contests?matchId=69ffe3b9aa61c4aeb4761ff3
+[2026-05-12T13:15:21.657Z] [Backend API] Requesting: GET http://localhost:5925/api/contests/6a02c021c0cdbb676a49ab37/leaderboard
+[2026-05-12T13:15:21.792Z] [Backend API] Requesting: GET http://localhost:5925/api/matches/69ffe3b9aa61c4aeb4761ff3
+[2026-05-12T13:15:36.964Z] [Backend API] Requesting: GET http://localhost:5925/api/dashboard/stats
+[2026-05-12T13:15:39.660Z] [Backend API] Requesting: GET http://localhost:5925/api/matches?limit=1000
+[2026-05-12T13:15:47.937Z] [Backend API] Requesting: GET http://localhost:5925/api/matches?limit=1000
+[2026-05-12T13:15:49.571Z] [Backend API] Requesting: GET http://localhost:5925/api/submissions?matchId=69ffe3b9aa61c4aeb4761ff3
+[2026-05-12T13:15:51.236Z] [Backend API] Requesting: GET http://localhost:5925/api/contests?matchId=69ffe3b9aa61c4aeb4761ff3
+[2026-05-12T13:15:51.304Z] [Backend API] Requesting: GET http://localhost:5925/api/contests/6a02c021c0cdbb676a49ab37/leaderboard
+[2026-05-12T13:15:51.438Z] [Backend API] Requesting: GET http://localhost:5925/api/matches/69ffe3b9aa61c4aeb4761ff3
+[2026-05-12T13:18:43.497Z] [Backend API] Requesting: GET http://localhost:5925/api/contests?matchId=69ffe3b9aa61c4aeb4761ff3
+[2026-05-12T13:18:43.615Z] [Backend API] Requesting: GET http://localhost:5925/api/contests?matchId=69ffe3b9aa61c4aeb4761ff3
+[2026-05-12T13:18:43.624Z] [Backend API] Requesting: GET http://localhost:5925/api/contests/6a02c021c0cdbb676a49ab37/leaderboard
+[2026-05-12T13:18:43.698Z] [Backend API] Requesting: GET http://localhost:5925/api/contests?matchId=69ffe3b9aa61c4aeb4761ff3
+[2026-05-12T13:18:43.774Z] [Backend API] Requesting: GET http://localhost:5925/api/contests/6a02c021c0cdbb676a49ab37/leaderboard
+[2026-05-12T13:18:43.782Z] [Backend API] Requesting: GET http://localhost:5925/api/matches/69ffe3b9aa61c4aeb4761ff3
+[2026-05-12T13:18:43.918Z] [Backend API] Requesting: GET http://localhost:5925/api/contests/6a02c021c0cdbb676a49ab37/leaderboard
+[2026-05-12T13:18:44.011Z] [Backend API] Requesting: GET http://localhost:5925/api/contests?matchId=69ffe3b9aa61c4aeb4761ff3
+[2026-05-12T13:18:44.150Z] [Backend API] Requesting: GET http://localhost:5925/api/contests/6a02c021c0cdbb676a49ab37/leaderboard
+[2026-05-12T13:18:44.212Z] [Backend API] Requesting: GET http://localhost:5925/api/matches/69ffe3b9aa61c4aeb4761ff3
+[2026-05-12T13:18:44.390Z] [Backend API] Requesting: GET http://localhost:5925/api/matches/69ffe3b9aa61c4aeb4761ff3
+[2026-05-12T13:18:44.510Z] [Backend API] Requesting: GET http://localhost:5925/api/matches/69ffe3b9aa61c4aeb4761ff3
+[2026-05-12T13:18:58.199Z] [Backend API] Requesting: POST http://localhost:5925/api/contests/6a02c021c0cdbb676a49ab37/points
+[2026-05-12T13:18:58.493Z] [Backend API] Requesting: GET http://localhost:5925/api/contests/6a02c021c0cdbb676a49ab37/leaderboard
+[2026-05-12T13:19:23.528Z] [Backend API] Requesting: GET http://localhost:5925/api/contests/6a02c021c0cdbb676a49ab37/leaderboard
+[2026-05-12T13:19:24.839Z] [Backend API] Requesting: GET http://localhost:5925/api/contests/6a02c021c0cdbb676a49ab37/leaderboard
+[2026-05-12T13:19:25.033Z] [Backend API] Requesting: GET http://localhost:5925/api/contests/6a02c021c0cdbb676a49ab37/leaderboard
+[2026-05-12T13:19:25.286Z] [Backend API] Requesting: GET http://localhost:5925/api/contests/6a02c021c0cdbb676a49ab37/leaderboard
+[2026-05-12T13:19:25.509Z] [Backend API] Requesting: GET http://localhost:5925/api/contests/6a02c021c0cdbb676a49ab37/leaderboard
+[2026-05-12T13:19:32.798Z] [Backend API] Requesting: GET http://localhost:5925/api/matches?limit=1000
+[2026-05-12T13:19:36.828Z] [Backend API] Requesting: GET http://localhost:5925/api/submissions?matchId=69ffe3b9aa61c4aeb4761ff3
+[2026-05-12T13:19:38.706Z] [Backend API] Requesting: GET http://localhost:5925/api/contests?matchId=69ffe3b9aa61c4aeb4761ff3
+[2026-05-12T13:19:38.820Z] [Backend API] Requesting: GET http://localhost:5925/api/contests/6a02c021c0cdbb676a49ab37/leaderboard
+[2026-05-12T13:19:38.962Z] [Backend API] Requesting: GET http://localhost:5925/api/matches/69ffe3b9aa61c4aeb4761ff3
+[2026-05-12T13:22:48.779Z] [Backend API] Requesting: GET http://localhost:5925/api/contests?matchId=69ffe3b9aa61c4aeb4761ff3
+[2026-05-12T13:22:48.868Z] [Backend API] Requesting: GET http://localhost:5925/api/contests?matchId=69ffe3b9aa61c4aeb4761ff3
+[2026-05-12T13:22:48.877Z] [Backend API] Requesting: GET http://localhost:5925/api/contests/6a02c021c0cdbb676a49ab37/leaderboard
+[2026-05-12T13:22:48.950Z] [Backend API] Requesting: GET http://localhost:5925/api/contests?matchId=69ffe3b9aa61c4aeb4761ff3
+[2026-05-12T13:22:48.995Z] [Backend API] Requesting: GET http://localhost:5925/api/contests/6a02c021c0cdbb676a49ab37/leaderboard
+[2026-05-12T13:22:49.003Z] [Backend API] Requesting: GET http://localhost:5925/api/matches/69ffe3b9aa61c4aeb4761ff3
+[2026-05-12T13:22:49.064Z] [Backend API] Requesting: GET http://localhost:5925/api/contests?matchId=69ffe3b9aa61c4aeb4761ff3
+[2026-05-12T13:22:49.120Z] [Backend API] Requesting: GET http://localhost:5925/api/contests/6a02c021c0cdbb676a49ab37/leaderboard
+[2026-05-12T13:22:49.138Z] [Backend API] Requesting: GET http://localhost:5925/api/matches/69ffe3b9aa61c4aeb4761ff3
+[2026-05-12T13:22:49.263Z] [Backend API] Requesting: GET http://localhost:5925/api/contests/6a02c021c0cdbb676a49ab37/leaderboard
+[2026-05-12T13:22:49.270Z] [Backend API] Requesting: GET http://localhost:5925/api/matches/69ffe3b9aa61c4aeb4761ff3
+[2026-05-12T13:22:49.405Z] [Backend API] Requesting: GET http://localhost:5925/api/matches/69ffe3b9aa61c4aeb4761ff3
+[2026-05-12T13:23:00.841Z] [Backend API] Requesting: GET http://localhost:5925/api/contests/6a02c021c0cdbb676a49ab37/leaderboard
+[2026-05-12T13:23:03.748Z] [Backend API] Requesting: GET http://localhost:5925/api/contests/6a02c021c0cdbb676a49ab37/leaderboard
+[2026-05-12T13:23:25.343Z] [Backend API] Requesting: GET http://localhost:5925/api/contests/6a02c021c0cdbb676a49ab37/leaderboard
+[2026-05-12T13:23:52.509Z] [Backend API] Requesting: GET http://localhost:5925/api/contests?matchId=69ffe3b9aa61c4aeb4761ff3
+[2026-05-12T13:23:52.670Z] [Backend API] Requesting: GET http://localhost:5925/api/contests/6a02c021c0cdbb676a49ab37/leaderboard
+[2026-05-12T13:23:52.832Z] [Backend API] Requesting: GET http://localhost:5925/api/matches/69ffe3b9aa61c4aeb4761ff3
+[2026-05-12T13:24:13.518Z] [Backend API] Requesting: GET http://localhost:5925/api/contests?matchId=69ffe3b9aa61c4aeb4761ff3
+[2026-05-12T13:24:13.673Z] [Backend API] Requesting: GET http://localhost:5925/api/contests/6a02c021c0cdbb676a49ab37/leaderboard
+[2026-05-12T13:24:13.823Z] [Backend API] Requesting: GET http://localhost:5925/api/matches/69ffe3b9aa61c4aeb4761ff3
+[2026-05-12T13:25:10.932Z] [Backend API] Requesting: GET http://localhost:5925/api/contests?matchId=69ffe3b9aa61c4aeb4761ff3
+[2026-05-12T13:25:11.350Z] [Backend API] Requesting: GET http://localhost:5925/api/contests/6a02c021c0cdbb676a49ab37/leaderboard
+[2026-05-12T13:25:11.536Z] [Backend API] Requesting: GET http://localhost:5925/api/matches/69ffe3b9aa61c4aeb4761ff3
+[2026-05-12T13:25:11.981Z] [Backend API] Requesting: GET http://localhost:5925/api/contests?matchId=69ffe3b9aa61c4aeb4761ff3
+[2026-05-12T13:25:12.071Z] [Backend API] Requesting: GET http://localhost:5925/api/contests/6a02c021c0cdbb676a49ab37/leaderboard
+[2026-05-12T13:25:12.227Z] [Backend API] Requesting: GET http://localhost:5925/api/matches/69ffe3b9aa61c4aeb4761ff3
+[2026-05-12T13:26:13.891Z] [Backend API] Requesting: GET http://localhost:5925/api/contests?matchId=69ffe3b9aa61c4aeb4761ff3
+[2026-05-12T13:26:13.995Z] [Backend API] Requesting: GET http://localhost:5925/api/contests?matchId=69ffe3b9aa61c4aeb4761ff3
+[2026-05-12T13:26:14.002Z] [Backend API] Requesting: GET http://localhost:5925/api/contests/6a02c021c0cdbb676a49ab37/leaderboard
+[2026-05-12T13:26:14.142Z] [Backend API] Requesting: GET http://localhost:5925/api/matches/69ffe3b9aa61c4aeb4761ff3
+[2026-05-12T13:26:14.397Z] [Backend API] Requesting: GET http://localhost:5925/api/contests/6a02c021c0cdbb676a49ab37/leaderboard
+[2026-05-12T13:26:14.553Z] [Backend API] Requesting: GET http://localhost:5925/api/matches/69ffe3b9aa61c4aeb4761ff3
+[2026-05-12T13:28:37.222Z] [Backend API] Requesting: GET http://localhost:5925/api/matches?limit=1000
+[2026-05-12T13:28:37.235Z] [Backend API] FAILED: undefined [GET] "http://localhost:5925/api/matches?limit=1000": <no response> fetch failed URL: http://localhost:5925/api/matches?limit=1000
+[2026-05-12T13:28:37.312Z] [Backend API] Requesting: GET http://localhost:5925/api/matches?limit=1000
+[2026-05-12T13:28:40.678Z] [Backend API] FAILED: undefined [GET] "http://localhost:5925/api/matches?limit=1000": <no response> fetch failed URL: http://localhost:5925/api/matches?limit=1000
+[2026-05-12T13:28:41.737Z] [Backend API] Requesting: GET http://localhost:5925/api/matches?limit=1000
+[2026-05-12T13:28:41.745Z] [Backend API] FAILED: undefined [GET] "http://localhost:5925/api/matches?limit=1000": <no response> fetch failed URL: http://localhost:5925/api/matches?limit=1000
+[2026-05-12T13:28:41.802Z] [Backend API] Requesting: GET http://localhost:5925/api/matches?limit=1000
+[2026-05-12T13:28:41.810Z] [Backend API] FAILED: undefined [GET] "http://localhost:5925/api/matches?limit=1000": <no response> fetch failed URL: http://localhost:5925/api/matches?limit=1000
+[2026-05-12T13:28:43.864Z] [Backend API] Requesting: GET http://localhost:5925/api/matches?limit=1000
+[2026-05-12T13:28:43.872Z] [Backend API] FAILED: undefined [GET] "http://localhost:5925/api/matches?limit=1000": <no response> fetch failed URL: http://localhost:5925/api/matches?limit=1000
+[2026-05-12T13:28:43.921Z] [Backend API] Requesting: GET http://localhost:5925/api/matches?limit=1000
+[2026-05-12T13:28:43.928Z] [Backend API] FAILED: undefined [GET] "http://localhost:5925/api/matches?limit=1000": <no response> fetch failed URL: http://localhost:5925/api/matches?limit=1000
+[2026-05-12T13:28:49.210Z] [Backend API] Requesting: GET http://localhost:5925/api/matches?limit=1000
+[2026-05-12T13:28:56.152Z] [Backend API] Requesting: GET http://localhost:5925/api/contests?matchId=69ffe3b9aa61c4aeb4761ff3
+[2026-05-12T13:28:56.254Z] [Backend API] Requesting: GET http://localhost:5925/api/contests/6a02c021c0cdbb676a49ab37/leaderboard
+[2026-05-12T13:28:56.381Z] [Backend API] Requesting: GET http://localhost:5925/api/matches/69ffe3b9aa61c4aeb4761ff3
+[2026-05-12T13:28:56.969Z] [Backend API] Requesting: GET http://localhost:5925/api/contests?matchId=69ffe3b9aa61c4aeb4761ff3
+[2026-05-12T13:28:57.058Z] [Backend API] Requesting: GET http://localhost:5925/api/contests/6a02c021c0cdbb676a49ab37/leaderboard
+[2026-05-12T13:28:57.225Z] [Backend API] Requesting: GET http://localhost:5925/api/matches/69ffe3b9aa61c4aeb4761ff3
+[2026-05-12T13:29:01.974Z] [Backend API] Requesting: GET http://localhost:5925/api/matches?limit=1000
+[2026-05-12T13:29:04.865Z] [Backend API] Requesting: GET http://localhost:5925/api/submissions?matchId=69ffe3b9aa61c4aeb4761ff3
+[2026-05-12T13:29:05.430Z] [Backend API] Requesting: GET http://localhost:5925/api/contests?matchId=69ffe3b9aa61c4aeb4761ff3
+[2026-05-12T13:29:05.514Z] [Backend API] Requesting: GET http://localhost:5925/api/contests/6a02c021c0cdbb676a49ab37/leaderboard
+[2026-05-12T13:29:05.667Z] [Backend API] Requesting: GET http://localhost:5925/api/matches/69ffe3b9aa61c4aeb4761ff3
+[2026-05-12T13:29:05.966Z] [Backend API] Requesting: GET http://localhost:5925/api/contests?matchId=69ffe3b9aa61c4aeb4761ff3
+[2026-05-12T13:29:06.050Z] [Backend API] Requesting: GET http://localhost:5925/api/contests/6a02c021c0cdbb676a49ab37/leaderboard
+[2026-05-12T13:29:06.575Z] [Backend API] Requesting: GET http://localhost:5925/api/matches/69ffe3b9aa61c4aeb4761ff3
+[2026-05-12T13:29:09.545Z] [Backend API] Requesting: GET http://localhost:5925/api/contests?matchId=69ffe3b9aa61c4aeb4761ff3
+[2026-05-12T13:29:09.648Z] [Backend API] Requesting: GET http://localhost:5925/api/contests/6a02c021c0cdbb676a49ab37/leaderboard
+[2026-05-12T13:29:09.819Z] [Backend API] Requesting: GET http://localhost:5925/api/matches/69ffe3b9aa61c4aeb4761ff3
+[2026-05-12T13:29:43.596Z] [Backend API] Requesting: POST http://localhost:5925/api/contests/6a02c021c0cdbb676a49ab37/points
+[2026-05-12T13:29:44.302Z] [Backend API] Requesting: GET http://localhost:5925/api/contests/6a02c021c0cdbb676a49ab37/leaderboard
+[2026-05-12T13:29:54.805Z] [Backend API] Requesting: GET http://localhost:5925/api/matches?limit=1000
+[2026-05-12T13:30:00.224Z] [Backend API] Requesting: GET http://localhost:5925/api/submissions?matchId=69ffe3b9aa61c4aeb4761ff3
+[2026-05-12T13:30:02.815Z] [Backend API] Requesting: GET http://localhost:5925/api/contests?matchId=69ffe3b9aa61c4aeb4761ff3
+[2026-05-12T13:30:02.885Z] [Backend API] Requesting: GET http://localhost:5925/api/contests/6a02c021c0cdbb676a49ab37/leaderboard
+[2026-05-12T13:30:03.046Z] [Backend API] Requesting: GET http://localhost:5925/api/matches/69ffe3b9aa61c4aeb4761ff3
+[2026-05-12T13:30:11.057Z] [Backend API] Requesting: GET http://localhost:5925/api/matches?limit=1000
+[2026-05-12T13:30:12.454Z] [Backend API] Requesting: GET http://localhost:5925/api/matches?limit=1000
+[2026-05-12T13:30:16.276Z] [Backend API] Requesting: GET http://localhost:5925/api/matches?limit=1000
+[2026-05-12T13:30:17.768Z] [Backend API] Requesting: GET http://localhost:5925/api/submissions?matchId=69ffe3b9aa61c4aeb4761ff3
+[2026-05-12T13:30:19.689Z] [Backend API] Requesting: GET http://localhost:5925/api/contests?matchId=69ffe3b9aa61c4aeb4761ff3
+[2026-05-12T13:30:19.786Z] [Backend API] Requesting: GET http://localhost:5925/api/contests/6a02c021c0cdbb676a49ab37/leaderboard
+[2026-05-12T13:30:19.948Z] [Backend API] Requesting: GET http://localhost:5925/api/matches/69ffe3b9aa61c4aeb4761ff3
+[2026-05-12T13:30:27.636Z] [Backend API] Requesting: GET http://localhost:5925/api/matches?limit=1000
+[2026-05-12T13:30:29.559Z] [Backend API] Requesting: GET http://localhost:5925/api/matches?limit=1000
+[2026-05-12T13:30:33.241Z] [Backend API] Requesting: GET http://localhost:5925/api/matches?limit=1000
+[2026-05-12T13:30:35.263Z] [Backend API] Requesting: GET http://localhost:5925/api/submissions?matchId=69ffe3b9aa61c4aeb4761ff3
+[2026-05-12T13:30:36.997Z] [Backend API] Requesting: GET http://localhost:5925/api/contests?matchId=69ffe3b9aa61c4aeb4761ff3
+[2026-05-12T13:30:37.077Z] [Backend API] Requesting: GET http://localhost:5925/api/contests/6a02c021c0cdbb676a49ab37/leaderboard
+[2026-05-12T13:30:37.192Z] [Backend API] Requesting: GET http://localhost:5925/api/matches/69ffe3b9aa61c4aeb4761ff3
+[2026-05-12T13:30:39.597Z] [Backend API] Requesting: GET http://localhost:5925/api/matches?limit=1000
+[2026-05-12T13:30:40.836Z] [Backend API] Requesting: GET http://localhost:5925/api/matches?limit=1000
+[2026-05-12T13:30:43.703Z] [Backend API] Requesting: GET http://localhost:5925/api/matches?limit=1000
+[2026-05-12T13:30:45.293Z] [Backend API] Requesting: GET http://localhost:5925/api/submissions?matchId=6a0328faaa61c4aeb47738b5
+[2026-05-12T13:30:46.664Z] [Backend API] Requesting: GET http://localhost:5925/api/contests?matchId=6a0328faaa61c4aeb47738b5
+[2026-05-12T13:30:46.739Z] [Backend API] Requesting: GET http://localhost:5925/api/matches/6a0328faaa61c4aeb47738b5
+[2026-05-12T13:30:49.790Z] [Backend API] Requesting: GET http://localhost:5925/api/matches?limit=1000
+[2026-05-12T13:30:52.325Z] [Backend API] Requesting: GET http://localhost:5925/api/matches?limit=1000
+[2026-05-12T13:30:58.683Z] [Backend API] Requesting: GET http://localhost:5925/api/matches?limit=1000
+[2026-05-12T13:31:01.327Z] [Backend API] Requesting: GET http://localhost:5925/api/submissions?matchId=69ffe3b9aa61c4aeb4761ff3
+[2026-05-12T13:31:10.429Z] [Backend API] Requesting: GET http://localhost:5925/api/submissions/6a00f8deaa61c4aeb476742e
+[2026-05-12T13:31:15.748Z] [Backend API] Requesting: GET http://localhost:5925/api/matches?limit=1000
+[2026-05-12T13:31:17.935Z] [Backend API] Requesting: GET http://localhost:5925/api/submissions?matchId=69ffe3b9aa61c4aeb4761ff3
+[2026-05-12T13:31:22.481Z] [Backend API] Requesting: GET http://localhost:5925/api/users?
+[2026-05-12T13:31:29.280Z] [Backend API] Requesting: GET http://localhost:5925/api/users/6a008d989cafa6003c6f5930
+[2026-05-12T13:31:29.631Z] [Backend API] Requesting: GET http://localhost:5925/api/users/6a008d989cafa6003c6f5930
+[2026-05-12T13:31:37.980Z] [Backend API] Requesting: GET http://localhost:5925/api/users?
+[2026-05-12T13:31:40.939Z] [Backend API] Requesting: GET http://localhost:5925/api/matches?limit=1000
+[2026-05-12T13:31:44.841Z] [Backend API] Requesting: GET http://localhost:5925/api/matches?limit=1000
+[2026-05-12T13:31:47.092Z] [Backend API] Requesting: GET http://localhost:5925/api/submissions?matchId=69ffe3b9aa61c4aeb4761ff3
+[2026-05-12T13:31:49.470Z] [Backend API] Requesting: GET http://localhost:5925/api/contests?matchId=69ffe3b9aa61c4aeb4761ff3
+[2026-05-12T13:31:49.566Z] [Backend API] Requesting: GET http://localhost:5925/api/contests/6a02c021c0cdbb676a49ab37/leaderboard
+[2026-05-12T13:31:49.712Z] [Backend API] Requesting: GET http://localhost:5925/api/matches/69ffe3b9aa61c4aeb4761ff3
+[2026-05-12T13:32:01.897Z] [Backend API] Requesting: GET http://localhost:5925/api/matches?limit=1000
+[2026-05-12T13:32:06.310Z] [Backend API] Requesting: GET http://localhost:5925/api/submissions?matchId=69ffe3b9aa61c4aeb4761ff3
+[2026-05-12T13:32:51.450Z] [Backend API] Requesting: GET http://localhost:5925/api/matches?limit=1000
+[2026-05-12T13:33:41.194Z] [Backend API] Requesting: GET http://localhost:5925/api/teams?
+[2026-05-12T13:33:46.742Z] [Backend API] Requesting: GET http://localhost:5925/api/players?
+[2026-05-12T13:59:44.776Z] [Backend API] Requesting: GET http://localhost:5925/api/players?
+[2026-05-12T13:59:48.899Z] [Backend API] Requesting: GET http://localhost:5925/api/players?search=g
+[2026-05-12T13:59:49.678Z] [Backend API] Requesting: GET http://localhost:5925/api/players?search=gill
+[2026-05-12T14:00:16.687Z] [Backend API] Requesting: PUT http://localhost:5925/api/players/6936e3287c5561aa39a6c22b
+[2026-05-12T14:00:46.917Z] [Backend API] Requesting: GET http://localhost:5925/api/players?
+[2026-05-12T14:00:51.281Z] [Backend API] Requesting: GET http://localhost:5925/api/players?
+[2026-05-12T14:00:52.657Z] [Backend API] Requesting: GET http://localhost:5925/api/players?search=gill
+[2026-05-12T14:01:35.644Z] [Backend API] Requesting: GET http://localhost:5925/api/matches?limit=1000
+[2026-05-12T14:01:36.475Z] [Backend API] Requesting: GET http://localhost:5925/api/teams?
+[2026-05-12T14:01:37.581Z] [Backend API] Requesting: GET http://localhost:5925/api/players?
+[2026-05-12T14:01:40.706Z] [Backend API] Requesting: GET http://localhost:5925/api/players?search=gill
+[2026-05-12T14:01:46.180Z] [Backend API] Requesting: PUT http://localhost:5925/api/players/6936e3287c5561aa39a6c22b
+[2026-05-12T14:01:46.635Z] [Backend API] Requesting: GET http://localhost:5925/api/players?
+[2026-05-12T14:01:51.119Z] [Backend API] Requesting: GET http://localhost:5925/api/players?
+[2026-05-12T14:01:52.727Z] [Backend API] Requesting: GET http://localhost:5925/api/players?search=gill
+[2026-05-12T14:01:58.426Z] [Backend API] Requesting: GET http://localhost:5925/api/quizzes?
+[2026-05-12T14:01:59.903Z] [Backend API] Requesting: GET http://localhost:5925/api/players?
+[2026-05-12T14:02:22.845Z] [Backend API] Requesting: GET http://localhost:5925/api/players?
+[2026-05-12T14:02:25.348Z] [Backend API] Requesting: GET http://localhost:5925/api/players?search=gill
+[2026-05-12T14:02:29.938Z] [Backend API] Requesting: PUT http://localhost:5925/api/players/6936e3287c5561aa39a6c22b
+[2026-05-12T14:02:30.058Z] [Backend API] Requesting: GET http://localhost:5925/api/players?
+[2026-05-12T14:02:32.722Z] [Backend API] Requesting: GET http://localhost:5925/api/players?
+[2026-05-12T14:02:33.769Z] [Backend API] Requesting: GET http://localhost:5925/api/players?search=gill
+[2026-05-12T14:03:38.639Z] [Backend API] Requesting: GET http://localhost:5925/api/players?
+[2026-05-12T14:03:40.862Z] [Backend API] Requesting: GET http://localhost:5925/api/players?search=gill
+[2026-05-12T14:03:45.491Z] [Backend API] Requesting: PUT http://localhost:5925/api/players/6936e3287c5561aa39a6c22b
+[2026-05-12T14:03:45.697Z] [Backend API] Requesting: GET http://localhost:5925/api/players?
+[2026-05-12T14:03:48.588Z] [Backend API] Requesting: GET http://localhost:5925/api/players?
+[2026-05-12T14:03:49.902Z] [Backend API] Requesting: GET http://localhost:5925/api/players?search=gill
+[2026-05-12T16:29:28.335Z] [Backend API] Requesting: GET http://localhost:5925/api/players?
+[2026-05-12T16:29:28.735Z] [Backend API] Requesting: GET http://localhost:5925/api/matches?limit=1000
+[2026-05-12T16:29:30.129Z] [Backend API] Requesting: GET http://localhost:5925/api/players?
+[2026-05-12T16:29:32.495Z] [Backend API] Requesting: GET http://localhost:5925/api/players?search=gi
+[2026-05-12T16:29:32.987Z] [Backend API] Requesting: GET http://localhost:5925/api/players?search=gill
+[2026-05-12T16:29:41.092Z] [Backend API] Requesting: GET http://localhost:5925/api/players?
+[2026-05-12T16:29:43.915Z] [Backend API] Requesting: GET http://localhost:5925/api/players?search=bethell
+[2026-05-12T16:30:13.744Z] [Backend API] Requesting: PUT http://localhost:5925/api/players/692c13cb7c5561aa39a5cb14
+[2026-05-12T16:30:14.058Z] [Backend API] Requesting: GET http://localhost:5925/api/players?
+[2026-05-12T16:30:16.655Z] [Backend API] Requesting: GET http://localhost:5925/api/players?search=bethel
+[2026-05-12T16:30:16.975Z] [Backend API] Requesting: GET http://localhost:5925/api/players?search=bethe
+[2026-05-12T16:30:18.405Z] [Backend API] Requesting: GET http://localhost:5925/api/players?search=bethell
+[2026-05-12T16:35:14.297Z] [Backend API] Requesting: GET http://localhost:5925/api/players?search=vira
+[2026-05-12T16:35:14.654Z] [Backend API] Requesting: GET http://localhost:5925/api/players?search=virat
+[2026-05-12T16:35:15.914Z] [Backend API] Requesting: GET http://localhost:5925/api/players?search=vira
+[2026-05-12T16:35:16.865Z] [Backend API] Requesting: GET http://localhost:5925/api/players?
+[2026-05-12T16:35:17.483Z] [Backend API] Requesting: GET http://localhost:5925/api/players?search=c
+[2026-05-12T16:35:17.811Z] [Backend API] Requesting: GET http://localhost:5925/api/players?
+[2026-05-12T16:35:19.180Z] [Backend API] Requesting: GET http://localhost:5925/api/players?search=k
+[2026-05-12T16:35:19.961Z] [Backend API] Requesting: GET http://localhost:5925/api/players?search=ko
+[2026-05-12T16:35:21.611Z] [Backend API] Requesting: GET http://localhost:5925/api/players?
+[2026-05-12T16:35:22.901Z] [Backend API] Requesting: GET http://localhost:5925/api/players?search=v
+[2026-05-12T16:35:23.410Z] [Backend API] Requesting: GET http://localhost:5925/api/players?search=v+
+[2026-05-12T16:35:23.965Z] [Backend API] Requesting: GET http://localhost:5925/api/players?search=v+k
+[2026-05-12T16:35:29.748Z] [Backend API] Requesting: PUT http://localhost:5925/api/players/692bca717c5561aa39a5c80b
+[2026-05-12T16:35:30.237Z] [Backend API] Requesting: GET http://localhost:5925/api/players?
+[2026-05-12T16:35:32.830Z] [Backend API] Requesting: GET http://localhost:5925/api/players?search=v+
+[2026-05-12T16:35:33.502Z] [Backend API] Requesting: GET http://localhost:5925/api/players?search=v+k
+[2026-05-12T16:38:07.771Z] [Backend API] Requesting: GET http://localhost:5925/api/players?
+[2026-05-12T16:38:08.001Z] [Backend API] Requesting: GET http://localhost:5925/api/players?
+[2026-05-12T16:38:18.464Z] [Backend API] Requesting: GET http://localhost:5925/api/players?
+[2026-05-12T16:38:25.401Z] [Backend API] Requesting: GET http://localhost:5925/api/players?search=v
+[2026-05-12T16:38:25.771Z] [Backend API] Requesting: GET http://localhost:5925/api/players?search=vi
+[2026-05-12T16:38:26.376Z] [Backend API] Requesting: GET http://localhost:5925/api/players?search=vira
+[2026-05-12T16:38:26.736Z] [Backend API] Requesting: GET http://localhost:5925/api/players?search=virat
+[2026-05-12T16:38:28.642Z] [Backend API] Requesting: GET http://localhost:5925/api/players?search=v
+[2026-05-12T16:38:29.544Z] [Backend API] Requesting: GET http://localhost:5925/api/players?search=v+
+[2026-05-12T16:38:30.323Z] [Backend API] Requesting: GET http://localhost:5925/api/players?search=v+k
+[2026-05-12T16:38:35.659Z] [Backend API] Requesting: PUT http://localhost:5925/api/players/692bca717c5561aa39a5c80b
+[2026-05-12T16:38:35.806Z] [Backend API] Requesting: GET http://localhost:5925/api/players?
+[2026-05-12T16:39:35.117Z] [Backend API] Requesting: GET http://localhost:5925/api/players?
+[2026-05-12T16:39:35.848Z] [Backend API] Requesting: GET http://localhost:5925/api/players?search=t
+[2026-05-12T16:39:36.475Z] [Backend API] Requesting: GET http://localhost:5925/api/players?search=tim
+[2026-05-12T16:39:37.015Z] [Backend API] Requesting: GET http://localhost:5925/api/players?search=tim+
+[2026-05-12T16:39:38.724Z] [Backend API] Requesting: GET http://localhost:5925/api/players?search=t
+[2026-05-12T16:39:39.257Z] [Backend API] Requesting: GET http://localhost:5925/api/players?search=t+
+[2026-05-12T16:39:40.514Z] [Backend API] Requesting: GET http://localhost:5925/api/players?search=t+d
+[2026-05-12T16:39:40.835Z] [Backend API] Requesting: GET http://localhost:5925/api/players?search=t+da
+[2026-05-12T16:49:00.687Z] [Backend API] Requesting: GET http://localhost:5925/api/players?search=r+
+[2026-05-12T16:49:01.027Z] [Backend API] Requesting: GET http://localhost:5925/api/players?search=r+s
+[2026-05-12T16:49:01.429Z] [Backend API] Requesting: GET http://localhost:5925/api/players?search=r+sh
+[2026-05-12T16:49:06.613Z] [Backend API] Requesting: PUT http://localhost:5925/api/players/6937e5777c5561aa39a6eac6
+[2026-05-12T16:49:06.733Z] [Backend API] Requesting: GET http://localhost:5925/api/players?
+[2026-05-12T16:49:21.406Z] [Backend API] Requesting: GET http://localhost:5925/api/players?search=r+s
+[2026-05-12T16:49:22.014Z] [Backend API] Requesting: GET http://localhost:5925/api/players?search=r+sh
+[2026-05-12T16:49:25.305Z] [Backend API] Requesting: PUT http://localhost:5925/api/players/6937e5777c5561aa39a6eac6
+[2026-05-12T16:49:25.449Z] [Backend API] Requesting: GET http://localhost:5925/api/players?
+[2026-05-12T16:52:00.536Z] [Backend API] Requesting: GET http://localhost:5925/api/matches?limit=1000
+[2026-05-12T16:52:06.835Z] [Backend API] Requesting: GET http://localhost:5925/api/matches?limit=1000
+[2026-05-12T16:52:07.762Z] [Backend API] Requesting: GET http://localhost:5925/api/submissions?matchId=69ffe3b9aa61c4aeb4761ff3
+[2026-05-12T16:52:08.309Z] [Backend API] Requesting: GET http://localhost:5925/api/matches?limit=1000
+[2026-05-12T16:52:10.712Z] [Backend API] Requesting: GET http://localhost:5925/api/matches?limit=1000
+[2026-05-12T16:52:12.467Z] [Backend API] Requesting: GET http://localhost:5925/api/submissions?matchId=6a0328faaa61c4aeb47738b5
+[2026-05-12T16:52:14.272Z] [Backend API] Requesting: GET http://localhost:5925/api/contests?matchId=6a0328faaa61c4aeb47738b5
+[2026-05-12T16:52:14.394Z] [Backend API] Requesting: GET http://localhost:5925/api/matches/6a0328faaa61c4aeb47738b5
+[2026-05-12T16:52:18.567Z] [Backend API] Requesting: POST http://localhost:5925/api/contests
+[2026-05-12T17:31:54.212Z] [Backend API] Requesting: GET http://localhost:5925/api/matches?limit=1000
+[2026-05-12T17:31:56.726Z] [Backend API] Requesting: GET http://localhost:5925/api/submissions?matchId=6a0328faaa61c4aeb47738b5
+[2026-05-12T17:32:02.275Z] [Backend API] Requesting: GET http://localhost:5925/api/matches?limit=1000
+[2026-05-12T17:32:13.263Z] [Backend API] Requesting: GET http://localhost:5925/api/teams?
+[2026-05-12T17:32:15.530Z] [Backend API] Requesting: GET http://localhost:5925/api/matches?limit=1000
+[2026-05-12T17:32:17.547Z] [Backend API] Requesting: GET http://localhost:5925/api/players?
+[2026-05-12T17:36:28.759Z] [Backend API] Requesting: GET http://localhost:5925/api/matches?limit=1000
+[2026-05-12T17:36:31.000Z] [Backend API] Requesting: GET http://localhost:5925/api/matches?limit=1000
+[2026-05-12T17:36:31.590Z] [Backend API] Requesting: GET http://localhost:5925/api/submissions?matchId=6a0328faaa61c4aeb47738b5
+[2026-05-12T17:36:32.899Z] [Backend API] Requesting: GET http://localhost:5925/api/contests?matchId=6a0328faaa61c4aeb47738b5
+[2026-05-12T17:36:32.994Z] [Backend API] Requesting: GET http://localhost:5925/api/contests/6a035ac29f915efd2217602b/leaderboard
+[2026-05-12T17:36:33.130Z] [Backend API] Requesting: GET http://localhost:5925/api/matches/6a0328faaa61c4aeb47738b5
+[2026-05-12T17:39:40.701Z] [Backend API] Requesting: GET http://localhost:5925/api/contests?matchId=6a0328faaa61c4aeb47738b5
+[2026-05-12T17:39:40.863Z] [Backend API] Requesting: GET http://localhost:5925/api/contests/6a035ac29f915efd2217602b/leaderboard
+[2026-05-12T17:39:41.150Z] [Backend API] Requesting: GET http://localhost:5925/api/matches/6a0328faaa61c4aeb47738b5
+[2026-05-12T17:39:41.502Z] [Backend API] Requesting: GET http://localhost:5925/api/contests?matchId=69ffe3b9aa61c4aeb4761ff3
+[2026-05-12T17:39:41.574Z] [Backend API] Requesting: GET http://localhost:5925/api/contests/6a02c021c0cdbb676a49ab37/leaderboard
+[2026-05-12T17:39:42.037Z] [Backend API] Requesting: GET http://localhost:5925/api/matches/69ffe3b9aa61c4aeb4761ff3
+[2026-05-12T17:39:57.893Z] [Backend API] Requesting: GET http://localhost:5925/api/contests?matchId=6a0328faaa61c4aeb47738b5
+[2026-05-12T17:39:57.896Z] [Backend API] Requesting: GET http://localhost:5925/api/contests?matchId=69ffe3b9aa61c4aeb4761ff3
+[2026-05-12T17:39:57.980Z] [Backend API] Requesting: GET http://localhost:5925/api/contests?matchId=6a0328faaa61c4aeb47738b5
+[2026-05-12T17:39:57.994Z] [Backend API] Requesting: GET http://localhost:5925/api/contests/6a035ac29f915efd2217602b/leaderboard
+[2026-05-12T17:39:57.998Z] [Backend API] Requesting: GET http://localhost:5925/api/contests/6a02c021c0cdbb676a49ab37/leaderboard
+[2026-05-12T17:39:58.109Z] [Backend API] Requesting: GET http://localhost:5925/api/contests/6a035ac29f915efd2217602b/leaderboard
+[2026-05-12T17:39:58.111Z] [Backend API] Requesting: GET http://localhost:5925/api/matches/6a0328faaa61c4aeb47738b5
+[2026-05-12T17:39:58.122Z] [Backend API] Requesting: GET http://localhost:5925/api/matches/69ffe3b9aa61c4aeb4761ff3
+[2026-05-12T17:39:58.540Z] [Backend API] Requesting: GET http://localhost:5925/api/contests?matchId=69ffe3b9aa61c4aeb4761ff3
+[2026-05-12T17:39:58.629Z] [Backend API] Requesting: GET http://localhost:5925/api/contests/6a02c021c0cdbb676a49ab37/leaderboard
+[2026-05-12T17:39:58.669Z] [Backend API] Requesting: GET http://localhost:5925/api/matches/6a0328faaa61c4aeb47738b5
+[2026-05-12T17:39:58.801Z] [Backend API] Requesting: GET http://localhost:5925/api/matches/69ffe3b9aa61c4aeb4761ff3
+[2026-05-12T17:40:12.211Z] [Backend API] Requesting: GET http://localhost:5925/api/matches?limit=1000
+[2026-05-12T17:40:12.823Z] [Backend API] Requesting: GET http://localhost:5925/api/submissions?matchId=6a0328faaa61c4aeb47738b5
+[2026-05-12T17:40:17.823Z] [Backend API] Requesting: GET http://localhost:5925/api/contests?matchId=6a0328faaa61c4aeb47738b5
+[2026-05-12T17:40:17.902Z] [Backend API] Requesting: GET http://localhost:5925/api/contests/6a035ac29f915efd2217602b/leaderboard
+[2026-05-12T17:40:18.028Z] [Backend API] Requesting: GET http://localhost:5925/api/matches/6a0328faaa61c4aeb47738b5
+[2026-05-12T17:40:24.943Z] [Backend API] Requesting: POST http://localhost:5925/api/contests
+[2026-05-12T17:40:25.120Z] [Backend API] Requesting: GET http://localhost:5925/api/contests/6a0366091d5d5641525f9ae6/leaderboard
+[2026-05-12T17:40:28.246Z] [Backend API] Requesting: GET http://localhost:5925/api/contests/6a035ac29f915efd2217602b/leaderboard
+[2026-05-12T17:40:29.220Z] [Backend API] Requesting: GET http://localhost:5925/api/contests/6a035ac29f915efd2217602b/leaderboard
+[2026-05-12T17:40:30.163Z] [Backend API] Requesting: GET http://localhost:5925/api/contests/6a035ac29f915efd2217602b/leaderboard
+[2026-05-12T17:40:33.058Z] [Backend API] Requesting: GET http://localhost:5925/api/contests/6a0366091d5d5641525f9ae6/leaderboard
+[2026-05-12T17:42:08.716Z] [Backend API] Requesting: GET http://localhost:5925/api/contests/6a035ac29f915efd2217602b/leaderboard
+[2026-05-12T17:42:09.575Z] [Backend API] Requesting: GET http://localhost:5925/api/contests/6a0366091d5d5641525f9ae6/leaderboard
+[2026-05-12T17:42:10.694Z] [Backend API] Requesting: GET http://localhost:5925/api/contests/6a035ac29f915efd2217602b/leaderboard
+[2026-05-12T17:44:54.347Z] [Backend API] Requesting: GET http://localhost:5925/api/contests?matchId=6a0328faaa61c4aeb47738b5
+[2026-05-12T17:44:54.438Z] [Backend API] Requesting: GET http://localhost:5925/api/contests?matchId=69ffe3b9aa61c4aeb4761ff3
+[2026-05-12T17:44:54.459Z] [Backend API] Requesting: GET http://localhost:5925/api/contests/6a0366091d5d5641525f9ae6/leaderboard
+[2026-05-12T17:44:54.508Z] [Backend API] Requesting: GET http://localhost:5925/api/contests/6a02c021c0cdbb676a49ab37/leaderboard
+[2026-05-12T17:44:54.526Z] [Backend API] Requesting: GET http://localhost:5925/api/matches/6a0328faaa61c4aeb47738b5
+[2026-05-12T17:44:54.645Z] [Backend API] Requesting: GET http://localhost:5925/api/matches/69ffe3b9aa61c4aeb4761ff3
+[2026-05-12T17:45:04.594Z] [Backend API] Requesting: GET http://localhost:5925/api/contests?matchId=69ffe3b9aa61c4aeb4761ff3
+[2026-05-12T17:45:04.701Z] [Backend API] Requesting: GET http://localhost:5925/api/contests/6a02c021c0cdbb676a49ab37/leaderboard
+[2026-05-12T17:45:04.820Z] [Backend API] Requesting: GET http://localhost:5925/api/matches/69ffe3b9aa61c4aeb4761ff3
+[2026-05-12T17:45:05.060Z] [Backend API] Requesting: GET http://localhost:5925/api/contests?matchId=6a0328faaa61c4aeb47738b5
+[2026-05-12T17:45:05.126Z] [Backend API] Requesting: GET http://localhost:5925/api/contests/6a0366091d5d5641525f9ae6/leaderboard
+[2026-05-12T17:45:05.202Z] [Backend API] Requesting: GET http://localhost:5925/api/matches/6a0328faaa61c4aeb47738b5
+[2026-05-12T17:45:05.449Z] [Backend API] Requesting: GET http://localhost:5925/api/contests?matchId=69ffe3b9aa61c4aeb4761ff3
+[2026-05-12T17:45:05.514Z] [Backend API] Requesting: GET http://localhost:5925/api/contests/6a02c021c0cdbb676a49ab37/leaderboard
+[2026-05-12T17:45:05.634Z] [Backend API] Requesting: GET http://localhost:5925/api/matches/69ffe3b9aa61c4aeb4761ff3
+[2026-05-12T17:45:09.670Z] [Backend API] Requesting: GET http://localhost:5925/api/contests/6a035ac29f915efd2217602b/leaderboard
+[2026-05-12T17:45:13.208Z] [Backend API] Requesting: GET http://localhost:5925/api/contests/6a0366091d5d5641525f9ae6/leaderboard
+[2026-05-12T17:45:40.567Z] [Backend API] Requesting: GET http://localhost:5925/api/contests/6a035ac29f915efd2217602b/leaderboard
+[2026-05-12T17:47:36.207Z] [Backend API] Requesting: PATCH http://localhost:5925/api/contests/6a035ac29f915efd2217602b
+[2026-05-12T17:47:49.843Z] [Backend API] Requesting: PATCH http://localhost:5925/api/contests/6a035ac29f915efd2217602b
+[2026-05-12T17:47:55.715Z] [Backend API] Requesting: GET http://localhost:5925/api/contests/6a0366091d5d5641525f9ae6/leaderboard
+[2026-05-12T17:47:57.029Z] [Backend API] Requesting: PATCH http://localhost:5925/api/contests/6a0366091d5d5641525f9ae6
+[2026-05-12T17:48:15.925Z] [Backend API] Requesting: GET http://localhost:5925/api/contests/6a035ac29f915efd2217602b/leaderboard
+[2026-05-12T17:48:17.388Z] [Backend API] Requesting: GET http://localhost:5925/api/contests/6a0366091d5d5641525f9ae6/leaderboard
+[2026-05-12T17:48:18.589Z] [Backend API] Requesting: GET http://localhost:5925/api/contests/6a035ac29f915efd2217602b/leaderboard
+[2026-05-12T17:48:19.615Z] [Backend API] Requesting: GET http://localhost:5925/api/contests/6a0366091d5d5641525f9ae6/leaderboard
+[2026-05-12T17:48:20.564Z] [Backend API] Requesting: GET http://localhost:5925/api/contests/6a035ac29f915efd2217602b/leaderboard
+[2026-05-12T17:48:46.917Z] [Backend API] Requesting: GET http://localhost:5925/api/contests?matchId=69ffe3b9aa61c4aeb4761ff3
+[2026-05-12T17:48:46.926Z] [Backend API] Requesting: GET http://localhost:5925/api/contests?matchId=6a0328faaa61c4aeb47738b5
+[2026-05-12T17:48:47.010Z] [Backend API] Requesting: GET http://localhost:5925/api/contests?matchId=6a0328faaa61c4aeb47738b5
+[2026-05-12T17:48:47.014Z] [Backend API] Requesting: GET http://localhost:5925/api/contests/6a02c021c0cdbb676a49ab37/leaderboard
+[2026-05-12T17:48:47.017Z] [Backend API] Requesting: GET http://localhost:5925/api/contests/6a0366091d5d5641525f9ae6/leaderboard
+[2026-05-12T17:48:47.073Z] [Backend API] Requesting: GET http://localhost:5925/api/matches/6a0328faaa61c4aeb47738b5
+[2026-05-12T17:48:47.087Z] [Backend API] Requesting: GET http://localhost:5925/api/contests/6a0366091d5d5641525f9ae6/leaderboard
+[2026-05-12T17:48:47.123Z] [Backend API] Requesting: GET http://localhost:5925/api/matches/69ffe3b9aa61c4aeb4761ff3
+[2026-05-12T17:48:47.445Z] [Backend API] Requesting: GET http://localhost:5925/api/contests?matchId=69ffe3b9aa61c4aeb4761ff3
+[2026-05-12T17:48:47.542Z] [Backend API] Requesting: GET http://localhost:5925/api/contests/6a02c021c0cdbb676a49ab37/leaderboard
+[2026-05-12T17:48:47.678Z] [Backend API] Requesting: GET http://localhost:5925/api/matches/69ffe3b9aa61c4aeb4761ff3
+[2026-05-12T17:48:47.980Z] [Backend API] Requesting: GET http://localhost:5925/api/matches/6a0328faaa61c4aeb47738b5
+[2026-05-12T17:48:55.100Z] [Backend API] Requesting: GET http://localhost:5925/api/contests/6a035ac29f915efd2217602b/leaderboard
+[2026-05-12T17:48:56.416Z] [Backend API] Requesting: PATCH http://localhost:5925/api/contests/6a035ac29f915efd2217602b
+[2026-05-12T17:49:06.118Z] [Backend API] Requesting: GET http://localhost:5925/api/contests?matchId=6a0328faaa61c4aeb47738b5
+[2026-05-12T17:49:06.149Z] [Backend API] Requesting: GET http://localhost:5925/api/contests?matchId=69ffe3b9aa61c4aeb4761ff3
+[2026-05-12T17:49:06.236Z] [Backend API] Requesting: GET http://localhost:5925/api/contests/6a02c021c0cdbb676a49ab37/leaderboard
+[2026-05-12T17:49:06.240Z] [Backend API] Requesting: GET http://localhost:5925/api/contests?matchId=6a0328faaa61c4aeb47738b5
+[2026-05-12T17:49:06.244Z] [Backend API] Requesting: GET http://localhost:5925/api/contests/6a0366091d5d5641525f9ae6/leaderboard
+[2026-05-12T17:49:06.309Z] [Backend API] Requesting: GET http://localhost:5925/api/matches/6a0328faaa61c4aeb47738b5
+[2026-05-12T17:49:06.317Z] [Backend API] Requesting: GET http://localhost:5925/api/contests/6a0366091d5d5641525f9ae6/leaderboard
+[2026-05-12T17:49:06.374Z] [Backend API] Requesting: GET http://localhost:5925/api/matches/69ffe3b9aa61c4aeb4761ff3
+[2026-05-12T17:49:06.459Z] [Backend API] Requesting: GET http://localhost:5925/api/contests?matchId=69ffe3b9aa61c4aeb4761ff3
+[2026-05-12T17:49:06.463Z] [Backend API] Requesting: GET http://localhost:5925/api/matches/6a0328faaa61c4aeb47738b5
+[2026-05-12T17:49:06.536Z] [Backend API] Requesting: GET http://localhost:5925/api/contests/6a02c021c0cdbb676a49ab37/leaderboard
+[2026-05-12T17:49:06.694Z] [Backend API] Requesting: GET http://localhost:5925/api/matches/69ffe3b9aa61c4aeb4761ff3
+[2026-05-13T15:40:16.896Z] [Backend API] Requesting: POST http://localhost:5925/api/auth/admin/login
+[2026-05-13T15:40:19.215Z] [Backend API] Requesting: GET http://localhost:5925/api/dashboard/stats
+[2026-05-13T15:41:01.563Z] [Backend API] Requesting: GET http://localhost:5925/api/players?
+[2026-05-13T15:41:09.881Z] [Backend API] Requesting: GET http://localhost:5925/api/players?search=v+k
+[2026-05-13T15:42:37.936Z] [Backend API] Requesting: PUT http://localhost:5925/api/players/692bca717c5561aa39a5c80b
+[2026-05-13T15:42:39.328Z] [Backend API] Requesting: GET http://localhost:5925/api/players?
+[2026-05-13T15:42:42.458Z] [Backend API] Requesting: GET http://localhost:5925/api/players?search=v+
+[2026-05-13T15:42:43.082Z] [Backend API] Requesting: GET http://localhost:5925/api/players?search=v+k
+[2026-05-13T15:43:21.957Z] [Backend API] Requesting: GET http://localhost:5925/api/matches?limit=1000
+[2026-05-13T15:43:29.235Z] [Backend API] Requesting: GET http://localhost:5925/api/matches?limit=1000
+[2026-05-13T15:43:30.043Z] [Backend API] Requesting: GET http://localhost:5925/api/submissions?matchId=6a03e881aa61c4aeb477ab7e
+[2026-05-13T15:43:33.505Z] [Backend API] Requesting: GET http://localhost:5925/api/contests?matchId=6a03e881aa61c4aeb477ab7e
+[2026-05-13T15:43:33.717Z] [Backend API] Requesting: GET http://localhost:5925/api/matches/6a03e881aa61c4aeb477ab7e
+[2026-05-13T15:43:57.665Z] [Backend API] Requesting: POST http://localhost:5925/api/contests
+[2026-05-13T15:43:59.758Z] [Backend API] Requesting: GET http://localhost:5925/api/contests/6a049c3ea3abb37d3017cefc/leaderboard
+[2026-05-13T15:45:33.546Z] [Backend API] Requesting: GET http://localhost:5925/api/players?
+[2026-05-13T15:45:36.133Z] [Backend API] Requesting: GET http://localhost:5925/api/players?search=s+y
+[2026-05-13T15:45:44.097Z] [Backend API] Requesting: PUT http://localhost:5925/api/players/692bc9717c5561aa39a5c7cd
+[2026-05-13T15:45:44.602Z] [Backend API] Requesting: GET http://localhost:5925/api/players?
+[2026-05-13T15:47:18.309Z] [Backend API] Requesting: GET http://localhost:5925/api/matches?limit=1000
+[2026-05-13T15:47:22.071Z] [Backend API] Requesting: GET http://localhost:5925/api/matches?limit=1000
+[2026-05-13T15:47:29.856Z] [Backend API] Requesting: GET http://localhost:5925/api/submissions?matchId=6a03e881aa61c4aeb477ab7e
+[2026-05-13T15:47:32.270Z] [Backend API] Requesting: GET http://localhost:5925/api/contests?matchId=6a03e881aa61c4aeb477ab7e
+[2026-05-13T15:47:32.855Z] [Backend API] Requesting: GET http://localhost:5925/api/contests/6a049c3ea3abb37d3017cefc/leaderboard
+[2026-05-13T15:47:32.920Z] [Backend API] Requesting: GET http://localhost:5925/api/matches/6a03e881aa61c4aeb477ab7e
+[2026-05-13T15:47:35.546Z] [Backend API] Requesting: PATCH http://localhost:5925/api/contests/6a049c3ea3abb37d3017cefc
+[2026-05-13T15:47:52.796Z] [Backend API] Requesting: GET http://localhost:5925/api/contests/6a049c3ea3abb37d3017cefc/leaderboard
+[2026-05-13T15:47:55.328Z] [Backend API] Requesting: GET http://localhost:5925/api/contests/6a049c3ea3abb37d3017cefc/leaderboard
+[2026-05-13T15:47:55.773Z] [Backend API] Requesting: GET http://localhost:5925/api/matches?limit=1000
+[2026-05-13T15:48:00.226Z] [Backend API] Requesting: GET http://localhost:5925/api/submissions?matchId=6a03e881aa61c4aeb477ab7e
+[2026-05-13T15:48:01.748Z] [Backend API] Requesting: GET http://localhost:5925/api/contests?matchId=6a03e881aa61c4aeb477ab7e
+[2026-05-13T15:48:01.831Z] [Backend API] Requesting: GET http://localhost:5925/api/contests/6a049c3ea3abb37d3017cefc/leaderboard
+[2026-05-13T15:48:01.949Z] [Backend API] Requesting: GET http://localhost:5925/api/matches/6a03e881aa61c4aeb477ab7e
+[2026-05-13T15:48:37.140Z] [Backend API] Requesting: POST http://localhost:5925/api/contests/6a049c3ea3abb37d3017cefc/points
+[2026-05-13T15:48:38.133Z] [Backend API] Requesting: GET http://localhost:5925/api/contests/6a049c3ea3abb37d3017cefc/leaderboard
+[2026-05-13T15:49:12.478Z] [Backend API] Requesting: POST http://localhost:5925/api/contests/6a049c3ea3abb37d3017cefc/points
+[2026-05-13T15:49:13.464Z] [Backend API] Requesting: GET http://localhost:5925/api/contests/6a049c3ea3abb37d3017cefc/leaderboard
+[2026-05-13T15:49:34.072Z] [Backend API] Requesting: POST http://localhost:5925/api/contests
+[2026-05-13T15:49:34.222Z] [Backend API] Requesting: GET http://localhost:5925/api/contests/6a049d8ea3abb37d3017e099/leaderboard
+[2026-05-13T15:49:44.060Z] [Backend API] Requesting: PATCH http://localhost:5925/api/contests/6a049d8ea3abb37d3017e099
+[2026-05-13T15:50:19.947Z] [Backend API] Requesting: GET http://localhost:5925/api/matches?limit=1000
+[2026-05-13T15:50:22.056Z] [Backend API] Requesting: GET http://localhost:5925/api/submissions?matchId=6a03e881aa61c4aeb477ab7e
+[2026-05-13T15:51:01.484Z] [Backend API] Requesting: GET http://localhost:5925/api/matches?limit=1000
+[2026-05-13T15:51:57.520Z] [Backend API] Requesting: GET http://localhost:5925/api/players?
+[2026-05-13T15:52:46.986Z] [Backend API] Requesting: GET http://localhost:5925/api/matches?limit=1000
+[2026-05-13T15:52:51.858Z] [Backend API] Requesting: GET http://localhost:5925/api/matches?limit=1000
+[2026-05-13T15:52:53.036Z] [Backend API] Requesting: GET http://localhost:5925/api/submissions?matchId=6a03e881aa61c4aeb477ab7e
+[2026-05-13T15:52:55.236Z] [Backend API] Requesting: GET http://localhost:5925/api/contests?matchId=6a03e881aa61c4aeb477ab7e
+[2026-05-13T15:52:55.328Z] [Backend API] Requesting: GET http://localhost:5925/api/contests/6a049d8ea3abb37d3017e099/leaderboard
+[2026-05-13T15:52:55.412Z] [Backend API] Requesting: GET http://localhost:5925/api/matches/6a03e881aa61c4aeb477ab7e
+[2026-05-13T15:52:58.850Z] [Backend API] Requesting: GET http://localhost:5925/api/contests/6a049c3ea3abb37d3017cefc/leaderboard
+[2026-05-13T15:53:03.341Z] [Backend API] Requesting: GET http://localhost:5925/api/contests/6a049d8ea3abb37d3017e099/leaderboard
+[2026-05-13T15:53:04.319Z] [Backend API] Requesting: GET http://localhost:5925/api/contests/6a049c3ea3abb37d3017cefc/leaderboard
+[2026-05-13T15:54:15.986Z] [Backend API] Requesting: POST http://localhost:5925/api/contests/6a049c3ea3abb37d3017cefc/points
+[2026-05-13T15:54:17.389Z] [Backend API] Requesting: GET http://localhost:5925/api/contests/6a049c3ea3abb37d3017cefc/leaderboard
+[2026-05-13T15:54:36.725Z] [Backend API] Requesting: POST http://localhost:5925/api/contests/6a049c3ea3abb37d3017cefc/points
+[2026-05-13T15:54:37.201Z] [Backend API] Requesting: GET http://localhost:5925/api/contests/6a049c3ea3abb37d3017cefc/leaderboard
+[2026-05-13T15:58:30.088Z] [Backend API] Requesting: GET http://localhost:5925/api/matches?limit=1000
+[2026-05-13T15:58:32.159Z] [Backend API] Requesting: GET http://localhost:5925/api/matches?limit=1000
+[2026-05-13T15:58:35.202Z] [Backend API] Requesting: GET http://localhost:5925/api/submissions?matchId=6a03e881aa61c4aeb477ab7e
+[2026-05-13T15:58:49.092Z] [Backend API] Requesting: GET http://localhost:5925/api/contests?matchId=6a03e881aa61c4aeb477ab7e
+[2026-05-13T15:58:49.181Z] [Backend API] Requesting: GET http://localhost:5925/api/contests/6a049d8ea3abb37d3017e099/leaderboard
+[2026-05-13T15:58:49.266Z] [Backend API] Requesting: GET http://localhost:5925/api/matches/6a03e881aa61c4aeb477ab7e
+[2026-05-18T09:25:36.307Z] [Backend API] Requesting: POST http://localhost:5925/api/auth/admin/login
+[2026-05-18T09:25:38.547Z] [Backend API] Requesting: GET http://localhost:5925/api/dashboard/stats
+[2026-05-18T09:25:41.066Z] [Backend API] Requesting: GET http://localhost:5925/api/matches?limit=1000
+[2026-05-18T09:26:22.847Z] [Backend API] Requesting: GET http://localhost:5925/api/players?
+[2026-05-18T09:26:22.851Z] [Backend API] Requesting: GET http://localhost:5925/api/matches?limit=1000
+[2026-05-18T09:26:23.906Z] [Backend API] Requesting: GET http://localhost:5925/api/quizzes?
+[2026-05-18T09:26:24.454Z] [Backend API] Requesting: GET http://localhost:5925/api/teams?
+[2026-05-18T09:26:27.376Z] [Backend API] Requesting: GET http://localhost:5925/api/matches?limit=1000
+[2026-05-18T09:26:39.870Z] [Backend API] Requesting: GET http://localhost:5925/api/players?
+[2026-05-18T09:26:39.878Z] [Backend API] Requesting: GET http://localhost:5925/api/matches?limit=1000
+[2026-05-18T09:26:40.912Z] [Backend API] Requesting: GET http://localhost:5925/api/quizzes?
+[2026-05-18T09:26:41.089Z] [Backend API] Requesting: GET http://localhost:5925/api/teams?
+[2026-05-18T09:31:09.204Z] [Backend API] Requesting: GET http://localhost:5925/api/notifications?
+[2026-05-18T09:31:17.901Z] [Backend API] Requesting: GET http://localhost:5925/api/matches?limit=1000
+[2026-05-18T09:31:20.259Z] [Backend API] Requesting: GET http://localhost:5925/api/matches?limit=1000
+[2026-05-18T09:31:21.010Z] [Backend API] Requesting: GET http://localhost:5925/api/submissions?matchId=6a0328faaa61c4aeb47738b5
+[2026-05-18T09:53:59.459Z] [Backend API] Requesting: GET http://localhost:5925/api/dashboard/stats
+[2026-05-18T09:54:02.066Z] [Backend API] Requesting: GET http://localhost:5925/api/matches?limit=1000
+[2026-05-18T09:54:04.031Z] [Backend API] Requesting: GET http://localhost:5925/api/players?
+[2026-05-18T09:54:04.035Z] [Backend API] Requesting: GET http://localhost:5925/api/matches?limit=1000
+[2026-05-18T09:54:04.962Z] [Backend API] Requesting: GET http://localhost:5925/api/quizzes?
+[2026-05-18T09:54:05.147Z] [Backend API] Requesting: GET http://localhost:5925/api/teams?
+[2026-05-18T09:54:57.001Z] [Backend API] Requesting: GET http://localhost:5925/api/players?
+[2026-05-18T09:55:57.581Z] [Backend API] Requesting: GET http://localhost:5925/api/players?
+[2026-05-18T09:55:57.710Z] [Backend API] Requesting: POST http://localhost:5925/api/matches
+[2026-05-18T09:55:58.573Z] [Backend API] Requesting: GET http://localhost:5925/api/matches?limit=1000
+[2026-05-18T09:55:59.267Z] [Backend API] Requesting: GET http://localhost:5925/api/matches?limit=1000
+[2026-05-18T09:56:11.174Z] [Backend API] Requesting: GET http://localhost:5925/api/matches?limit=1000
+[2026-05-18T09:56:11.960Z] [Backend API] Requesting: GET http://localhost:5925/api/submissions?matchId=6a0ae22df216965fa3a72ec5
+[2026-05-18T09:56:13.847Z] [Backend API] Requesting: GET http://localhost:5925/api/contests?matchId=6a0ae22df216965fa3a72ec5
+[2026-05-18T09:56:13.935Z] [Backend API] Requesting: GET http://localhost:5925/api/matches/6a0ae22df216965fa3a72ec5
+[2026-05-18T09:56:18.231Z] [Backend API] Requesting: POST http://localhost:5925/api/contests
+[2026-05-18T09:56:18.425Z] [Backend API] Requesting: GET http://localhost:5925/api/contests/6a0ae242f216965fa3a73ed2/leaderboard
+[2026-05-18T09:56:32.922Z] [Backend API] Requesting: GET http://localhost:5925/api/contests/6a0ae242f216965fa3a73ed2/leaderboard
+[2026-05-18T09:56:35.587Z] [Backend API] Requesting: DELETE http://localhost:5925/api/contests/6a0ae242f216965fa3a73ed2
+[2026-05-18T09:56:37.818Z] [Backend API] Requesting: GET http://localhost:5925/api/matches?limit=1000
+[2026-05-18T09:56:39.025Z] [Backend API] Requesting: GET http://localhost:5925/api/matches?limit=1000
+[2026-05-18T09:56:39.996Z] [Backend API] Requesting: GET http://localhost:5925/api/submissions?matchId=6a0ae22df216965fa3a72ec5
+[2026-05-18T09:56:47.117Z] [Backend API] Requesting: GET http://localhost:5925/api/contests?matchId=6a0ae22df216965fa3a72ec5
+[2026-05-18T09:56:47.277Z] [Backend API] Requesting: GET http://localhost:5925/api/matches/6a0ae22df216965fa3a72ec5
+[2026-05-18T09:56:51.827Z] [Backend API] Requesting: POST http://localhost:5925/api/contests
+[2026-05-18T09:56:52.035Z] [Backend API] Requesting: GET http://localhost:5925/api/contests/6a0ae263f216965fa3a7499c/leaderboard
+[2026-05-18T10:06:25.181Z] [Backend API] Requesting: GET http://localhost:5925/api/matches?limit=1000
+[2026-05-18T10:06:26.370Z] [Backend API] Requesting: GET http://localhost:5925/api/matches?limit=1000
+[2026-05-18T10:06:29.131Z] [Backend API] Requesting: GET http://localhost:5925/api/matches?limit=1000
+[2026-05-18T10:06:30.008Z] [Backend API] Requesting: GET http://localhost:5925/api/submissions?matchId=6a0ae22df216965fa3a72ec5
+[2026-05-18T10:06:32.471Z] [Backend API] Requesting: GET http://localhost:5925/api/contests?matchId=6a0ae22df216965fa3a72ec5
+[2026-05-18T10:06:32.610Z] [Backend API] Requesting: GET http://localhost:5925/api/contests/6a0ae263f216965fa3a7499c/leaderboard
+[2026-05-18T10:06:32.801Z] [Backend API] Requesting: GET http://localhost:5925/api/matches/6a0ae22df216965fa3a72ec5
+[2026-05-18T10:07:34.202Z] [Backend API] Requesting: PATCH http://localhost:5925/api/contests/6a0ae263f216965fa3a7499c
+[2026-05-18T10:08:48.025Z] [Backend API] Requesting: GET http://localhost:5925/api/contests?matchId=6a0ae22df216965fa3a72ec5
+[2026-05-18T10:08:48.189Z] [Backend API] Requesting: GET http://localhost:5925/api/contests/6a0ae263f216965fa3a7499c/leaderboard
+[2026-05-18T10:08:48.433Z] [Backend API] Requesting: GET http://localhost:5925/api/matches/6a0ae22df216965fa3a72ec5
+[2026-05-18T10:08:48.696Z] [Backend API] Requesting: GET http://localhost:5925/api/contests?matchId=6a0ae22df216965fa3a72ec5
+[2026-05-18T10:08:48.912Z] [Backend API] Requesting: GET http://localhost:5925/api/contests/6a0ae263f216965fa3a7499c/leaderboard
+[2026-05-18T10:08:49.022Z] [Backend API] Requesting: GET http://localhost:5925/api/matches/6a0ae22df216965fa3a72ec5
+[2026-05-18T10:08:59.368Z] [Backend API] Requesting: GET http://localhost:5925/api/matches?limit=1000
+[2026-05-18T10:09:01.070Z] [Backend API] Requesting: GET http://localhost:5925/api/submissions?matchId=6a0ae22df216965fa3a72ec5
+[2026-05-18T10:09:02.529Z] [Backend API] Requesting: GET http://localhost:5925/api/contests?matchId=6a0ae22df216965fa3a72ec5
+[2026-05-18T10:09:02.656Z] [Backend API] Requesting: GET http://localhost:5925/api/contests/6a0ae263f216965fa3a7499c/leaderboard
+[2026-05-18T10:09:02.745Z] [Backend API] Requesting: GET http://localhost:5925/api/matches/6a0ae22df216965fa3a72ec5
+[2026-05-18T10:10:46.437Z] [Backend API] Requesting: PATCH http://localhost:5925/api/contests/6a0ae263f216965fa3a7499c
+[2026-05-18T10:14:37.074Z] [Backend API] Requesting: GET http://localhost:5925/api/contests?matchId=6a0ae22df216965fa3a72ec5
+[2026-05-18T10:14:37.196Z] [Backend API] Requesting: GET http://localhost:5925/api/contests/6a0ae263f216965fa3a7499c/leaderboard
+[2026-05-18T10:14:37.285Z] [Backend API] Requesting: GET http://localhost:5925/api/matches/6a0ae22df216965fa3a72ec5
+[2026-05-18T10:14:37.690Z] [Backend API] Requesting: GET http://localhost:5925/api/contests?matchId=6a0ae22df216965fa3a72ec5
+[2026-05-18T10:14:37.780Z] [Backend API] Requesting: GET http://localhost:5925/api/contests/6a0ae263f216965fa3a7499c/leaderboard
+[2026-05-18T10:14:37.905Z] [Backend API] Requesting: GET http://localhost:5925/api/matches/6a0ae22df216965fa3a72ec5
+[2026-05-18T10:14:49.462Z] [Backend API] Requesting: GET http://localhost:5925/api/contests?matchId=6a0ae22df216965fa3a72ec5
+[2026-05-18T10:14:49.572Z] [Backend API] Requesting: GET http://localhost:5925/api/contests/6a0ae263f216965fa3a7499c/leaderboard
+[2026-05-18T10:14:49.667Z] [Backend API] Requesting: GET http://localhost:5925/api/matches/6a0ae22df216965fa3a72ec5
+[2026-05-18T10:14:58.341Z] [Backend API] Requesting: PATCH http://localhost:5925/api/contests/6a0ae263f216965fa3a7499c
+[2026-05-18T10:15:48.452Z] [Backend API] Requesting: GET http://localhost:5925/api/contests?matchId=6a0ae22df216965fa3a72ec5
+[2026-05-18T10:15:48.571Z] [Backend API] Requesting: GET http://localhost:5925/api/contests/6a0ae263f216965fa3a7499c/leaderboard
+[2026-05-18T10:15:48.680Z] [Backend API] Requesting: GET http://localhost:5925/api/contests?matchId=6a0ae22df216965fa3a72ec5
+[2026-05-18T10:15:48.683Z] [Backend API] Requesting: GET http://localhost:5925/api/matches/6a0ae22df216965fa3a72ec5
+[2026-05-18T10:15:48.773Z] [Backend API] Requesting: GET http://localhost:5925/api/contests/6a0ae263f216965fa3a7499c/leaderboard
+[2026-05-18T10:15:48.877Z] [Backend API] Requesting: GET http://localhost:5925/api/matches/6a0ae22df216965fa3a72ec5
+[2026-05-18T10:16:44.731Z] [Backend API] Requesting: GET http://localhost:5925/api/contests?matchId=6a0ae22df216965fa3a72ec5
+[2026-05-18T10:16:44.828Z] [Backend API] Requesting: GET http://localhost:5925/api/contests/6a0ae263f216965fa3a7499c/leaderboard
+[2026-05-18T10:16:44.923Z] [Backend API] Requesting: GET http://localhost:5925/api/matches/6a0ae22df216965fa3a72ec5
+[2026-05-18T10:16:45.674Z] [Backend API] Requesting: GET http://localhost:5925/api/contests?matchId=6a0ae22df216965fa3a72ec5
+[2026-05-18T10:16:45.773Z] [Backend API] Requesting: GET http://localhost:5925/api/contests/6a0ae263f216965fa3a7499c/leaderboard
+[2026-05-18T10:16:45.864Z] [Backend API] Requesting: GET http://localhost:5925/api/matches/6a0ae22df216965fa3a72ec5
+[2026-05-18T10:16:53.350Z] [Backend API] Requesting: PATCH http://localhost:5925/api/contests/6a0ae263f216965fa3a7499c
+[2026-05-18T10:16:56.748Z] [Backend API] Requesting: PATCH http://localhost:5925/api/contests/6a0ae263f216965fa3a7499c
+[2026-05-18T10:16:58.006Z] [Backend API] Requesting: PATCH http://localhost:5925/api/contests/6a0ae263f216965fa3a7499c
+[2026-05-20T13:37:59.298Z] [Backend API] Requesting: POST http://localhost:5925/api/auth/admin/login
+[2026-05-20T13:38:01.494Z] [Backend API] Requesting: GET http://localhost:5925/api/dashboard/stats
+[2026-05-20T13:38:03.416Z] [Backend API] Requesting: GET http://localhost:5925/api/users?
+[2026-05-20T13:38:05.501Z] [Backend API] Requesting: GET http://localhost:5925/api/matches?limit=1000
+[2026-05-20T13:38:22.839Z] [Backend API] Requesting: GET http://localhost:5925/api/matches?limit=1000
+[2026-05-20T13:38:24.262Z] [Backend API] Requesting: GET http://localhost:5925/api/submissions?matchId=6a0ae22df216965fa3a72ec5
+[2026-05-20T13:38:27.736Z] [Backend API] Requesting: GET http://localhost:5925/api/matches?limit=1000
+[2026-05-20T13:38:29.297Z] [Backend API] Requesting: GET http://localhost:5925/api/players?
+[2026-05-20T13:38:29.325Z] [Backend API] Requesting: GET http://localhost:5925/api/quizzes?
+[2026-05-20T13:38:29.377Z] [Backend API] Requesting: GET http://localhost:5925/api/players?
+[2026-05-20T13:38:29.610Z] [Backend API] Requesting: GET http://localhost:5925/api/teams?
+[2026-05-20T13:38:36.369Z] [Backend API] Requesting: GET http://localhost:5925/api/players?
+[2026-05-20T13:38:36.455Z] [Backend API] Requesting: PUT http://localhost:5925/api/matches/6a0ae22df216965fa3a72ec5
+[2026-05-20T13:38:37.314Z] [Backend API] Requesting: GET http://localhost:5925/api/matches?limit=1000
+[2026-05-20T13:38:40.338Z] [Backend API] Requesting: GET http://localhost:5925/api/players?
+[2026-05-20T13:38:40.443Z] [Backend API] Requesting: GET http://localhost:5925/api/matches?limit=1000
+[2026-05-20T13:38:42.129Z] [Backend API] Requesting: GET http://localhost:5925/api/submissions?matchId=6a0ae22df216965fa3a72ec5
+[2026-05-20T13:38:49.228Z] [Backend API] Requesting: GET http://localhost:5925/api/contests?matchId=6a0ae22df216965fa3a72ec5
+[2026-05-20T13:38:49.314Z] [Backend API] Requesting: GET http://localhost:5925/api/contests/6a0ae263f216965fa3a7499c/leaderboard
+[2026-05-20T13:38:49.405Z] [Backend API] Requesting: GET http://localhost:5925/api/matches/6a0ae22df216965fa3a72ec5
+[2026-05-20T13:39:03.652Z] [Backend API] Requesting: GET http://localhost:5925/api/matches?limit=1000
+[2026-05-20T13:39:06.280Z] [Backend API] Requesting: GET http://localhost:5925/api/submissions?matchId=6a0ae22df216965fa3a72ec5
+[2026-05-20T13:39:09.971Z] [Backend API] Requesting: DELETE http://localhost:5925/api/matches/6a0ae22df216965fa3a72ec5
+[2026-05-20T13:39:10.195Z] [Backend API] Requesting: GET http://localhost:5925/api/matches?limit=1000
+[2026-05-20T13:39:14.761Z] [Backend API] Requesting: GET http://localhost:5925/api/players?
+[2026-05-20T13:39:14.765Z] [Backend API] Requesting: GET http://localhost:5925/api/matches?limit=1000
+[2026-05-20T13:39:16.081Z] [Backend API] Requesting: GET http://localhost:5925/api/quizzes?
+[2026-05-20T13:39:16.194Z] [Backend API] Requesting: GET http://localhost:5925/api/teams?
+[2026-05-20T13:39:41.401Z] [Backend API] Requesting: GET http://localhost:5925/api/players?
+[2026-05-20T13:39:41.489Z] [Backend API] Requesting: POST http://localhost:5925/api/matches
+[2026-05-20T13:39:42.015Z] [Backend API] Requesting: GET http://localhost:5925/api/matches?limit=1000
+[2026-05-20T13:39:43.551Z] [Backend API] Requesting: GET http://localhost:5925/api/matches?limit=1000
+[2026-05-20T13:39:48.166Z] [Backend API] Requesting: GET http://localhost:5925/api/matches?limit=1000
+[2026-05-20T13:39:50.834Z] [Backend API] Requesting: GET http://localhost:5925/api/submissions?matchId=6a0db99d44c9213ee0c126d2
+[2026-05-20T13:39:52.876Z] [Backend API] Requesting: GET http://localhost:5925/api/contests?matchId=6a0db99d44c9213ee0c126d2
+[2026-05-20T13:39:52.956Z] [Backend API] Requesting: GET http://localhost:5925/api/matches/6a0db99d44c9213ee0c126d2
+[2026-05-20T13:39:58.448Z] [Backend API] Requesting: POST http://localhost:5925/api/contests
+[2026-05-20T13:39:58.575Z] [Backend API] Requesting: GET http://localhost:5925/api/contests/6a0db9ae44c9213ee0c13690/leaderboard
+[2026-05-20T13:58:18.018Z] [Backend API] Requesting: GET http://localhost:5925/api/contests?matchId=6a0db99d44c9213ee0c126d2
+[2026-05-20T13:58:18.089Z] [Backend API] Requesting: GET http://localhost:5925/api/contests/6a0db9ae44c9213ee0c13690/leaderboard
+[2026-05-20T13:58:18.164Z] [Backend API] Requesting: GET http://localhost:5925/api/matches/6a0db99d44c9213ee0c126d2
+[2026-05-20T14:01:18.822Z] [Backend API] Requesting: GET http://localhost:5925/api/matches?limit=1000
+[2026-05-20T14:01:19.866Z] [Backend API] Requesting: GET http://localhost:5925/api/submissions?matchId=6a0db99d44c9213ee0c126d2
+[2026-05-20T14:01:21.514Z] [Backend API] Requesting: GET http://localhost:5925/api/contests?matchId=6a0db99d44c9213ee0c126d2
+[2026-05-20T14:01:21.576Z] [Backend API] Requesting: GET http://localhost:5925/api/contests/6a0db9ae44c9213ee0c13690/leaderboard
+[2026-05-20T14:01:21.639Z] [Backend API] Requesting: GET http://localhost:5925/api/matches/6a0db99d44c9213ee0c126d2
+[2026-05-20T14:01:24.137Z] [Backend API] Requesting: GET http://localhost:5925/api/matches?limit=1000
+[2026-05-20T14:01:26.089Z] [Backend API] Requesting: GET http://localhost:5925/api/submissions?matchId=6a0db99d44c9213ee0c126d2
+[2026-05-20T14:01:29.188Z] [Backend API] Requesting: GET http://localhost:5925/api/matches?limit=1000
+[2026-05-20T14:01:30.148Z] [Backend API] Requesting: GET http://localhost:5925/api/players?
+[2026-05-20T14:01:30.154Z] [Backend API] Requesting: GET http://localhost:5925/api/quizzes?
+[2026-05-20T14:01:30.325Z] [Backend API] Requesting: GET http://localhost:5925/api/teams?
+[2026-05-20T14:01:30.589Z] [Backend API] Requesting: GET http://localhost:5925/api/players?
+[2026-05-20T14:01:30.696Z] [Backend API] Requesting: GET http://localhost:5925/api/players?
+[2026-05-20T14:07:16.301Z] [Backend API] Requesting: GET http://localhost:5925/api/matches?limit=1000
+[2026-05-20T14:07:17.601Z] [Backend API] Requesting: GET http://localhost:5925/api/submissions?matchId=6a0db99d44c9213ee0c126d2
+[2026-05-20T14:07:19.213Z] [Backend API] Requesting: GET http://localhost:5925/api/contests?matchId=6a0db99d44c9213ee0c126d2
+[2026-05-20T14:07:19.282Z] [Backend API] Requesting: GET http://localhost:5925/api/contests/6a0db9ae44c9213ee0c13690/leaderboard
+[2026-05-20T14:07:19.641Z] [Backend API] Requesting: GET http://localhost:5925/api/matches/6a0db99d44c9213ee0c126d2
+[2026-05-20T14:07:46.098Z] [Backend API] Requesting: GET http://localhost:5925/api/matches?limit=1000
+[2026-05-20T14:07:46.667Z] [Backend API] Requesting: GET http://localhost:5925/api/submissions?matchId=6a0db99d44c9213ee0c126d2
+[2026-05-20T14:07:49.505Z] [Backend API] Requesting: GET http://localhost:5925/api/matches?limit=1000
+[2026-05-20T14:07:49.933Z] [Backend API] Requesting: GET http://localhost:5925/api/players?
+[2026-05-20T14:07:49.939Z] [Backend API] Requesting: GET http://localhost:5925/api/quizzes?
+[2026-05-20T14:07:49.996Z] [Backend API] Requesting: GET http://localhost:5925/api/players?
+[2026-05-20T14:07:50.063Z] [Backend API] Requesting: GET http://localhost:5925/api/teams?
+[2026-05-20T14:08:14.825Z] [Backend API] Requesting: GET http://localhost:5925/api/players?
+[2026-05-20T14:08:14.903Z] [Backend API] Requesting: PUT http://localhost:5925/api/matches/6a0db99d44c9213ee0c126d2
+[2026-05-20T14:08:15.299Z] [Backend API] Requesting: GET http://localhost:5925/api/matches?limit=1000
+[2026-05-20T14:08:16.088Z] [Backend API] Requesting: GET http://localhost:5925/api/players?
+[2026-05-20T14:08:16.182Z] [Backend API] Requesting: GET http://localhost:5925/api/matches?limit=1000
+[2026-05-20T14:08:16.822Z] [Backend API] Requesting: GET http://localhost:5925/api/submissions?matchId=6a0db99d44c9213ee0c126d2
+[2026-05-20T14:08:45.108Z] [Backend API] Requesting: GET http://localhost:5925/api/matches?limit=1000
+[2026-05-20T14:08:46.013Z] [Backend API] Requesting: GET http://localhost:5925/api/players?
+[2026-05-20T14:08:46.020Z] [Backend API] Requesting: GET http://localhost:5925/api/quizzes?
+[2026-05-20T14:08:46.076Z] [Backend API] Requesting: GET http://localhost:5925/api/players?
+[2026-05-20T14:08:46.144Z] [Backend API] Requesting: GET http://localhost:5925/api/teams?
+[2026-05-20T14:09:07.676Z] [Backend API] Requesting: GET http://localhost:5925/api/players?
+[2026-05-20T14:09:07.743Z] [Backend API] Requesting: PUT http://localhost:5925/api/matches/6a0db99d44c9213ee0c126d2
+[2026-05-20T14:09:08.163Z] [Backend API] Requesting: GET http://localhost:5925/api/matches?limit=1000
+[2026-05-20T14:09:08.842Z] [Backend API] Requesting: GET http://localhost:5925/api/players?
+[2026-05-20T14:09:08.939Z] [Backend API] Requesting: GET http://localhost:5925/api/matches?limit=1000
+[2026-05-20T14:09:09.535Z] [Backend API] Requesting: GET http://localhost:5925/api/submissions?matchId=6a0db99d44c9213ee0c126d2
+[2026-05-20T14:09:41.510Z] [Backend API] Requesting: GET http://localhost:5925/api/contests?matchId=6a0db99d44c9213ee0c126d2
+[2026-05-20T14:09:41.584Z] [Backend API] Requesting: GET http://localhost:5925/api/contests/6a0db9ae44c9213ee0c13690/leaderboard
+[2026-05-20T14:09:41.758Z] [Backend API] Requesting: GET http://localhost:5925/api/matches/6a0db99d44c9213ee0c126d2
+[2026-05-20T14:09:43.823Z] [Backend API] Requesting: GET http://localhost:5925/api/matches?limit=1000
+[2026-05-20T14:09:44.877Z] [Backend API] Requesting: GET http://localhost:5925/api/submissions?matchId=6a0db99d44c9213ee0c126d2
+[2026-05-20T14:09:45.867Z] [Backend API] Requesting: GET http://localhost:5925/api/matches?limit=1000
+[2026-05-20T14:09:46.482Z] [Backend API] Requesting: GET http://localhost:5925/api/submissions?matchId=6a0db99d44c9213ee0c126d2
+[2026-05-20T14:09:47.433Z] [Backend API] Requesting: GET http://localhost:5925/api/matches?limit=1000
+[2026-05-20T14:09:47.840Z] [Backend API] Requesting: GET http://localhost:5925/api/submissions?matchId=6a0db99d44c9213ee0c126d2
+[2026-05-20T14:09:49.085Z] [Backend API] Requesting: GET http://localhost:5925/api/contests?matchId=6a0db99d44c9213ee0c126d2
+[2026-05-20T14:09:49.145Z] [Backend API] Requesting: GET http://localhost:5925/api/contests/6a0db9ae44c9213ee0c13690/leaderboard
+[2026-05-20T14:09:49.203Z] [Backend API] Requesting: GET http://localhost:5925/api/matches/6a0db99d44c9213ee0c126d2
+[2026-05-20T14:09:51.253Z] [Backend API] Requesting: GET http://localhost:5925/api/matches?limit=1000
+[2026-05-20T14:09:51.890Z] [Backend API] Requesting: GET http://localhost:5925/api/submissions?matchId=6a0db99d44c9213ee0c126d2
+[2026-05-20T14:09:53.880Z] [Backend API] Requesting: GET http://localhost:5925/api/matches?limit=1000
+[2026-05-20T14:09:54.737Z] [Backend API] Requesting: GET http://localhost:5925/api/players?
+[2026-05-20T14:09:54.746Z] [Backend API] Requesting: GET http://localhost:5925/api/quizzes?
+[2026-05-20T14:09:54.796Z] [Backend API] Requesting: GET http://localhost:5925/api/players?
+[2026-05-20T14:09:54.853Z] [Backend API] Requesting: GET http://localhost:5925/api/teams?
+[2026-05-20T14:10:09.856Z] [Backend API] Requesting: GET http://localhost:5925/api/players?
+[2026-05-20T14:10:09.946Z] [Backend API] Requesting: PUT http://localhost:5925/api/matches/6a0db99d44c9213ee0c126d2
+[2026-05-20T14:10:10.509Z] [Backend API] Requesting: GET http://localhost:5925/api/matches?limit=1000
+[2026-05-20T14:10:10.989Z] [Backend API] Requesting: GET http://localhost:5925/api/players?
+[2026-05-20T14:10:11.067Z] [Backend API] Requesting: GET http://localhost:5925/api/matches?limit=1000
+[2026-05-20T14:10:11.553Z] [Backend API] Requesting: GET http://localhost:5925/api/submissions?matchId=6a0db99d44c9213ee0c126d2
+[2026-05-20T14:10:34.813Z] [Backend API] Requesting: GET http://localhost:5925/api/matches?limit=1000
+[2026-05-20T14:10:36.151Z] [Backend API] Requesting: GET http://localhost:5925/api/players?
+[2026-05-20T14:10:36.158Z] [Backend API] Requesting: GET http://localhost:5925/api/quizzes?
+[2026-05-20T14:10:36.220Z] [Backend API] Requesting: GET http://localhost:5925/api/players?
+[2026-05-20T14:10:36.275Z] [Backend API] Requesting: GET http://localhost:5925/api/teams?
+[2026-05-20T14:11:03.984Z] [Backend API] Requesting: GET http://localhost:5925/api/players?
+[2026-05-20T14:11:04.076Z] [Backend API] Requesting: PUT http://localhost:5925/api/matches/6a0db99d44c9213ee0c126d2
+[2026-05-20T14:11:04.442Z] [Backend API] Requesting: GET http://localhost:5925/api/matches?limit=1000
+[2026-05-20T14:11:06.104Z] [Backend API] Requesting: GET http://localhost:5925/api/players?
+[2026-05-20T14:11:06.212Z] [Backend API] Requesting: GET http://localhost:5925/api/matches?limit=1000
+[2026-05-20T14:11:06.752Z] [Backend API] Requesting: GET http://localhost:5925/api/submissions?matchId=6a0db99d44c9213ee0c126d2
+[2026-05-20T14:11:33.824Z] [Backend API] Requesting: GET http://localhost:5925/api/matches?limit=1000
+[2026-05-20T14:11:34.937Z] [Backend API] Requesting: GET http://localhost:5925/api/players?
+[2026-05-20T14:11:34.944Z] [Backend API] Requesting: GET http://localhost:5925/api/quizzes?
+[2026-05-20T14:11:35.000Z] [Backend API] Requesting: GET http://localhost:5925/api/players?
+[2026-05-20T14:11:35.113Z] [Backend API] Requesting: GET http://localhost:5925/api/teams?
+[2026-05-20T14:12:06.166Z] [Backend API] Requesting: GET http://localhost:5925/api/players?
+[2026-05-20T14:12:06.246Z] [Backend API] Requesting: PUT http://localhost:5925/api/matches/6a0db99d44c9213ee0c126d2
+[2026-05-20T14:12:06.644Z] [Backend API] Requesting: GET http://localhost:5925/api/matches?limit=1000
+[2026-05-20T14:12:07.081Z] [Backend API] Requesting: GET http://localhost:5925/api/players?
+[2026-05-20T14:12:07.187Z] [Backend API] Requesting: GET http://localhost:5925/api/matches?limit=1000
+[2026-05-20T14:12:07.617Z] [Backend API] Requesting: GET http://localhost:5925/api/submissions?matchId=6a0db99d44c9213ee0c126d2
+[2026-05-20T14:13:08.946Z] [Backend API] Requesting: GET http://localhost:5925/api/contests?matchId=6a0db99d44c9213ee0c126d2
+[2026-05-20T14:13:09.010Z] [Backend API] Requesting: GET http://localhost:5925/api/contests/6a0db9ae44c9213ee0c13690/leaderboard
+[2026-05-20T14:13:09.114Z] [Backend API] Requesting: GET http://localhost:5925/api/matches/6a0db99d44c9213ee0c126d2
+[2026-05-20T14:13:12.974Z] [Backend API] Requesting: PATCH http://localhost:5925/api/contests/6a0db9ae44c9213ee0c13690
+[2026-05-23T09:22:27.801Z] [Backend API] Requesting: POST http://localhost:5925/api/auth/admin/login
+[2026-05-23T09:22:28.311Z] [Backend API] FAILED: 401 Unauthorized URL: http://localhost:5925/api/auth/admin/login
+[2026-05-23T09:22:37.636Z] [Backend API] Requesting: POST http://localhost:5925/api/auth/admin/login
+[2026-05-23T09:22:39.896Z] [Backend API] Requesting: GET http://localhost:5925/api/dashboard/stats
+[2026-05-23T09:22:43.708Z] [Backend API] Requesting: GET http://localhost:5925/api/matches?limit=1000
+[2026-05-23T09:22:59.529Z] [Backend API] Requesting: GET http://localhost:5925/api/players?
+[2026-05-23T09:22:59.536Z] [Backend API] Requesting: GET http://localhost:5925/api/matches?limit=1000
+[2026-05-23T09:23:01.927Z] [Backend API] Requesting: GET http://localhost:5925/api/quizzes?
+[2026-05-23T09:23:02.325Z] [Backend API] Requesting: GET http://localhost:5925/api/teams?
+[2026-05-23T09:25:34.778Z] [Backend API] Requesting: GET http://localhost:5925/api/players?
+[2026-05-23T09:25:34.866Z] [Backend API] Requesting: POST http://localhost:5925/api/matches
+[2026-05-23T09:25:35.611Z] [Backend API] Requesting: GET http://localhost:5925/api/matches?limit=1000
+[2026-05-23T09:25:36.757Z] [Backend API] Requesting: GET http://localhost:5925/api/matches?limit=1000
+[2026-05-23T09:29:03.874Z] [Backend API] Requesting: GET http://localhost:5925/api/notifications?
+[2026-05-23T09:29:13.258Z] [Backend API] Requesting: POST http://localhost:5925/api/notifications/6933a0dc7c5561aa39a6673e/send
+[2026-05-23T09:29:34.309Z] [Backend API] Requesting: POST http://localhost:5925/api/notifications/6933a0867c5561aa39a66728/send
+[2026-05-23T09:29:53.579Z] [Backend API] Requesting: POST http://localhost:5925/api/auth/admin/login
+[2026-05-23T09:29:55.282Z] [Backend API] Requesting: GET http://localhost:5925/api/dashboard/stats
+[2026-05-23T09:30:00.053Z] [Backend API] Requesting: GET http://localhost:5925/api/notifications?
+[2026-05-23T09:30:12.486Z] [Backend API] Requesting: POST http://localhost:5925/api/notifications/6951cb0d3e1f3555d530bbec/send
+[2026-05-23T09:30:36.754Z] [Backend API] Requesting: POST http://localhost:5925/api/notifications/6951caff3e1f3555d530bbe7/send
+[2026-05-23T09:48:54.557Z] [Backend API] Requesting: GET http://localhost:5925/api/notifications?
+[2026-05-23T10:09:34.391Z] [Backend API] Requesting: GET http://localhost:5925/api/notifications?
+[2026-05-23T10:09:40.094Z] [Backend API] Requesting: GET http://localhost:5925/api/dashboard/stats
+[2026-05-23T10:09:48.923Z] [Backend API] Requesting: GET http://localhost:5925/api/notifications?
+[2026-05-23T10:09:52.051Z] [Backend API] Requesting: POST http://localhost:5925/api/notifications/69437141f7e809e710266366/send
+[2026-05-23T10:09:56.904Z] [Backend API] Requesting: POST http://localhost:5925/api/notifications/6951cb0d3e1f3555d530bbec/send
+[2026-05-23T10:10:10.965Z] [Backend API] Requesting: POST http://localhost:5925/api/notifications/6951caff3e1f3555d530bbe7/send
+[2026-05-23T10:10:25.147Z] [Backend API] Requesting: POST http://localhost:5925/api/notifications/6951caed3e1f3555d530bbe2/send
+[2026-05-23T10:11:36.780Z] [Backend API] Requesting: POST http://localhost:5925/api/notifications/6951cb0d3e1f3555d530bbec/send
+[2026-05-23T10:19:56.033Z] [Backend API] Requesting: GET http://localhost:5925/api/dashboard/stats
+[2026-05-23T10:20:04.521Z] [Backend API] Requesting: GET http://localhost:5925/api/matches?limit=1000
+[2026-05-23T10:20:15.918Z] [Backend API] Requesting: GET http://localhost:5925/api/matches?limit=1000
+[2026-05-23T10:20:16.774Z] [Backend API] Requesting: GET http://localhost:5925/api/submissions?matchId=6a11728f2be520faa187a6be
+[2026-05-23T10:20:30.482Z] [Backend API] Requesting: GET http://localhost:5925/api/contests?matchId=6a11728f2be520faa187a6be
+[2026-05-23T10:20:30.575Z] [Backend API] Requesting: GET http://localhost:5925/api/matches/6a11728f2be520faa187a6be
+[2026-05-23T10:21:15.477Z] [Backend API] Requesting: POST http://localhost:5925/api/contests
+[2026-05-23T10:21:17.333Z] [Backend API] Requesting: GET http://localhost:5925/api/contests/6a117f9b417e3923303ed837/leaderboard
+[2026-05-23T10:26:01.786Z] [Backend API] Requesting: PATCH http://localhost:5925/api/contests/6a117f9b417e3923303ed837
+[2026-05-23T10:26:01.965Z] [Backend API] Requesting: PATCH http://localhost:5925/api/contests/6a117f9b417e3923303ed837
+[2026-05-23T10:33:14.739Z] [Backend API] Requesting: GET http://localhost:5925/api/matches?limit=1000
+[2026-05-23T10:33:15.728Z] [Backend API] Requesting: GET http://localhost:5925/api/matches?limit=1000
+[2026-05-23T10:33:18.417Z] [Backend API] Requesting: GET http://localhost:5925/api/submissions?matchId=6a11728f2be520faa187a6be
+[2026-05-23T10:33:20.386Z] [Backend API] Requesting: GET http://localhost:5925/api/contests?matchId=6a11728f2be520faa187a6be
+[2026-05-23T10:33:20.785Z] [Backend API] Requesting: GET http://localhost:5925/api/contests/6a117f9b417e3923303ed837/leaderboard
+[2026-05-23T10:33:20.866Z] [Backend API] Requesting: GET http://localhost:5925/api/matches/6a11728f2be520faa187a6be
+[2026-05-23T10:33:24.436Z] [Backend API] Requesting: PATCH http://localhost:5925/api/contests/6a117f9b417e3923303ed837
+[2026-05-23T10:33:32.492Z] [Backend API] Requesting: PATCH http://localhost:5925/api/contests/6a117f9b417e3923303ed837
+[2026-05-23T10:34:18.586Z] [Backend API] Requesting: PATCH http://localhost:5925/api/contests/6a117f9b417e3923303ed837
+[2026-05-23T10:34:30.010Z] [Backend API] Requesting: PATCH http://localhost:5925/api/contests/6a117f9b417e3923303ed837
+[2026-05-23T10:35:21.136Z] [Backend API] Requesting: GET http://localhost:5925/api/contests?matchId=6a11728f2be520faa187a6be
+[2026-05-23T10:35:21.476Z] [Backend API] Requesting: GET http://localhost:5925/api/contests/6a117f9b417e3923303ed837/leaderboard
+[2026-05-23T10:35:21.532Z] [Backend API] Requesting: GET http://localhost:5925/api/matches/6a11728f2be520faa187a6be
+[2026-05-23T10:35:54.161Z] [Backend API] Requesting: GET http://localhost:5925/api/matches?limit=1000
+[2026-05-23T10:35:55.993Z] [Backend API] Requesting: GET http://localhost:5925/api/submissions?matchId=6a11728f2be520faa187a6be
+[2026-05-23T10:35:56.907Z] [Backend API] Requesting: GET http://localhost:5925/api/matches?limit=1000
+[2026-05-23T10:35:58.521Z] [Backend API] Requesting: GET http://localhost:5925/api/submissions?matchId=6a11728f2be520faa187a6be
+[2026-05-23T10:36:00.647Z] [Backend API] Requesting: GET http://localhost:5925/api/contests?matchId=6a11728f2be520faa187a6be
+[2026-05-23T10:36:00.709Z] [Backend API] Requesting: GET http://localhost:5925/api/contests/6a117f9b417e3923303ed837/leaderboard
+[2026-05-23T10:36:00.773Z] [Backend API] Requesting: GET http://localhost:5925/api/matches/6a11728f2be520faa187a6be
+[2026-05-23T10:36:03.161Z] [Backend API] Requesting: PATCH http://localhost:5925/api/contests/6a117f9b417e3923303ed837
+[2026-05-23T10:36:07.250Z] [Backend API] Requesting: PATCH http://localhost:5925/api/contests/6a117f9b417e3923303ed837
+[2026-05-23T10:36:12.230Z] [Backend API] Requesting: GET http://localhost:5925/api/contests/6a117f9b417e3923303ed837/leaderboard
+[2026-05-23T10:37:01.975Z] [Backend API] Requesting: GET http://localhost:5925/api/contests?matchId=6a11728f2be520faa187a6be
+[2026-05-23T10:37:02.067Z] [Backend API] Requesting: GET http://localhost:5925/api/contests?matchId=6a11728f2be520faa187a6be
+[2026-05-23T10:37:02.072Z] [Backend API] Requesting: GET http://localhost:5925/api/contests/6a117f9b417e3923303ed837/leaderboard
+[2026-05-23T10:37:02.136Z] [Backend API] Requesting: GET http://localhost:5925/api/matches/6a11728f2be520faa187a6be
+[2026-05-23T10:37:02.146Z] [Backend API] Requesting: GET http://localhost:5925/api/contests/6a117f9b417e3923303ed837/leaderboard
+[2026-05-23T10:37:02.288Z] [Backend API] Requesting: GET http://localhost:5925/api/matches/6a11728f2be520faa187a6be
+[2026-05-23T10:37:11.044Z] [Backend API] Requesting: GET http://localhost:5925/api/contests?matchId=6a11728f2be520faa187a6be
+[2026-05-23T10:37:11.056Z] [Backend API] FAILED: undefined [GET] "http://localhost:5925/api/contests?matchId=6a11728f2be520faa187a6be": <no response> fetch failed URL: http://localhost:5925/api/contests?matchId=6a11728f2be520faa187a6be
+[2026-05-23T10:37:11.103Z] [Backend API] Requesting: GET http://localhost:5925/api/matches/6a11728f2be520faa187a6be
+[2026-05-23T10:37:11.110Z] [Backend API] FAILED: undefined [GET] "http://localhost:5925/api/matches/6a11728f2be520faa187a6be": <no response> fetch failed URL: http://localhost:5925/api/matches/6a11728f2be520faa187a6be
+[2026-05-23T10:37:11.177Z] [Backend API] Requesting: GET http://localhost:5925/api/matches/6a11728f2be520faa187a6be
+[2026-05-23T10:37:11.185Z] [Backend API] FAILED: undefined [GET] "http://localhost:5925/api/matches/6a11728f2be520faa187a6be": <no response> fetch failed URL: http://localhost:5925/api/matches/6a11728f2be520faa187a6be
+[2026-05-23T10:37:13.944Z] [Backend API] Requesting: GET http://localhost:5925/api/matches?limit=1000
+[2026-05-23T10:37:14.608Z] [Backend API] Requesting: GET http://localhost:5925/api/submissions?matchId=6a11728f2be520faa187a6be
+[2026-05-23T10:37:16.114Z] [Backend API] Requesting: GET http://localhost:5925/api/contests?matchId=6a11728f2be520faa187a6be
+[2026-05-23T10:37:16.192Z] [Backend API] Requesting: GET http://localhost:5925/api/contests/6a117f9b417e3923303ed837/leaderboard
+[2026-05-23T10:37:16.275Z] [Backend API] Requesting: GET http://localhost:5925/api/matches/6a11728f2be520faa187a6be
+[2026-05-23T10:37:18.717Z] [Backend API] Requesting: PATCH http://localhost:5925/api/contests/6a117f9b417e3923303ed837
+[2026-05-23T10:37:23.941Z] [Backend API] Requesting: PATCH http://localhost:5925/api/contests/6a117f9b417e3923303ed837
+[2026-05-23T10:38:13.709Z] [Backend API] Requesting: PATCH http://localhost:5925/api/contests/6a117f9b417e3923303ed837
+[2026-05-23T10:38:13.928Z] [Backend API] Requesting: PATCH http://localhost:5925/api/contests/6a117f9b417e3923303ed837
+[2026-05-23T10:38:15.102Z] [Backend API] Requesting: PATCH http://localhost:5925/api/contests/6a117f9b417e3923303ed837
