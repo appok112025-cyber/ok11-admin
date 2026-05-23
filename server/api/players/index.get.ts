@@ -12,9 +12,16 @@ export default defineEventHandler(async (event): Promise<ApiResponse<any>> => {
     requireAuth(event)
 
     const query = getQuery(event)
+    const normalizedQuery = { ...query }
+
+    if (!normalizedQuery.limit && !normalizedQuery.pageSize) {
+      normalizedQuery.limit = '1000'
+      normalizedQuery.pageSize = '1000'
+    }
+
     const response = await backendApiRequest<any>(event, '/api/players', {
       method: 'GET',
-      query,
+      query: normalizedQuery,
     })
 
     const result = response?.data || response
