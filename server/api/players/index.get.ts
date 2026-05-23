@@ -17,15 +17,35 @@ export default defineEventHandler(async (event): Promise<ApiResponse<any>> => {
       query,
     })
 
-    const result = response.data || response
+    const result = response?.data || response
+    const playersData = Array.isArray(result)
+      ? result
+      : Array.isArray(result?.players)
+        ? result.players
+        : Array.isArray(result?.data)
+          ? result.data
+          : Array.isArray(result?.players?.data)
+            ? result.players.data
+            : []
+
+    const pagination =
+      result?.pagination ||
+      result?.meta?.pagination ||
+      response?.pagination ||
+      response?.meta?.pagination
 
     return {
-      data: result.players || result,
-      meta: {
-        total: result.total,
-        page: result.page,
-        limit: result.limit
-      }
+      data: playersData,
+      meta: pagination
+        ? {
+            pagination: {
+              page: pagination.page || 1,
+              pageSize: pagination.limit || pagination.pageSize || 100,
+              pageCount: pagination.totalPages || pagination.pageCount || 1,
+              total: pagination.total || playersData.length,
+            },
+          }
+        : undefined,
     }
   } catch (error: any) {
     return handleApiError(error, 'fetch players')
