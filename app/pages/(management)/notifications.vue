@@ -63,9 +63,20 @@
               <div class="flex items-center gap-2">
                 <button
                   @click="handleSend(notification)"
-                  class="px-3 py-1.5 text-sm font-medium text-white bg-green-600 rounded-lg hover:bg-green-700 transition-colors"
+                  :disabled="sendingNotificationId === notification.id"
+                  class="px-3 py-1.5 text-sm font-medium text-white bg-green-600 rounded-lg hover:bg-green-700 transition-colors disabled:opacity-60 disabled:cursor-not-allowed flex items-center gap-1.5"
                 >
-                  Send
+                  <svg
+                    v-if="sendingNotificationId === notification.id"
+                    class="animate-spin h-3.5 w-3.5"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                  >
+                    <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4" />
+                    <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 5.373 0 0 12h4z" />
+                  </svg>
+                  {{ sendingNotificationId === notification.id ? 'Sending...' : 'Send' }}
                 </button>
                 <IconButton
                   variant="edit"
@@ -189,6 +200,7 @@
   const isSubmitting = ref(false)
   const editingNotification = ref<any>(null)
   const notificationToDelete = ref<any>(null)
+  const sendingNotificationId = ref<string | null>(null)
 
   // Track failed notification images to show fallback
   const failedNotificationImages = ref<Set<string>>(new Set())
@@ -278,7 +290,12 @@
   }
 
   const handleSend = async (notification: any) => {
-    await sendNotification(notification.id)
+    sendingNotificationId.value = notification.id
+    try {
+      await sendNotification(notification.id)
+    } finally {
+      sendingNotificationId.value = null
+    }
   }
 
   onMounted(() => {
