@@ -30,7 +30,7 @@
             </svg>
             Delete Match
           </button>
-          <NuxtLink
+          <!-- <NuxtLink
             :to="`/matches/${selectedMatch.id}/submissions`"
             class="inline-flex items-center justify-center px-4 py-2.5 bg-gradient-to-r from-green-600 to-green-700 text-white font-medium rounded-lg shadow-md hover:shadow-lg hover:from-green-700 hover:to-green-800 transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500"
             aria-label="View submissions"
@@ -49,7 +49,7 @@
               />
             </svg>
             View Submissions
-          </NuxtLink>
+          </NuxtLink> -->
           <NuxtLink
             :to="`/matches/${selectedMatch.id}/contests`"
             class="inline-flex items-center justify-center px-4 py-2.5 bg-gradient-to-r from-purple-600 to-purple-700 text-white font-medium rounded-lg shadow-md hover:shadow-lg hover:from-purple-700 hover:to-purple-800 transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-purple-500"
@@ -251,10 +251,10 @@
               <label
                 class="block text-xs font-semibold text-gray-500 uppercase tracking-wide mb-1"
               >
-                Participants
+                Opted-in Users / Contest Entries
               </label>
-              <p class="text-sm text-gray-900">
-                {{ selectedMatch.participantsCount || 0 }} users opted in
+              <p class="text-sm text-gray-900 font-bold">
+                {{ selectedMatch.participantsCount || 0 }} users opted in • {{ totalContestParticipants }} contest entries
               </p>
             </div>
           </div>
@@ -401,8 +401,124 @@
             </div>
           </div>
 
-          <!-- Quizzes Section - Accordion -->
+          <!-- Contests Section - Accordion -->
           <div class="mt-8 border-t border-gray-200 pt-6">
+            <button
+              @click="contestsExpanded = !contestsExpanded"
+              class="w-full flex items-center justify-between text-left focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 rounded-lg p-2 -m-2"
+            >
+              <h3 class="text-lg font-semibold text-gray-900">
+                Match Contests
+                <span
+                  v-if="matchContests.length > 0"
+                  class="ml-2 text-base font-normal text-gray-500"
+                >
+                  ({{ matchContests.length }})
+                </span>
+              </h3>
+              <svg
+                class="w-5 h-5 text-gray-500 transition-transform duration-200"
+                :class="{ 'rotate-180': contestsExpanded }"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M19 9l-7 7-7-7"
+                />
+              </svg>
+            </button>
+            <div
+              v-show="contestsExpanded"
+              class="mt-4 transition-all duration-200"
+            >
+              <div v-if="contestsLoading" class="p-4 text-center text-gray-400">
+                Loading contests...
+              </div>
+              <div
+                v-else-if="matchContests.length > 0"
+                class="bg-gray-50 rounded-lg overflow-hidden border border-gray-200"
+              >
+                <div class="overflow-x-auto">
+                  <table class="min-w-full divide-y divide-gray-200">
+                    <thead class="bg-gray-100">
+                      <tr>
+                        <th class="px-4 py-3 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">Contest Name</th>
+                        <th class="px-4 py-3 text-right text-xs font-semibold text-gray-600 uppercase tracking-wider">Prize Pool</th>
+                        <th class="px-4 py-3 text-right text-xs font-semibold text-gray-600 uppercase tracking-wider">Entry Fee</th>
+                        <th class="px-4 py-3 text-center text-xs font-semibold text-gray-600 uppercase tracking-wider">Participants</th>
+                        <th class="px-4 py-3 text-center text-xs font-semibold text-gray-600 uppercase tracking-wider">Status</th>
+                        <th class="px-4 py-3 text-center text-xs font-semibold text-gray-600 uppercase tracking-wider">Action</th>
+                      </tr>
+                    </thead>
+                    <tbody class="bg-white divide-y divide-gray-200">
+                      <tr
+                        v-for="contest in matchContests"
+                        :key="contest.id || contest._id"
+                        @click="router.push(`/matches/${selectedMatch.id}/contests`)"
+                        class="hover:bg-blue-50 cursor-pointer transition-colors"
+                      >
+                        <td class="px-4 py-3 whitespace-nowrap text-sm font-bold text-gray-900">
+                          {{ contest.name }}
+                        </td>
+                        <td class="px-4 py-3 whitespace-nowrap text-right text-sm font-black text-gray-900">
+                          ₹{{ contest.firstPrize }}
+                        </td>
+                        <td class="px-4 py-3 whitespace-nowrap text-right text-sm">
+                          <span v-if="contest.entryFee === 0" class="text-green-600 font-bold bg-green-50 px-1.5 py-0.5 rounded text-xs">FREE</span>
+                          <span v-else class="text-gray-900 font-semibold">₹{{ contest.entryFee }}</span>
+                        </td>
+                        <td class="px-4 py-3 whitespace-nowrap text-center text-sm font-bold text-blue-600">
+                          {{ contest.totalParticipants || 0 }} / {{ contest.participantLimit }}
+                        </td>
+                        <td class="px-4 py-3 whitespace-nowrap text-center">
+                          <span
+                            class="px-2 py-0.5 rounded text-[10px] font-black uppercase tracking-wider"
+                            :class="{
+                              'bg-green-100 text-green-800': contest.status === 'Live',
+                              'bg-blue-100 text-blue-800': contest.status === 'Upcoming',
+                              'bg-gray-100 text-gray-800': contest.status === 'Completed',
+                            }"
+                          >
+                            {{ contest.status }}
+                          </span>
+                        </td>
+                        <td class="px-4 py-3 whitespace-nowrap text-center text-sm">
+                          <NuxtLink
+                            :to="`/matches/${selectedMatch.id}/contests`"
+                            class="text-xs font-bold text-blue-600 hover:text-blue-800"
+                            @click.stop
+                          >
+                            Manage
+                          </NuxtLink>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <div
+                v-else
+                class="bg-gray-50 rounded-lg p-4 text-center border border-gray-200"
+              >
+                <p class="text-sm text-gray-500">
+                  No contests configured for this match.
+                </p>
+                <NuxtLink
+                  :to="`/matches/${selectedMatch.id}/contests`"
+                  class="mt-2 inline-flex items-center text-xs font-bold text-blue-600 hover:text-blue-800"
+                >
+                  Create first contest →
+                </NuxtLink>
+              </div>
+            </div>
+          </div>
+
+          <!-- Quizzes Section - Accordion -->
+          <!-- <div class="mt-8 border-t border-gray-200 pt-6">
             <button
               @click="quizzesExpanded = !quizzesExpanded"
               class="w-full flex items-center justify-between text-left focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 rounded-lg p-2 -m-2"
@@ -501,10 +617,10 @@
                 </p>
               </div>
             </div>
-          </div>
+          </div> -->
 
           <!-- Submissions Section -->
-          <div class="mt-8 border-t border-gray-200 pt-6">
+          <!-- <div class="mt-8 border-t border-gray-200 pt-6">
             <div class="flex items-center justify-between mb-4">
               <label
                 class="block text-xs font-semibold text-gray-500 uppercase tracking-wide"
@@ -620,7 +736,7 @@
                                 getSubmissionScorePercentage(submission) < 70,
                               'bg-red-500':
                                 getSubmissionScorePercentage(submission) < 40,
-                            }"
+                              }"
                             :style="{
                               width:
                                 getSubmissionScorePercentage(submission) + '%',
@@ -686,7 +802,7 @@
             <div v-else class="bg-gray-50 rounded-lg p-4 text-center">
               <p class="text-sm text-gray-500">No submissions yet</p>
             </div>
-          </div>
+          </div> -->
         </div>
       </div>
     </div>
@@ -709,8 +825,8 @@
 <script setup lang="ts">
   import { formatDateTime } from '~/utils/common/date'
   import { useMatches } from '~/composables/matches/useMatches'
-  import { useSubmissions } from '~/composables/common/useSubmissions'
-  import type { Submission } from '~/types/submission'
+  // import { useSubmissions } from '~/composables/common/useSubmissions'
+  // import type { Submission } from '~/types/submission'
 
   definePageMeta({
     layout: 'admin',
@@ -739,31 +855,52 @@
   const matchToDelete = ref<string | null>(null)
   const playersExpanded = ref(false)
   const quizzesExpanded = ref(false)
+  const contestsExpanded = ref(true)
 
-  const {
-    submissions: allSubmissions,
-    loading: submissionsLoading,
-    error: submissionsError,
-    loadSubmissions,
-  } = useSubmissions()
+  const matchContests = ref<any[]>([])
+  const contestsLoading = ref(false)
 
-  const matchSubmissions = computed(() => {
-    if (!selectedMatch.value?.id) return []
-    return allSubmissions.value.filter(
-      (s: Submission) => s.matchId === selectedMatch.value?.id
-    )
+  const fetchMatchContests = async () => {
+    if (!matchId.value) return
+    try {
+      contestsLoading.value = true
+      const res = await $fetch<any>(`/api/contests?matchId=${matchId.value}`)
+      matchContests.value = res.data || []
+    } catch (e) {
+      console.error('Error fetching match contests:', e)
+    } finally {
+      contestsLoading.value = false
+    }
+  }
+
+  const totalContestParticipants = computed(() => {
+    return matchContests.value.reduce((sum, c) => sum + (c.totalParticipants || 0), 0)
   })
 
-  const navigateToSubmission = (submissionId: string) => {
-    router.push(`/matches/${matchId.value}/submissions/${submissionId}`)
-  }
+  // const {
+  //   submissions: allSubmissions,
+  //   loading: submissionsLoading,
+  //   error: submissionsError,
+  //   loadSubmissions,
+  // } = useSubmissions()
 
-  const getSubmissionScorePercentage = (submission: Submission) => {
-    if (!submission.totalPoints || submission.totalPoints === 0) return 0
-    return Math.round(
-      ((submission.totalPointsEarned || 0) / submission.totalPoints) * 100
-    )
-  }
+  // const matchSubmissions = computed(() => {
+  //   if (!selectedMatch.value?.id) return []
+  //   return allSubmissions.value.filter(
+  //     (s: Submission) => s.matchId === selectedMatch.value?.id
+  //   )
+  // })
+
+  // const navigateToSubmission = (submissionId: string) => {
+  //   router.push(`/matches/${matchId.value}/submissions/${submissionId}`)
+  // }
+
+  // const getSubmissionScorePercentage = (submission: Submission) => {
+  //   if (!submission.totalPoints || submission.totalPoints === 0) return 0
+  //   return Math.round(
+  //     ((submission.totalPointsEarned || 0) / submission.totalPoints) * 100
+  //   )
+  // }
 
   const getPlayerName = (
     player: string | { id: string; name: string } | any
@@ -833,9 +970,10 @@
       if (match) {
         selectedMatch.value = { ...match }
         // Load submissions for this match
-        await loadSubmissions({ matchId })
+        // await loadSubmissions({ matchId })
       }
     }
+    await fetchMatchContests()
   })
 
   // Reload when navigating back to this page
@@ -848,9 +986,10 @@
       if (match) {
         selectedMatch.value = { ...match }
         // Load submissions for this match
-        await loadSubmissions({ matchId })
+        // await loadSubmissions({ matchId })
       }
     }
+    await fetchMatchContests()
   })
 
   // Watch for route changes
@@ -866,8 +1005,9 @@
         if (match) {
           selectedMatch.value = { ...match }
           // Load submissions for this match
-          await loadSubmissions({ matchId })
+          // await loadSubmissions({ matchId })
         }
+        await fetchMatchContests()
       }
     }
   )

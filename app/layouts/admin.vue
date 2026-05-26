@@ -468,6 +468,11 @@
           icon: 'sport',
         },
         {
+          name: 'Contests',
+          href: '/contests',
+          icon: 'star',
+        },
+        {
           name: 'Teams',
           href: '/teams',
           icon: 'flag',
@@ -477,16 +482,16 @@
           href: '/players',
           icon: 'users',
         },
-        {
-          name: 'Quizzes',
-          href: '/quizzes',
-          icon: 'quiz',
-        },
-        {
-          name: 'Submissions',
-          href: '/submissions',
-          icon: 'document',
-        },
+        // {
+        //   name: 'Quizzes',
+        //   href: '/quizzes',
+        //   icon: 'quiz',
+        // },
+        // {
+        //   name: 'Submissions',
+        //   href: '/submissions',
+        //   icon: 'document',
+        // },
       ],
     },
     {
@@ -534,6 +539,11 @@
       icon: 'sport',
     },
     {
+      name: 'Contests',
+      href: '/contests',
+      icon: 'star',
+    },
+    {
       name: 'Teams',
       href: '/teams',
       icon: 'flag',
@@ -543,11 +553,11 @@
       href: '/players',
       icon: 'users',
     },
-    {
-      name: 'Quizzes',
-      href: '/quizzes',
-      icon: 'quiz',
-    },
+    // {
+    //   name: 'Quizzes',
+    //   href: '/quizzes',
+    //   icon: 'quiz',
+    // },
     {
       name: 'FAQs',
       href: '/faqs',

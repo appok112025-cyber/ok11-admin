@@ -31,11 +31,11 @@
   // Track if avatar image failed to load
   const avatarLoadFailed = ref(false)
 
-  const navigateToSubmission = (match: any) => {
-    if (match.matchId && match.submissionId) {
-      router.push(`/matches/${match.matchId}/submissions/${match.submissionId}`)
-    }
-  }
+  // const navigateToSubmission = (match: any) => {
+  //   if (match.matchId && match.submissionId) {
+  //     router.push(`/matches/${match.matchId}/submissions/${match.submissionId}`)
+  //   }
+  // }
 
   const userId = computed(() => {
     const params = route.params as Record<string, string | string[]>
@@ -318,11 +318,10 @@
             </label>
             <div class="bg-gray-50 rounded-lg p-4">
               <div class="space-y-3">
-                <button
+                <div
                   v-for="(match, index) in selectedUser.matches"
                   :key="index"
-                  @click="navigateToSubmission(match)"
-                  class="w-full bg-white p-4 rounded-lg border border-gray-200 hover:border-blue-400 hover:shadow-md transition-all duration-200 text-left cursor-pointer"
+                  class="w-full bg-white p-4 rounded-lg border border-gray-200 text-left"
                 >
                   <div class="flex items-center justify-between mb-2">
                     <span class="text-sm font-semibold text-gray-900">
@@ -332,19 +331,6 @@
                       <span class="text-xs text-gray-500">
                         {{ formatDate(match.date) }}
                       </span>
-                      <svg
-                        class="w-4 h-4 text-gray-400"
-                        fill="none"
-                        stroke="currentColor"
-                        viewBox="0 0 24 24"
-                      >
-                        <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="2"
-                          d="M9 5l7 7-7 7"
-                        />
-                      </svg>
                     </div>
                   </div>
                   <div class="grid grid-cols-2 gap-4 text-sm">
@@ -377,7 +363,7 @@
                       </span>
                     </div>
                   </div>
-                </button>
+                </div>
               </div>
             </div>
           </div>

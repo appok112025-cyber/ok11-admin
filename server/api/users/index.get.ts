@@ -9,9 +9,11 @@ export default defineEventHandler(
       requireAuth(event)
 
       const query = getQuery(event)
+      // Override limit to fetch ALL users — pagination is handled client-side
+      const fetchQuery = { ...query, limit: 10000, page: 1 }
       const response = await backendApiRequest<any>(event, '/api/users', {
         method: 'GET',
-        query,
+        query: fetchQuery,
       })
 
       const pagination =
@@ -40,6 +42,7 @@ export default defineEventHandler(
             appVersion: user.appVersion || null,
             matches: user.matches || [],
             blocked: user.blocked || false,
+            walletBalance: user.walletBalance || 0,
           }))
         : []
 

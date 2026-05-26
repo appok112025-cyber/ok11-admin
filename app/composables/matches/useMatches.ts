@@ -31,14 +31,14 @@ export const useMatches = () => {
       teamA: string[]
       teamB: string[]
     }
-    quizzes?: Array<{
-      questionId?: string
-      question: string
-      options: Array<{ text: string }>
-      correctAnswer: number | null
-      points: number
-      saved?: boolean
-    }>
+    // quizzes?: Array<{
+    //   questionId?: string
+    //   question: string
+    //   options: Array<{ text: string }>
+    //   correctAnswer: number | null
+    //   points: number
+    //   saved?: boolean
+    // }>
   }>({
     matchNumber: '',
     matchName: '',
@@ -48,7 +48,7 @@ export const useMatches = () => {
     status: 'Upcoming',
     score: '',
     players: { teamA: [], teamB: [] },
-    quizzes: [],
+    // quizzes: [],
   })
 
   const navigateToMatch = (matchId: string) => {
@@ -162,23 +162,23 @@ export const useMatches = () => {
               }
             }
 
-            if (match.quizzes && Array.isArray(match.quizzes)) {
-              normalizedMatch.quizzes = match.quizzes.map((quiz: any) => ({
-                questionId:
-                  quiz.questionId ||
-                  quiz._id?.toString() ||
-                  quiz.id?.toString(),
-                question: quiz.question || '',
-                options: Array.isArray(quiz.options)
-                  ? quiz.options.map((opt: any) => ({
-                      text: typeof opt === 'string' ? opt : opt?.text || '',
-                    }))
-                  : [],
-                correctAnswer: quiz.correctAnswer ?? null,
-                points: quiz.points || 10,
-                saved: true,
-              }))
-            }
+            // if (match.quizzes && Array.isArray(match.quizzes)) {
+            //   normalizedMatch.quizzes = match.quizzes.map((quiz: any) => ({
+            //     questionId:
+            //       quiz.questionId ||
+            //       quiz._id?.toString() ||
+            //       quiz.id?.toString(),
+            //     question: quiz.question || '',
+            //     options: Array.isArray(quiz.options)
+            //       ? quiz.options.map((opt: any) => ({
+            //           text: typeof opt === 'string' ? opt : opt?.text || '',
+            //         }))
+            //       : [],
+            //     correctAnswer: quiz.correctAnswer ?? null,
+            //     points: quiz.points || 10,
+            //     saved: true,
+            //   }))
+            // }
 
             return normalizedMatch
           }) as Match[]
@@ -218,7 +218,7 @@ export const useMatches = () => {
       status: 'Upcoming',
       score: '',
       players: { teamA: [], teamB: [] },
-      quizzes: [],
+      // quizzes: [],
     }
     showModal.value = true
   }
@@ -235,7 +235,7 @@ export const useMatches = () => {
         status: 'Upcoming',
         score: '',
         players: { teamA: [], teamB: [] },
-        quizzes: [],
+        // quizzes: [],
       }
     }
   }
@@ -295,7 +295,7 @@ export const useMatches = () => {
         matchToUpdate.status = form.value.status
         matchToUpdate.score = form.value.score?.trim() || undefined
         matchToUpdate.players = form.value.players
-        matchToUpdate.quizzes = form.value.quizzes
+        // matchToUpdate.quizzes = form.value.quizzes
 
         try {
           const playersResponse = await $fetch<{ data: any[] }>('/api/players')
@@ -322,46 +322,47 @@ export const useMatches = () => {
             teamB: convertPlayerNamesToIds(form.value.players?.teamB || []),
           }
 
-          console.log('matchToUpdate.quizzes before filtering:', {
-            quizzes: matchToUpdate.quizzes,
-            count: matchToUpdate.quizzes?.length,
-          })
+          // console.log('matchToUpdate.quizzes before filtering:', {
+          //   quizzes: matchToUpdate.quizzes,
+          //   count: matchToUpdate.quizzes?.length,
+          // })
 
-          const quizzesForApi = (matchToUpdate.quizzes || [])
-            .filter((quiz: any) => {
-              // Include quiz if it has a question or questionId AND has at least 2 options with text
-              const hasQuestion =
-                (quiz.question && quiz.question.trim()) || quiz.questionId
-              const hasValidOptions =
-                quiz.options &&
-                quiz.options.length >= 2 &&
-                quiz.options.every(
-                  (opt: any) => opt && opt.text && opt.text.trim()
-                )
-              console.log('Filtering quiz:', {
-                quiz,
-                hasQuestion,
-                hasValidOptions,
-                willInclude: hasQuestion && hasValidOptions,
-              })
-              return hasQuestion && hasValidOptions
-            })
-            .map((quiz: any) => ({
-              questionId: quiz.questionId || undefined,
-              question: quiz.question || '',
-              options: Array.isArray(quiz.options)
-                ? quiz.options.map((opt: any) => ({
-                    text: typeof opt === 'string' ? opt : opt?.text || '',
-                  }))
-                : [],
-              correctAnswer: quiz.correctAnswer ?? null,
-              points: quiz.points || 10,
-            }))
+          const quizzesForApi: any[] = []
+          // const quizzesForApi = (matchToUpdate.quizzes || [])
+          //   .filter((quiz: any) => {
+          //     // Include quiz if it has a question or questionId AND has at least 2 options with text
+          //     const hasQuestion =
+          //       (quiz.question && quiz.question.trim()) || quiz.questionId
+          //     const hasValidOptions =
+          //       quiz.options &&
+          //       quiz.options.length >= 2 &&
+          //       quiz.options.every(
+          //         (opt: any) => opt && opt.text && opt.text.trim()
+          //       )
+          //     console.log('Filtering quiz:', {
+          //       quiz,
+          //       hasQuestion,
+          //       hasValidOptions,
+          //       willInclude: hasQuestion && hasValidOptions,
+          //     })
+          //     return hasQuestion && hasValidOptions
+          //   })
+          //   .map((quiz: any) => ({
+          //     questionId: quiz.questionId || undefined,
+          //     question: quiz.question || '',
+          //     options: Array.isArray(quiz.options)
+          //       ? quiz.options.map((opt: any) => ({
+          //           text: typeof opt === 'string' ? opt : opt?.text || '',
+          //         }))
+          //       : [],
+          //     correctAnswer: quiz.correctAnswer ?? null,
+          //     points: quiz.points || 10,
+          //   }))
 
-          console.log('Updating match with quizzes:', {
-            quizzesCount: quizzesForApi.length,
-            quizzes: quizzesForApi,
-          })
+          // console.log('Updating match with quizzes:', {
+          //   quizzesCount: quizzesForApi.length,
+          //   quizzes: quizzesForApi,
+          // })
 
           const updateResponse = await retry(
             () =>
@@ -435,7 +436,7 @@ export const useMatches = () => {
           participantsCount: 0,
           participants: [],
           players: form.value.players,
-          quizzes: form.value.quizzes,
+          // quizzes: form.value.quizzes,
         }
 
         matches.value.push(newMatch)
@@ -485,30 +486,31 @@ export const useMatches = () => {
             return false
           }
 
-          const quizzesForApi = (newMatch.quizzes || [])
-            .filter((quiz: any) => {
-              // Include quiz if it has a question or questionId AND has at least 2 options with text
-              const hasQuestion =
-                (quiz.question && quiz.question.trim()) || quiz.questionId
-              const hasValidOptions =
-                quiz.options &&
-                quiz.options.length >= 2 &&
-                quiz.options.every(
-                  (opt: any) => opt && opt.text && opt.text.trim()
-                )
-              return hasQuestion && hasValidOptions
-            })
-            .map((quiz: any) => ({
-              questionId: quiz.questionId || undefined,
-              question: quiz.question || '',
-              options: Array.isArray(quiz.options)
-                ? quiz.options.map((opt: any) => ({
-                    text: typeof opt === 'string' ? opt : opt?.text || '',
-                  }))
-                : [],
-              correctAnswer: quiz.correctAnswer ?? null,
-              points: quiz.points || 10,
-            }))
+          const quizzesForApi: any[] = []
+          // const quizzesForApi = (newMatch.quizzes || [])
+          //   .filter((quiz: any) => {
+          //     // Include quiz if it has a question or questionId AND has at least 2 options with text
+          //     const hasQuestion =
+          //       (quiz.question && quiz.question.trim()) || quiz.questionId
+          //     const hasValidOptions =
+          //       quiz.options &&
+          //       quiz.options.length >= 2 &&
+          //       quiz.options.every(
+          //         (opt: any) => opt && opt.text && opt.text.trim()
+          //       )
+          //     return hasQuestion && hasValidOptions
+          //   })
+          //   .map((quiz: any) => ({
+          //     questionId: quiz.questionId || undefined,
+          //     question: quiz.question || '',
+          //     options: Array.isArray(quiz.options)
+          //       ? quiz.options.map((opt: any) => ({
+          //           text: typeof opt === 'string' ? opt : opt?.text || '',
+          //         }))
+          //       : [],
+          //     correctAnswer: quiz.correctAnswer ?? null,
+          //     points: quiz.points || 10,
+          //   }))
 
           const createResponse = await retry(
             () =>
@@ -569,18 +571,19 @@ export const useMatches = () => {
       .toISOString()
       .slice(0, 16)
 
-    const quizzes = (match.quizzes || []).map(quiz => ({
-      questionId: quiz.questionId || '',
-      question: quiz.question || '',
-      options: Array.isArray(quiz.options)
-        ? quiz.options.map((opt: any) => ({
-            text: typeof opt === 'string' ? opt : opt?.text || '',
-          }))
-        : [],
-      correctAnswer: quiz.correctAnswer ?? null,
-      points: quiz.points || 10,
-      saved: true,
-    }))
+    // const quizzes = (match.quizzes || []).map(quiz => ({
+    //   questionId: quiz.questionId || '',
+    //   question: quiz.question || '',
+    //   options: Array.isArray(quiz.options)
+    //     ? quiz.options.map((opt: any) => ({
+    //         text: typeof opt === 'string' ? opt : opt?.text || '',
+    //       }))
+    //     : [],
+    //   correctAnswer: quiz.correctAnswer ?? null,
+    //   points: quiz.points || 10,
+    //   saved: true,
+    // }))
+    const quizzes: any[] = []
 
     let playerNames = { teamA: [] as string[], teamB: [] as string[] }
 
@@ -659,7 +662,7 @@ export const useMatches = () => {
       status: match.status,
       score: match.score || '',
       players: playerNames,
-      quizzes: quizzes,
+      // quizzes: quizzes,
     }
 
     console.log('Composable: Initialized edit form for match', match.id, {

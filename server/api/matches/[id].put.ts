@@ -75,22 +75,22 @@ export default defineEventHandler(
         }
       }
 
-      if (matchData.quizzes !== undefined) {
-        payload.quizzes = Array.isArray(matchData.quizzes)
-          ? matchData.quizzes.map((quiz: any) => ({
-              questionId: quiz.questionId || undefined,
-              question: quiz.question || '',
-              options: Array.isArray(quiz.options)
-                ? quiz.options.map((opt: any) => ({
-                    text: typeof opt === 'string' ? opt : opt?.text || '',
-                  }))
-                : [],
-              correctAnswer:
-                quiz.correctAnswer !== undefined ? quiz.correctAnswer : null,
-              points: quiz.points || 10,
-            }))
-          : []
-      }
+      // if (matchData.quizzes !== undefined) {
+      //   payload.quizzes = Array.isArray(matchData.quizzes)
+      //     ? matchData.quizzes.map((quiz: any) => ({
+      //         questionId: quiz.questionId || undefined,
+      //         question: quiz.question || '',
+      //         options: Array.isArray(quiz.options)
+      //           ? quiz.options.map((opt: any) => ({
+      //               text: typeof opt === 'string' ? opt : opt?.text || '',
+      //             }))
+      //           : [],
+      //         correctAnswer:
+      //           quiz.correctAnswer !== undefined ? quiz.correctAnswer : null,
+      //         points: quiz.points || 10,
+      //       }))
+      //     : []
+      // }
 
       const response = await backendApiRequest<any>(
         event,

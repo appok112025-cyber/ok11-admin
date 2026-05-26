@@ -6,7 +6,7 @@
     />
 
     <!-- Stats Grid -->
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
       <div class="bg-white rounded-xl shadow-sm border border-gray-200 p-6">
         <div class="flex items-center justify-between">
           <div>
@@ -91,7 +91,7 @@
         </div>
       </div>
 
-      <div class="bg-white rounded-xl shadow-sm border border-gray-200 p-6">
+      <!-- <div class="bg-white rounded-xl shadow-sm border border-gray-200 p-6">
         <div class="flex items-center justify-between">
           <div>
             <p class="text-sm font-medium text-gray-600">Submissions</p>
@@ -117,7 +117,7 @@
             </svg>
           </div>
         </div>
-      </div>
+      </div> -->
     </div>
 
     <!-- Match Related -->
@@ -151,7 +151,7 @@
           </div>
         </NuxtLink>
 
-        <NuxtLink
+        <!-- <NuxtLink
           to="/submissions"
           class="flex items-center space-x-3 p-4 border border-gray-200 rounded-lg hover:bg-gray-50 hover:border-blue-300 transition-colors"
         >
@@ -176,7 +176,7 @@
             <p class="text-sm font-medium text-gray-900">View Submissions</p>
             <p class="text-xs text-gray-500">Manage match submissions</p>
           </div>
-        </NuxtLink>
+        </NuxtLink> -->
 
         <NuxtLink
           to="/teams"
@@ -232,7 +232,7 @@
           </div>
         </NuxtLink>
 
-        <NuxtLink
+        <!-- <NuxtLink
           to="/quizzes"
           class="flex items-center space-x-3 p-4 border border-gray-200 rounded-lg hover:bg-gray-50 hover:border-blue-300 transition-colors"
         >
@@ -257,7 +257,7 @@
             <p class="text-sm font-medium text-gray-900">Manage Quizzes</p>
             <p class="text-xs text-gray-500">View and manage quizzes</p>
           </div>
-        </NuxtLink>
+        </NuxtLink> -->
       </div>
     </div>
 
@@ -413,7 +413,7 @@
     totalUsers: number
     totalMatches: number
     activeMatches: number
-    totalSubmissions: number
+    totalSubmissions?: number
   }
 
   const loading = ref(true)
@@ -421,7 +421,6 @@
     totalUsers: 0,
     totalMatches: 0,
     activeMatches: 0,
-    totalSubmissions: 0,
   })
 
   const fetchStats = async () => {
@@ -436,7 +435,6 @@
           totalUsers: response.data.totalUsers || 0,
           totalMatches: response.data.totalMatches || 0,
           activeMatches: response.data.activeMatches || 0,
-          totalSubmissions: response.data.totalSubmissions || 0,
         }
         console.log('Dashboard stats set:', stats.value)
       } else {

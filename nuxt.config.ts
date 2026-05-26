@@ -32,7 +32,7 @@ export default defineNuxtConfig({
       'composables/common',
       'composables/content',
       'composables/matches',
-      'composables/quizzes',
+      // 'composables/quizzes',
       'composables/teams',
       'composables/users',
       'stores',

@@ -31,4 +31,5 @@ export interface UserWithMatches {
   appVersion: string | null
   matches: UserMatch[]
   blocked?: boolean
+  walletBalance: number
 }

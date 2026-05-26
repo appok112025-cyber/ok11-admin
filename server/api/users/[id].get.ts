@@ -32,6 +32,7 @@ export default defineEventHandler(async (event): Promise<UserWithMatches> => {
       appVersion: user.appVersion || null,
       matches: user.matches || [],
       blocked: user.blocked || false,
+      walletBalance: user.walletBalance || 0,
     }
   } catch (error: any) {
     return handleApiError(error, 'fetch user')

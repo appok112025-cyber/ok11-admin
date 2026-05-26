@@ -99,52 +99,52 @@ export default defineEventHandler(
         payload.score = matchData.score
       }
 
-      // Validate and filter quizzes
-      if (matchData.quizzes !== undefined && Array.isArray(matchData.quizzes)) {
-        payload.quizzes = matchData.quizzes
-          .filter((quiz: any) => {
-            // Only include quizzes with valid structure
-            return (
-              quiz &&
-              typeof quiz === 'object' &&
-              quiz.question &&
-              typeof quiz.question === 'string' &&
-              quiz.question.trim().length > 0 &&
-              Array.isArray(quiz.options) &&
-              quiz.options.length >= 2 &&
-              quiz.options.length <= 4 &&
-              quiz.options.every(
-                (opt: any) =>
-                  opt &&
-                  typeof opt === 'object' &&
-                  opt.text &&
-                  typeof opt.text === 'string' &&
-                  opt.text.trim().length > 0
-              )
-            )
-          })
-          .map((quiz: any) => ({
-            questionId: quiz.questionId || undefined,
-            question: quiz.question.trim(),
-            options: quiz.options.map((opt: any) => ({
-              text: opt.text.trim(),
-            })),
-            correctAnswer:
-              quiz.correctAnswer !== null && quiz.correctAnswer !== undefined
-                ? Number.isInteger(quiz.correctAnswer) &&
-                  quiz.correctAnswer >= 0 &&
-                  quiz.correctAnswer < quiz.options.length
-                  ? quiz.correctAnswer
-                  : null
-                : null,
-            points:
-              quiz.points && Number.isInteger(quiz.points) && quiz.points > 0
-                ? quiz.points
-                : 10,
-          }))
-      } else {
-        payload.quizzes = []
-      }
+      // // Validate and filter quizzes
+      // if (matchData.quizzes !== undefined && Array.isArray(matchData.quizzes)) {
+      //   payload.quizzes = matchData.quizzes
+      //     .filter((quiz: any) => {
+      //       // Only include quizzes with valid structure
+      //       return (
+      //         quiz &&
+      //         typeof quiz === 'object' &&
+      //         quiz.question &&
+      //         typeof quiz.question === 'string' &&
+      //         quiz.question.trim().length > 0 &&
+      //         Array.isArray(quiz.options) &&
+      //         quiz.options.length >= 2 &&
+      //         quiz.options.length <= 4 &&
+      //         quiz.options.every(
+      //           (opt: any) =>
+      //             opt &&
+      //             typeof opt === 'object' &&
+      //             opt.text &&
+      //             typeof opt.text === 'string' &&
+      //             opt.text.trim().length > 0
+      //         )
+      //       )
+      //     })
+      //     .map((quiz: any) => ({
+      //       questionId: quiz.questionId || undefined,
+      //       question: quiz.question.trim(),
+      //       options: quiz.options.map((opt: any) => ({
+      //         text: opt.text.trim(),
+      //       })),
+      //       correctAnswer:
+      //         quiz.correctAnswer !== null && quiz.correctAnswer !== undefined
+      //           ? Number.isInteger(quiz.correctAnswer) &&
+      //             quiz.correctAnswer >= 0 &&
+      //             quiz.correctAnswer < quiz.options.length
+      //             ? quiz.correctAnswer
+      //             : null
+      //           : null,
+      //       points:
+      //         quiz.points && Number.isInteger(quiz.points) && quiz.points > 0
+      //           ? quiz.points
+      //           : 10,
+      //     }))
+      // } else {
+      //   payload.quizzes = []
+      // }
 
       if (payload.players.teamA.length === 0) {
         throw createError({

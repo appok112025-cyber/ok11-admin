@@ -38,6 +38,38 @@
     </div>
 
     <div v-else class="bg-white shadow-lg rounded-xl overflow-hidden relative">
+      <!-- Search & Sorting Toolbar -->
+      <div class="p-6 border-b border-gray-150 bg-gray-50/30 flex flex-col sm:flex-row items-center justify-between gap-4">
+        <!-- Search Bar -->
+        <div class="relative w-full sm:max-w-md">
+          <span class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+            <svg class="h-5 w-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
+          </span>
+          <input
+            v-model="searchQuery"
+            type="text"
+            placeholder="Search users by name, email, phone..."
+            class="w-full pl-10 pr-4 py-2 border border-gray-300 rounded-lg text-sm focus:ring-2 focus:ring-blue-500 focus:border-blue-500 focus:outline-none"
+          />
+        </div>
+        
+        <!-- Sorting Option -->
+        <div class="flex items-center gap-3 w-full sm:w-auto justify-end">
+          <label class="text-xs font-semibold text-gray-500 whitespace-nowrap">Sort By:</label>
+          <select
+            v-model="sortBy"
+            class="px-3 py-2 border border-gray-300 rounded-lg text-xs bg-white focus:ring-2 focus:ring-blue-500 focus:outline-none font-bold text-gray-700"
+          >
+            <option value="createdAt_desc">Date Joined (Newest)</option>
+            <option value="createdAt_asc">Date Joined (Oldest)</option>
+            <option value="name_asc">Name (A-Z)</option>
+            <option value="name_desc">Name (Z-A)</option>
+            <option value="walletBalance_desc">Wallet Balance (Highest)</option>
+            <option value="walletBalance_asc">Wallet Balance (Lowest)</option>
+          </select>
+        </div>
+      </div>
+
       <div
         v-if="isChangingPage"
         class="absolute inset-0 bg-white/50 backdrop-blur-sm z-10 flex items-center justify-center"
@@ -64,6 +96,11 @@
                 class="px-6 py-3 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider"
               >
                 Phone
+              </th>
+              <th
+                class="px-6 py-3 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider"
+              >
+                Wallet Balance
               </th>
               <th
                 class="px-6 py-3 text-right text-xs font-semibold text-gray-600 uppercase tracking-wider"
@@ -120,6 +157,19 @@
               <td class="px-6 py-4 whitespace-nowrap">
                 <div class="text-sm text-gray-900">
                   {{ user.phone || '-' }}
+                </div>
+              </td>
+              <td class="px-6 py-4 whitespace-nowrap" @click.stop>
+                <div class="flex items-center gap-3">
+                  <span class="text-sm font-black text-green-650">₹{{ (user.walletBalance || 0).toFixed(2) }}</span>
+                  <button
+                    @click="openAddMoneyModal(user)"
+                    class="px-2.5 py-1 bg-blue-50 hover:bg-blue-600 hover:text-white text-blue-600 font-bold text-[10px] uppercase rounded transition-all flex items-center gap-1 active:scale-95 border border-blue-100"
+                    title="Add Money"
+                  >
+                    <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M12 4v16m8-8H4"></path></svg>
+                    Add Money
+                  </button>
                 </div>
               </td>
               <td
@@ -269,20 +319,146 @@
         </div>
       </div>
     </div>
+
+    <!-- Add Money Dialog -->
+    <div v-if="showAddMoneyDialog" class="fixed inset-0 bg-gray-900/50 backdrop-blur-sm flex items-center justify-center z-50 p-4">
+      <div class="bg-white rounded-2xl shadow-2xl max-w-md w-full border border-gray-100 p-6 space-y-4">
+        <div>
+          <h3 class="text-lg font-bold text-gray-900">Add Money to Wallet</h3>
+          <p class="text-sm text-gray-500">User: <strong class="text-gray-700">{{ selectedUserForMoney?.name || selectedUserForMoney?.email }}</strong></p>
+        </div>
+        
+        <div class="space-y-2">
+          <label class="block text-xs font-bold text-gray-400 uppercase">Amount to Add (₹)</label>
+          <div class="relative flex items-center">
+            <span class="absolute left-3 text-gray-500 font-bold">₹</span>
+            <input
+              v-model.number="addMoneyAmount"
+              type="number"
+              min="1"
+              class="w-full pl-7 pr-3 py-2 border border-gray-300 rounded-lg text-sm font-bold focus:ring-2 focus:ring-blue-500 focus:outline-none"
+              placeholder="100"
+            />
+          </div>
+        </div>
+
+        <div class="flex justify-end gap-3 pt-2">
+          <button
+            @click="closeAddMoneyModal"
+            class="px-4 py-2 text-xs font-bold text-gray-500 hover:bg-gray-100 rounded-lg transition-all"
+            :disabled="addingMoney"
+          >
+            Cancel
+          </button>
+          <button
+            @click="submitAddMoney"
+            class="px-5 py-2 bg-blue-600 hover:bg-blue-700 text-white font-bold text-xs rounded-lg shadow-md active:scale-95 transition-all flex items-center gap-1.5"
+            :disabled="addingMoney || !addMoneyAmount || addMoneyAmount <= 0"
+          >
+            <svg v-if="addingMoney" class="animate-spin h-3.5 w-3.5 text-white" fill="none" viewBox="0 0 24 24"><circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle><path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path></svg>
+            {{ addingMoney ? 'Adding...' : 'Add Money' }}
+          </button>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
 <script setup lang="ts">
   import { useUsers } from '~/composables/users/useUsers'
   import { usePagination } from '~/composables/common/usePagination'
+  import { useToast } from '~/composables/common/useToast'
 
   const route = useRoute()
+  const { success: toastSuccess, error: toastError } = useToast()
 
   definePageMeta({
     layout: 'admin',
   })
 
   const { users, loading, error, navigateToUser, loadUsers } = useUsers()
+
+  // Search & Sorting state
+  const searchQuery = ref('')
+  const sortBy = ref('createdAt_desc')
+
+  // Filtered and sorted computed list of users
+  const filteredAndSortedUsers = computed(() => {
+    let result = [...users.value]
+
+    const query = searchQuery.value.toLowerCase().trim()
+    if (query) {
+      result = result.filter(user => {
+        const name = (user.name || '').toLowerCase()
+        const email = (user.email || '').toLowerCase()
+        const phone = (user.phone || '').toLowerCase()
+        return name.includes(query) || email.includes(query) || phone.includes(query)
+      })
+    }
+
+    result.sort((a, b) => {
+      if (sortBy.value === 'createdAt_asc') {
+        return new Date(a.createdAt).getTime() - new Date(b.createdAt).getTime()
+      } else if (sortBy.value === 'createdAt_desc') {
+        return new Date(b.createdAt).getTime() - new Date(a.createdAt).getTime()
+      } else if (sortBy.value === 'name_asc') {
+        return (a.name || '').localeCompare(b.name || '')
+      } else if (sortBy.value === 'name_desc') {
+        return (b.name || '').localeCompare(a.name || '')
+      } else if (sortBy.value === 'walletBalance_asc') {
+        return (a.walletBalance || 0) - (b.walletBalance || 0)
+      } else if (sortBy.value === 'walletBalance_desc') {
+        return (b.walletBalance || 0) - (a.walletBalance || 0)
+      }
+      return 0
+    })
+
+    return result
+  })
+
+  // Add Money state & methods
+  const showAddMoneyDialog = ref(false)
+  const selectedUserForMoney = ref<any>(null)
+  const addMoneyAmount = ref<number | null>(100)
+  const addingMoney = ref(false)
+
+  const openAddMoneyModal = (user: any) => {
+    selectedUserForMoney.value = user
+    addMoneyAmount.value = 100
+    showAddMoneyDialog.value = true
+  }
+
+  const closeAddMoneyModal = () => {
+    showAddMoneyDialog.value = false
+    selectedUserForMoney.value = null
+    addMoneyAmount.value = null
+  }
+
+  const submitAddMoney = async () => {
+    if (!selectedUserForMoney.value || !addMoneyAmount.value || addMoneyAmount.value <= 0) return
+    
+    addingMoney.value = true
+    try {
+      const userId = selectedUserForMoney.value.id
+      const res = await $fetch<any>(`/api/users/${userId}/add-money`, {
+        method: 'POST',
+        body: { amount: addMoneyAmount.value }
+      })
+      
+      // Update locally
+      const idx = users.value.findIndex(u => u.id === userId)
+      if (idx !== -1) {
+        users.value[idx].walletBalance = res.walletBalance !== undefined ? res.walletBalance : (users.value[idx].walletBalance || 0) + addMoneyAmount.value
+      }
+      
+      toastSuccess(`Successfully added ₹${addMoneyAmount.value} to ${selectedUserForMoney.value.name || 'user'}'s wallet!`)
+      closeAddMoneyModal()
+    } catch (e: any) {
+      toastError(e.data?.message || e.message || 'Failed to add money')
+    } finally {
+      addingMoney.value = false
+    }
+  }
 
   // Track failed avatar images to show fallback
   const failedAvatars = ref<Set<string>>(new Set())
@@ -302,7 +478,12 @@
     visiblePages,
     isChangingPage,
     goToPage,
-  } = usePagination(users, 10)
+  } = usePagination(filteredAndSortedUsers, 10)
+
+  // Reset page to 1 when search or sorting changes
+  watch([searchQuery, sortBy], () => {
+    currentPage.value = 1
+  })
 
   onMounted(() => {
     loadUsers()

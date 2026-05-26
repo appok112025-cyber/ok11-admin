@@ -164,7 +164,7 @@
                 @click.stop
               >
                 <div class="flex items-center justify-end gap-2">
-                  <span
+                  <!-- <span
                     v-if="match.quizzes && match.quizzes.length > 0"
                     class="inline-flex items-center px-2 py-1 rounded-md text-xs font-medium bg-purple-100 text-purple-800"
                     title="Has quizzes"
@@ -185,7 +185,7 @@
                     {{ match.quizzes.length }} Quiz{{
                       match.quizzes.length > 1 ? 'zes' : ''
                     }}
-                  </span>
+                  </span> -->
                   <svg
                     class="w-5 h-5 text-gray-400 inline-block"
                     fill="none"

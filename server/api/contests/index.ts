@@ -11,12 +11,9 @@ export default defineEventHandler(async (event) => {
       const query = getQuery(event)
       const matchId = query.matchId as string
       
-      if (!matchId) {
-        return { success: false, error: 'matchId is required' }
-      }
-
       // Call the standardized backend endpoint
-      const response = await backendApiRequest<any>(event, `/api/contests?matchId=${matchId}`)
+      const url = matchId ? `/api/contests?matchId=${matchId}` : '/api/contests'
+      const response = await backendApiRequest<any>(event, url)
       
       // Handle the standardized backend response format: { success: true, data: { data: [...] } }
       if (response && response.success && response.data) {

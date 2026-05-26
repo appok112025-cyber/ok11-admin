@@ -231,7 +231,7 @@
         </div>
 
         <!-- Quiz Section -->
-        <div class="border-t border-gray-200 pt-6">
+        <!-- <div class="border-t border-gray-200 pt-6">
           <div class="flex items-center justify-between mb-4">
             <div>
               <div class="flex items-center gap-3">
@@ -310,7 +310,6 @@
               </div>
 
               <div class="space-y-4">
-                <!-- Question Selection -->
                 <div>
                   <label class="block text-sm font-medium text-gray-700 mb-2">
                     Question <span class="text-red-500">*</span>
@@ -366,7 +365,6 @@
                   </div>
                 </div>
 
-                <!-- Options -->
                 <div>
                   <div class="flex items-center justify-between mb-2">
                     <label class="block text-sm font-medium text-gray-700">
@@ -459,7 +457,6 @@
                   </div>
                 </div>
 
-                <!-- Points -->
                 <div>
                   <label class="block text-sm font-medium text-gray-700 mb-2">
                     Points <span class="text-red-500">*</span>
@@ -477,7 +474,6 @@
                   </p>
                 </div>
 
-                <!-- Save Quiz Button -->
                 <div
                   v-if="!quiz.saved"
                   class="flex justify-end pt-2 border-t border-gray-200"
@@ -554,7 +550,7 @@
               No quiz questions added yet
             </p>
           </div>
-        </div>
+        </div> -->
       </form>
     </div>
 
@@ -569,7 +565,7 @@
 
 <script setup lang="ts">
   import { useMatches } from '~/composables/matches/useMatches'
-  import { useQuizzes } from '~/composables/quizzes/useQuizzes'
+  // import { useQuizzes } from '~/composables/quizzes/useQuizzes'
   import { useTeams } from '~/composables/teams/useTeams'
   import { useToast } from '~/composables/common/useToast'
   import { computed, ref, onMounted, watch } from 'vue'
@@ -591,7 +587,9 @@
   const { success: showSuccess } = useToast()
   const showTeamDialog = ref(false)
   const addingForTeam = ref<'teamA' | 'teamB' | null>(null)
-  const { quizzes: availableQuizzes, fetchQuizzes } = useQuizzes()
+  // const { quizzes: availableQuizzes, fetchQuizzes } = useQuizzes()
+  const availableQuizzes = ref<any[]>([])
+  const fetchQuizzes = async () => {}
   const { teams: availableTeams, fetchTeams } = useTeams()
 
   const isFormValid = computed(() => {
@@ -635,123 +633,121 @@
     }
   }
 
-  const addQuiz = () => {
-    if (!form.value.quizzes) {
-      form.value.quizzes = []
-    }
-    const newQuiz: any = {
-      questionId: '',
-      question: '',
-      options: [{ text: '' }, { text: '' }],
-      correctAnswer: null,
-      points: 10,
-      saved: false,
-    }
-    form.value.quizzes.push(newQuiz)
-  }
+  // const addQuiz = () => {
+  //   if (!form.value.quizzes) {
+  //     form.value.quizzes = []
+  //   }
+  //   const newQuiz: any = {
+  //     questionId: '',
+  //     question: '',
+  //     options: [{ text: '' }, { text: '' }],
+  //     correctAnswer: null,
+  //     points: 10,
+  //     saved: false,
+  //   }
+  //   form.value.quizzes.push(newQuiz)
+  // }
 
-  const isQuizValid = (quiz: any) => {
-    const hasQuestion = quiz.question.trim() !== '' || quiz.questionId !== ''
-    const hasValidOptions =
-      quiz.options.length >= 2 &&
-      quiz.options.every((opt: any) => opt.text.trim() !== '')
-    return hasQuestion && hasValidOptions
-  }
+  // const isQuizValid = (quiz: any) => {
+  //   const hasQuestion = quiz.question.trim() !== '' || quiz.questionId !== ''
+  //   const hasValidOptions =
+  //     quiz.options.length >= 2 &&
+  //     quiz.options.every((opt: any) => opt.text.trim() !== '')
+  //   return hasQuestion && hasValidOptions
+  // }
 
-  const saveQuiz = (index: number) => {
-    const quiz = form.value.quizzes?.[index]
-    if (quiz && isQuizValid(quiz)) {
-      quiz.saved = true
-    }
-  }
+  // const saveQuiz = (index: number) => {
+  //   const quiz = form.value.quizzes?.[index]
+  //   if (quiz && isQuizValid(quiz)) {
+  //     quiz.saved = true
+  //   }
+  // }
 
-  const editQuiz = (index: number) => {
-    const quiz = form.value.quizzes?.[index]
-    if (quiz) {
-      quiz.saved = false
-    }
-  }
+  // const editQuiz = (index: number) => {
+  //   const quiz = form.value.quizzes?.[index]
+  //   if (quiz) {
+  //     quiz.saved = false
+  //   }
+  // }
 
-  const saveAsPredefine = async (index: number) => {
-    const quiz = form.value.quizzes?.[index]
-    if (!quiz || !quiz.question.trim()) return
+  // const saveAsPredefine = async (index: number) => {
+  //   const quiz = form.value.quizzes?.[index]
+  //   if (!quiz || !quiz.question.trim()) return
 
-    try {
-      await $fetch('/api/quizzes', {
-        method: 'POST',
-        body: { question: quiz.question.trim() },
-      })
+  //   try {
+  //     await $fetch('/api/quizzes', {
+  //       method: 'POST',
+  //       body: { question: quiz.question.trim() },
+  //     })
 
-      await fetchQuizzes()
-      // Set the newly created quiz as selected
-      const newQuiz = availableQuizzes.value.find(
-        q => q.question === quiz.question.trim()
-      )
-      if (newQuiz) {
-        quiz.questionId = newQuiz.id
-        showSuccess('Question saved as predefined template')
-      }
-    } catch (error: any) {
-      console.error('Failed to save question as predefined:', error)
-      const { error: showError } = useToast()
-      const errorMessage =
-        error?.data?.error ||
-        error?.message ||
-        'Failed to save question as predefined'
-      showError(errorMessage)
-    }
-  }
+  //     await fetchQuizzes()
+  //     const newQuiz = availableQuizzes.value.find(
+  //       q => q.question === quiz.question.trim()
+  //     )
+  //     if (newQuiz) {
+  //       quiz.questionId = newQuiz.id
+  //       showSuccess('Question saved as predefined template')
+  //     }
+  //   } catch (error: any) {
+  //     console.error('Failed to save question as predefined:', error)
+  //     const { error: showError } = useToast()
+  //     const errorMessage =
+  //       error?.data?.error ||
+  //       error?.message ||
+  //       'Failed to save question as predefined'
+  //     showError(errorMessage)
+  //   }
+  // }
 
-  const removeQuiz = (index: number) => {
-    form.value.quizzes?.splice(index, 1)
-  }
+  // const removeQuiz = (index: number) => {
+  //   form.value.quizzes?.splice(index, 1)
+  // }
 
-  const addOption = (quizIndex: number) => {
-    const quiz = form.value.quizzes?.[quizIndex]
-    if (quiz && quiz.options.length < 4) {
-      quiz.options.push({ text: '' })
-    }
-  }
+  // const addOption = (quizIndex: number) => {
+  //   const quiz = form.value.quizzes?.[quizIndex]
+  //   if (quiz && quiz.options.length < 4) {
+  //     quiz.options.push({ text: '' })
+  //   }
+  // }
 
-  const removeOption = (quizIndex: number, optionIndex: number) => {
-    const quiz = form.value.quizzes?.[quizIndex]
-    if (quiz && quiz.options.length > 2) {
-      quiz.options.splice(optionIndex, 1)
-      // Reset correct answer if it was the removed option
-      if (quiz.correctAnswer === optionIndex) {
-        quiz.correctAnswer = null
-      } else if (
-        quiz.correctAnswer !== null &&
-        quiz.correctAnswer > optionIndex
-      ) {
-        quiz.correctAnswer--
-      }
-    }
-  }
+  // const removeOption = (quizIndex: number, optionIndex: number) => {
+  //   const quiz = form.value.quizzes?.[quizIndex]
+  //   if (quiz && quiz.options.length > 2) {
+  //     quiz.options.splice(optionIndex, 1)
+  //     if (quiz.correctAnswer === optionIndex) {
+  //       quiz.correctAnswer = null
+  //     } else if (
+  //       quiz.correctAnswer !== null &&
+  //       quiz.correctAnswer > optionIndex
+  //     ) {
+  //       quiz.correctAnswer--
+  //     }
+  //   }
+  // }
 
-  const setCorrectAnswer = (quizIndex: number, optionIndex: number) => {
-    const quiz = form.value.quizzes?.[quizIndex]
-    if (quiz) {
-      quiz.correctAnswer =
-        quiz.correctAnswer === optionIndex ? null : optionIndex
-    }
-  }
+  // const setCorrectAnswer = (quizIndex: number, optionIndex: number) => {
+  //   const quiz = form.value.quizzes?.[quizIndex]
+  //   if (quiz) {
+  //     quiz.correctAnswer =
+  //       quiz.correctAnswer === optionIndex ? null : optionIndex
+  //   }
+  // }
 
-  const handleQuestionSelect = (quizIndex: number) => {
-    const quiz = form.value.quizzes?.[quizIndex]
-    if (quiz) {
-      if (quiz.questionId) {
-        const selectedQuiz = availableQuizzes.value.find(
-          q => q.id === quiz.questionId
-        )
-        if (selectedQuiz) {
-          quiz.question = selectedQuiz.question
-        }
-      } else {
-        quiz.question = ''
-      }
-    }
-  }
+  // const handleQuestionSelect = (quizIndex: number) => {
+  //   const quiz = form.value.quizzes?.[quizIndex]
+  //   if (quiz) {
+  //     if (quiz.questionId) {
+  //       const selectedQuiz = availableQuizzes.value.find(
+  //         q => q.id === quiz.questionId
+  //       )
+  //       if (selectedQuiz) {
+  //         quiz.question = selectedQuiz.question
+  //       }
+  //     } else {
+  //       quiz.question = ''
+  //     }
+  //   }
+  // }
 
   const teamNamesForPicker = computed(() => {
     const teamA = availableTeams.value.find(t => t.id === form.value.teamA)
@@ -865,7 +861,7 @@
   onMounted(async () => {
     editingMatchId.value = null
     await loadMatches()
-    await fetchQuizzes()
+    // await fetchQuizzes()
     await fetchTeams()
     initializeForm()
   })
