@@ -157,6 +157,7 @@
     name: string
     imageUrl: string
   }) => {
+    failedTeamImages.value.delete(team.id)
     searchQuery.value = ''
     await fetchTeams()
     await nextTick()

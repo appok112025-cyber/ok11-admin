@@ -74,7 +74,7 @@
       :show="showDialog"
       :title="editingPlayer ? 'Edit Player' : 'Add New Player'"
       :loading="isSubmitting"
-      :disabled="!playerName.trim() || isUploading"
+      :disabled="!playerName.trim() || isSubmitting"
       :editing="!!editingPlayer"
       @close="closeDialog"
       @submit="handleSubmit"
@@ -107,46 +107,51 @@
         </div>
         <div>
           <label class="block text-sm font-medium text-gray-700 mb-2">
-            Player Image (Recommended: 1:1 ratio)
+            Player Image URL
           </label>
           <input
-            type="file"
-            accept="image/*"
-            class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500"
-            @change="handleImageUpload"
+            v-model="playerImageUrl"
+            type="url"
+            class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 text-sm"
+            placeholder="https://example.com/player.jpg"
           />
-          <div v-if="isUploading" class="mt-2 text-sm text-blue-600 font-medium">
-            Uploading image...
-          </div>
-          
-          <div class="mt-4">
-            <label class="block text-xs font-medium text-gray-500 mb-1">Or provide Image URL directly</label>
-            <input
-              v-model="playerImageUrl"
-              type="url"
-              class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 text-sm"
-              placeholder="https://example.com/player.jpg"
-            />
+
+          <!-- Image Preview — matches app squad view style -->
+          <div v-if="playerImageUrl" class="mt-4 flex flex-col items-center">
+            <label class="block text-xs font-medium text-gray-500 mb-2 text-center">Preview (as shown in app)</label>
+            <div class="flex flex-col items-center justify-center gap-2 w-full">
+              <!-- Avatar circle -->
+              <div
+                class="relative w-24 h-24 rounded-full overflow-hidden border-4 border-blue-500 shadow-lg bg-blue-100"
+              >
+                <img
+                  v-if="!imagePreviewError"
+                  :src="playerImageUrl"
+                  alt="Preview"
+                  class="w-full h-full object-cover"
+                  @error="imagePreviewError = true"
+                  @load="imagePreviewError = false"
+                />
+                <div
+                  v-else
+                  class="w-full h-full flex items-center justify-center"
+                >
+                  <svg class="w-10 h-10 text-blue-300" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M12 12c2.7 0 4.8-2.1 4.8-4.8S14.7 2.4 12 2.4 7.2 4.5 7.2 7.2 9.3 12 12 12zm0 2.4c-3.2 0-9.6 1.6-9.6 4.8v2.4h19.2v-2.4c0-3.2-6.4-4.8-9.6-4.8z"/>
+                  </svg>
+                </div>
+              </div>
+              <!-- Name pill (like in app) -->
+              <div class="px-3 py-1 bg-white border border-gray-200 rounded-md shadow-sm">
+                <span class="text-xs font-black text-gray-800">
+                  {{ playerName.trim() || 'Player Name' }}
+                </span>
+              </div>
+              <!-- Error message -->
+              <span v-if="imagePreviewError" class="text-xs text-red-500">Unable to load image</span>
+            </div>
           </div>
 
-          <!-- Image Preview -->
-          <div v-if="playerImageUrl" class="mt-3 flex items-center gap-3">
-            <div class="w-16 h-16 rounded-full overflow-hidden border-2 border-gray-200">
-              <img
-                :src="playerImageUrl"
-                alt="Preview"
-                class="w-full h-full object-cover"
-                @error="imagePreviewError = true"
-                @load="imagePreviewError = false"
-              />
-            </div>
-            <span v-if="imagePreviewError" class="text-sm text-red-500">
-              Unable to load image
-            </span>
-            <span v-else class="text-sm text-green-600">
-              ✓ Image preview
-            </span>
-          </div>
         </div>
       </div>
     </FormDialog>
@@ -176,7 +181,6 @@
   const players = ref<any[]>([])
   const isLoading = ref(false)
   const isSubmitting = ref(false)
-  const isUploading = ref(false)
   const searchQuery = ref('')
   const showDialog = ref(false)
   const playerName = ref('')
@@ -221,7 +225,6 @@
     playerImageUrl.value = ''
     playerRole.value = 'bat'
     imagePreviewError.value = false
-    isUploading.value = false
     showDialog.value = true
   }
 
@@ -231,7 +234,6 @@
     playerImageUrl.value = player.imageUrl || ''
     playerRole.value = player.role || 'bat'
     imagePreviewError.value = false
-    isUploading.value = false
     showDialog.value = true
   }
 
@@ -242,52 +244,10 @@
     playerImageUrl.value = ''
     playerRole.value = 'bat'
     imagePreviewError.value = false
-    isUploading.value = false
-  }
-
-  const handleImageUpload = async (event: Event) => {
-    const file = (event.target as HTMLInputElement).files?.[0]
-    if (!file) return
-
-    isUploading.value = true
-    try {
-      // 1. Get presigned URL
-      const response = await $fetch<{ data: { uploadUrl: string; cdnUrl: string } }>('/api/players/image-upload-url', {
-        method: 'POST',
-        body: {
-          contentType: file.type,
-          fileName: file.name,
-          fileSize: file.size,
-          path: 'players'
-        }
-      })
-
-      const { uploadUrl, cdnUrl } = response.data
-
-      // 2. Upload file directly to R2
-      await $fetch(uploadUrl, {
-        method: 'PUT',
-        body: file,
-        headers: {
-          'Content-Type': file.type,
-        }
-      })
-
-      // 3. Set the image URL to the final CDN URL
-      playerImageUrl.value = cdnUrl
-      success('Image uploaded successfully')
-    } catch (err: any) {
-      console.error('Failed to upload image:', err)
-      showError('Failed to upload image. Please try again or provide a URL directly.')
-    } finally {
-      isUploading.value = false
-      // Reset file input
-      ;(event.target as HTMLInputElement).value = ''
-    }
   }
 
   const handleSubmit = async () => {
-    if (!playerName.value.trim() || isUploading.value) return
+    if (!playerName.value.trim()) return
 
     isSubmitting.value = true
     try {

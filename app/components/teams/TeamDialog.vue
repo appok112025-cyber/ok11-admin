@@ -5,7 +5,7 @@
     :loading="isSubmitting"
     :disabled="
       !formData.name.trim() ||
-      (!selectedFile && !formData.imageUrl) ||
+      !formData.imageUrl.trim() ||
       isSubmitting
     "
     :editing="!!editingTeam"
@@ -30,73 +30,64 @@
       </div>
       <div>
         <label class="block text-sm font-medium text-gray-700 mb-2">
-          Team Image <span class="text-red-500">*</span>
+          Team Image URL <span class="text-red-500">*</span>
         </label>
         <div class="space-y-3">
-          <div
-            v-if="formData.imageUrl || localImagePreview"
-            class="relative w-full h-48 rounded-lg overflow-hidden border-2 border-gray-200"
-          >
-            <img
-              :src="localImagePreview || formData.imageUrl"
-              alt="Team preview"
-              class="w-full h-full object-cover"
-            />
-            <button
-              type="button"
-              @click="clearImage"
-              class="absolute top-2 right-2 bg-red-500 text-white rounded-full p-1 hover:bg-red-600 transition-colors"
-            >
-              <svg
-                class="w-5 h-5"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M6 18L18 6M6 6l12 12"
-                />
-              </svg>
-            </button>
-          </div>
-          <div
-            v-else
-            class="border-2 border-dashed border-gray-300 rounded-lg p-6 text-center"
-          >
+          <!-- URL input -->
+          <div>
             <input
-              ref="fileInput"
-              type="file"
-              accept="image/*"
-              class="hidden"
-              :disabled="!formData.name.trim() || isSubmitting"
-              @change="handleFileSelect"
+              v-model="formData.imageUrl"
+              type="url"
+              class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 text-sm"
+              placeholder="https://example.com/team-logo.png"
             />
-            <button
-              type="button"
-              @click="fileInput?.click()"
-              class="w-full py-3 px-4 rounded-lg transition-colors font-medium"
-              :class="
-                !formData.name.trim() || isSubmitting
-                  ? 'bg-gray-100 text-gray-400 cursor-not-allowed'
-                  : 'bg-blue-50 hover:bg-blue-100 text-blue-700'
-              "
-              :disabled="!formData.name.trim() || isSubmitting"
-            >
-              {{
-                formData.name.trim() ? 'Select Image' : 'Enter team name first'
-              }}
-            </button>
-            <p class="mt-2 text-xs text-gray-500">
-              {{
-                formData.name.trim()
-                  ? 'PNG, JPG, GIF up to 5MB'
-                  : 'Enter team name to enable image selection'
-              }}
-            </p>
           </div>
+
+          <!-- Image Preview -->
+          <div v-if="formData.imageUrl" class="mt-4 flex flex-col items-center">
+            <label class="block text-xs font-medium text-gray-500 mb-2 text-center">Preview (as shown in app)</label>
+            <div class="flex flex-col items-center justify-center gap-2 w-full">
+              <!-- Avatar circle -->
+              <div
+                class="relative w-24 h-24 rounded-full overflow-hidden border-4 border-blue-500 shadow-lg bg-blue-100"
+              >
+                <img
+                  v-if="!imagePreviewError"
+                  :src="formData.imageUrl"
+                  alt="Preview"
+                  class="w-full h-full object-cover"
+                  @error="imagePreviewError = true"
+                  @load="imagePreviewError = false"
+                />
+                <div
+                  v-else
+                  class="w-full h-full flex items-center justify-center"
+                >
+                  <svg class="w-10 h-10 text-blue-300" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M12 12c2.7 0 4.8-2.1 4.8-4.8S14.7 2.4 12 2.4 7.2 4.5 7.2 7.2 9.3 12 12 12zm0 2.4c-3.2 0-9.6 1.6-9.6 4.8v2.4h19.2v-2.4c0-3.2-6.4-4.8-9.6-4.8z"/>
+                  </svg>
+                </div>
+              </div>
+              <!-- Name pill (like in app) -->
+              <div class="px-3 py-1 bg-white border border-gray-200 rounded-md shadow-sm">
+                <span class="text-xs font-black text-gray-800">
+                  {{ formData.name.trim() || 'Team Name' }}
+                </span>
+              </div>
+              <!-- Actions -->
+              <div class="flex flex-col items-center gap-1">
+                <span v-if="imagePreviewError" class="text-xs text-red-500">Unable to load image</span>
+                <button
+                  type="button"
+                  @click="clearImage"
+                  class="text-xs text-red-500 hover:text-red-700 underline"
+                >
+                  Clear URL
+                </button>
+              </div>
+            </div>
+          </div>
+
           <p v-if="formErrors.imageUrl" class="text-sm text-red-600">
             {{ formErrors.imageUrl }}
           </p>
@@ -110,8 +101,6 @@
   import { ref, watch } from 'vue'
   import { validateRequired } from '~/utils/validation/validation'
   import { useToast } from '~/composables/common/useToast'
-  import { sanitizeFileName, getFileExtension } from '~/utils/file/file'
-  import { getUploadErrorMessage } from '~/utils/file/upload'
 
   interface Team {
     id: string
@@ -139,64 +128,12 @@
 
   const formData = ref({ name: '', imageUrl: '' })
   const formErrors = ref({ name: '', imageUrl: '' })
-  const selectedFile = ref<File | null>(null)
-  const localImagePreview = ref('')
   const isSubmitting = ref(false)
-  const fileInput = ref<HTMLInputElement | null>(null)
-
-  const uploadImage = async (file: File): Promise<string> => {
-    const teamName = sanitizeFileName(formData.value.name.trim())
-    const fileExtension = getFileExtension(file.name)
-    const fileName = `${teamName}${fileExtension}`
-
-    try {
-      const { data } = await $fetch<{
-        data: { uploadUrl: string; fileUrl: string }
-      }>('/api/teams/image-upload-url', {
-        method: 'POST',
-        body: {
-          contentType: file.type || 'image/jpeg',
-          fileName,
-          fileSize: file.size,
-        },
-      })
-
-      const uploadRes = await fetch(data.uploadUrl, {
-        method: 'PUT',
-        mode: 'cors',
-        headers: { 'Content-Type': file.type || 'image/jpeg' },
-        body: file,
-      })
-
-      if (!uploadRes.ok) {
-        throw new Error(`Upload failed: ${uploadRes.status}`)
-      }
-
-      return data.fileUrl
-    } catch (error: any) {
-      const friendlyMessage = getUploadErrorMessage(error)
-      showError(friendlyMessage)
-      console.error('Image upload error:', error)
-      throw error
-    }
-  }
-
-  const handleFileSelect = (event: Event) => {
-    const file = (event.target as HTMLInputElement).files?.[0]
-    if (file) {
-      selectedFile.value = file
-      localImagePreview.value = URL.createObjectURL(file)
-      formData.value.imageUrl = ''
-    }
-  }
+  const imagePreviewError = ref(false)
 
   const clearImage = () => {
     formData.value.imageUrl = ''
-    selectedFile.value = null
-    localImagePreview.value = ''
-    if (fileInput.value) {
-      fileInput.value.value = ''
-    }
+    imagePreviewError.value = false
   }
 
   const resetFormErrors = () => {
@@ -209,8 +146,8 @@
     if (!nameValidation.valid && nameValidation.error) {
       formErrors.value.name = nameValidation.error
     }
-    if (!selectedFile.value && !formData.value.imageUrl) {
-      formErrors.value.imageUrl = 'Team image is required'
+    if (!formData.value.imageUrl.trim()) {
+      formErrors.value.imageUrl = 'Team image URL is required'
       return false
     }
     return nameValidation.valid
@@ -224,14 +161,10 @@
     isSubmitting.value = true
 
     try {
-      let imageUrl = formData.value.imageUrl
-
-      if (selectedFile.value && !props.editingTeam) {
-        imageUrl = await uploadImage(selectedFile.value)
-      }
+      const imageUrl = formData.value.imageUrl.trim()
 
       if (props.editingTeam) {
-        const response = await $fetch<{ data: Team }>('/api/teams', {
+        const response = await $fetch<{ data: Team }>(`/api/teams/${props.editingTeam.id}`, {
           method: 'PUT',
           body: {
             id: props.editingTeam.id,
@@ -280,8 +213,8 @@
       handleClose()
     } catch (error: any) {
       console.error('Submit error:', error)
-      const errorMessage =
-        error?.data?.error || error?.message || 'Failed to save team'
+      const rawError = error?.data?.error || error?.message || 'Failed to save team'
+      const errorMessage = typeof rawError === 'string' ? rawError : (rawError?.message || JSON.stringify(rawError))
       if (
         errorMessage.includes('duplicate') ||
         errorMessage.includes('E11000')
@@ -299,12 +232,8 @@
 
   const handleClose = () => {
     formData.value = { name: '', imageUrl: '' }
-    selectedFile.value = null
-    localImagePreview.value = ''
+    imagePreviewError.value = false
     resetFormErrors()
-    if (fileInput.value) {
-      fileInput.value.value = ''
-    }
     emit('close')
   }
 
@@ -320,8 +249,7 @@
         } else {
           formData.value = { name: '', imageUrl: '' }
         }
-        selectedFile.value = null
-        localImagePreview.value = ''
+        imagePreviewError.value = false
         resetFormErrors()
       }
     },
