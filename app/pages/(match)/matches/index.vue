@@ -156,7 +156,10 @@
               </td>
               <td class="px-6 py-4 whitespace-nowrap">
                 <div class="text-sm text-gray-900">
-                  {{ match.participantsCount || 0 }}
+                  <span v-if="contestParticipantsCount[match.id] !== undefined">
+                    {{ contestParticipantsCount[match.id] }}
+                  </span>
+                  <span v-else class="text-gray-400">...</span>
                 </div>
               </td>
               <td
@@ -401,4 +404,23 @@
       }
     }
   )
+
+  const contestParticipantsCount = ref<Record<string, number>>({})
+
+  watch(matches, async (newMatches) => {
+    for (const match of newMatches) {
+      if (contestParticipantsCount.value[match.id] === undefined) {
+        try {
+          const response = await $fetch<any>(`/api/contests?matchId=${match.id}`)
+          if (response && response.data) {
+            const total = response.data.reduce((sum: number, c: any) => sum + (c.totalParticipants || 0), 0)
+            contestParticipantsCount.value[match.id] = total
+          }
+        } catch (err) {
+          console.error('Failed to fetch contests for match', match.id, err)
+          contestParticipantsCount.value[match.id] = 0
+        }
+      }
+    }
+  }, { immediate: true })
 </script>

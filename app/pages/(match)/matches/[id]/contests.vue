@@ -335,12 +335,7 @@
                         <span class="px-3 py-1.5 bg-green-50 text-green-600 text-[10px] font-black uppercase tracking-wider rounded-lg border border-green-100">Sent</span>
                       </div>
                       <div v-else-if="getPrizeForRank(entry.rank) > 0">
-                        <button
-                          @click="sendMoney(entry.userId?._id || entry.userId)"
-                          class="px-3 py-1.5 bg-blue-600 text-white text-[10px] font-black uppercase tracking-wider rounded-lg hover:bg-blue-700 active:scale-[0.98] transition-all flex items-center gap-1 font-bold"
-                        >
-                          Send ₹{{ getPrizeForRank(entry.rank) }}
-                        </button>
+                        <span class="text-xs text-gray-500 font-medium px-3 py-1.5 bg-gray-50 rounded-lg border border-gray-100">Pending ₹{{ getPrizeForRank(entry.rank) }}</span>
                       </div>
                       <span v-else class="text-xs text-gray-400 font-medium">No Prize</span>
                     </td>
